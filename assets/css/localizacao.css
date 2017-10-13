@@ -5,11 +5,14 @@ body{
 h2#titulo{
 	color: #660000;
 	text-align: center;
+	font-family: playfair display;
 }
 #end{
 	color: #660000;
 	display: block;
 	text-align: center;
+	font-family: playfair display;
+
 }
 .center-block {
   display: block;
