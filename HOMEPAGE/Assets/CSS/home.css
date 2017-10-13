@@ -1,0 +1,89 @@
+<<<<<<< HEAD
+html, nav, body, .carousel-example-generic{
+    background-color:#F8F8FF;
+    font-family: 'Playfair Display', serif;
+}
+
+footer{
+    background-color: #660000;
+    color:#F8F8FF;
+    font-family: 'Playfair Display', serif;
+}
+
+main{
+    color:#660000;
+    background-color: #F8F8FF;
+    font-family: 'Playfair Display', serif;
+}
+
+#slideshow-Homepage{
+    width:100%;
+    font-size: 2em;
+    margin-top: 50px;
+    background-color: #F8F8FF;
+    font-family: 'Playfair Display', serif;
+}
+
+.row{
+    margin-top: 40px;
+}
+
+.card{
+    border:3px solid #660000;
+    text-align: center;
+    border-radius:60px; 
+    padding:15px;
+}
+
+.img-fluid{
+    position: relative;
+}
+
+@media(max-width:768px){
+    
+    .carousel-caption{
+        font-size: 0.5em;
+    }
+
+    .col-sm-6{
+        margin-bottom: 30px;
+    }   
+    
+    .row{
+        margin-bottom: -40px;
+    }
+    
+}
+=======
+html, nav, body, .carousel-example-generic{
+    background-color:#F8F8FF;
+}
+
+footer{
+    background-color: #660000;
+    color:#F8F8FF;
+}
+
+main{
+    color:#660000;
+    background-color: #F8F8FF;
+}
+
+#slideshow-Homepage{
+    width:100%;
+    font-size: 2em;
+    margin-top: 50px;
+    background-color: #F8F8FF;
+}
+
+.row{
+    margin-top: 40px;
+}
+
+.card{
+    border:3px solid #660000;
+    text-align: center;
+    border-radius:60px; 
+    padding:15px;
+}
+>>>>>>> master

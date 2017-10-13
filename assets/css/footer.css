@@ -1,0 +1,105 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+	position: relative;
+	margin: 0px;
+	min-height: 100%;
+	background-color: #F8F8FF;
+}
+.col-md-4 {
+	padding-right: 0;
+	padding-left: 0;
+}
+.card { /* cada card eh uma das 3 secoes do footer */
+	background-color: #660000;
+	border: none;
+	border-radius: 0;
+	height: 60px;
+	color: #F8F8FF;
+}
+.card-text {
+	position: absolute;
+}
+.icones-sociais {
+	position: absolute;
+	position: absolute;
+    top: -20%;
+    right: 57%;
+}
+.icones-sociais li {
+	display: inline-block;
+}
+.icones-sociais a {
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	font-size: 0.1px; /* "image-replacement" para esconder o texto do link e mostrar apenas os icones */
+}
+
+.facebook {
+	background-image: url(../images/facebook-gray-icon.png);
+}
+.twitter {	
+	background-image: url(../images/twitter-gray-icon.png);
+}
+.instagram {
+	background-image: url(../images/instagram-gray-icon.png);
+}
+.nome {
+	top: 4%;
+    right: 25%;
+    font-size: 134%;
+    font-weight: bold
+}
+.cidade {
+	top: 46%;
+    right: 38%;
+}
+.email {
+	top: 10%;
+    left: 47%;
+}
+.telefone {
+	left: 58%;
+    top: 40%;
+}
+@media(min-width: 768px) and (max-width: 1024px){ /* adequando o footer para um tablet */
+	.icones-sociais {
+		right: 27%;
+	}
+	.telefone {
+    left: 26%;
+	}
+	.email {
+    left: 6%;
+	}
+    .cidade {
+    top: 43%;
+    right: 28%;
+	}
+	.nome {
+	right: 6%;
+	}
+}
+@media(max-width: 767px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
+	.icones-sociais {
+		right: 30%;
+	}
+	.nome {
+		right: 15%;
+	}
+	.cidade {
+		right: 32%;
+	}
+	.email {
+		left: 20%;
+	}
+	.telefone {
+		left: 34%;
+	}
+}
