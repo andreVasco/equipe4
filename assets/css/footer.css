@@ -14,7 +14,7 @@ body {
 	padding-right: 0;
 	padding-left: 0;
 }
-.card {	
+.card { /* cada card eh uma das 3 secoes do footer */
 	background-color: #660000;
 	border: none;
 	border-radius: 0;
@@ -38,7 +38,7 @@ body {
 	height: 48px;
 	display: inline-block;
 	background-repeat: no-repeat;
-	font-size: 0.1px;
+	font-size: 0.1px; /* "image-replacement" para esconder o texto do link e mostrar apenas os icones */
 }
 
 .facebook {
@@ -68,13 +68,38 @@ body {
 	left: 58%;
     top: 40%;
 }
-@media(min-width: 768px) and (max-width: 1024px){
+@media(min-width: 768px) and (max-width: 1024px){ /* adequando o footer para um tablet */
 	.icones-sociais {
-		right: 42%;
+		right: 27%;
 	}
 	.telefone {
-    left: 46%;
+    left: 26%;
 	}
 	.email {
-    left: 30%;
+    left: 6%;
+	}
+    .cidade {
+    top: 43%;
+    right: 28%;
+	}
+	.nome {
+	right: 6%;
+	}
+}
+@media(max-width: 767px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
+	.icones-sociais {
+		right: 30%;
+	}
+	.nome {
+		right: 15%;
+	}
+	.cidade {
+		right: 32%;
+	}
+	.email {
+		left: 20%;
+	}
+	.telefone {
+		left: 34%;
+	}
 }
