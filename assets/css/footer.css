@@ -40,6 +40,19 @@ body {
 	background-repeat: no-repeat;
 	font-size: 0.1px; /* "image-replacement" para esconder o texto do link e mostrar apenas os icones */
 }
+a.facebook:hover {
+	transform: rotate(360deg);
+}a.facebook {
+	transition: 0.6s ease-in-out;
+}a.twitter:hover {
+	transform: rotate(360deg);
+}a.twitter {
+	transition: 0.6s ease-in-out;
+}a.instagram:hover {
+	transform: rotate(360deg);
+}a.instagram {
+	transition: 0.6s ease-in-out;
+}
 
 .facebook {
 	background-image: url(../images/facebook-gray-icon.png);
