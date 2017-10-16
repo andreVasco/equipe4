@@ -27,7 +27,6 @@
 }
 .icones-sociais {
 	position: absolute;
-	position: absolute;
     top: -20%;
     right: 57%;
 }
@@ -82,7 +81,25 @@ a.facebook:hover {
 	left: 58%;
     top: 40%;
 }
-@media(min-width: 768px) and (max-width: 1024px){ /* adequando o footer para um tablet */
+
+@media(max-width: 1300px){ /* adequando o footer para laptop */
+	.icones-sociais {
+	right: 39%;
+	}
+	.telefone {
+    left: 56%;
+	}
+	.email {
+    left: 26%;
+	}
+    .cidade {
+    top: 43%;
+    right: 31%;
+	}
+	.nome {
+	right: 13%;
+}
+@media(max-width: 930px){ /* adequando o footer para um tablet */
 	.icones-sociais {
 		right: 27%;
 	}
@@ -102,7 +119,7 @@ a.facebook:hover {
 }
 @media(max-width: 767px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
 	.icones-sociais {
-		right: 30%;
+		right: 80%;
 	}
 	.nome {
 		right: 15%;
@@ -115,6 +132,38 @@ a.facebook:hover {
 	}
 	.telefone {
 		left: 34%;
+	}
+}@media(max-width: 425px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
+	.icones-sociais {
+		right: 35%;
+	}
+	.nome {
+		right: 23%;
+	}
+	.cidade {
+		right: 36%;
+	}
+	.email {
+		left: 25%;
+	}
+	.telefone {
+		left: 37%;
+	}
+}@media(max-width: 320px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
+	.icones-sociais {
+		right: 27%;
+	}
+	.nome {
+		right: 14%;
+	}
+	.cidade {
+		right: 33%;
+	}
+	.email {
+		left: 22%;
+	}
+	.telefone {
+		left: 37%;
 	}
 }
 /* CSS FOOTER - FIM */
