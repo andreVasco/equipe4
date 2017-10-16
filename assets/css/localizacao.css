@@ -1,24 +1,25 @@
+/*PAGINA DE LOCALIZACAO*/
 
-body{
+body-localizacao{
 	background-color: #F8F8FF;
 }
-h2#titulo{
+#titulo-h2-localizacao{
 	color: #660000;
 	text-align: center;
 	font-family: playfair display;
+	background-color: #fff;
 }
-#end{
+#endereco-localizacao{
 	color: #660000;
 	display: block;
 	text-align: center;
 	font-family: playfair display;
-<<<<<<< HEAD
 
-=======
->>>>>>> fernanda
 }
-.center-block {
+
+#mapa-localizacao {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+/*FIM DA PAGINA DE LOCALIZACAO*/
