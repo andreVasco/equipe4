@@ -1,27 +1,28 @@
-html {
+/* CSS FOOTER - INICIO */
+#html-footer {
   height: 100%;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
-body {
+#body-footer {
 	position: relative;
 	margin: 0px;
 	min-height: 100%;
 	background-color: #F8F8FF;
 }
-.col-md-4 {
+#footer .col-md-4 {
 	padding-right: 0;
 	padding-left: 0;
 }
-.card { /* cada card eh uma das 3 secoes do footer */
+#footer .card { /* cada card eh uma das 3 secoes do footer */
 	background-color: #660000;
 	border: none;
 	border-radius: 0;
 	height: 60px;
 	color: #F8F8FF;
 }
-.card-text {
+#footer .card-text {
 	position: absolute;
 }
 .icones-sociais {
@@ -39,6 +40,19 @@ body {
 	display: inline-block;
 	background-repeat: no-repeat;
 	font-size: 0.1px; /* "image-replacement" para esconder o texto do link e mostrar apenas os icones */
+}
+a.facebook:hover {
+	transform: rotate(360deg);
+}a.facebook {
+	transition: 0.6s ease-in-out;
+}a.twitter:hover {
+	transform: rotate(360deg);
+}a.twitter {
+	transition: 0.6s ease-in-out;
+}a.instagram:hover {
+	transform: rotate(360deg);
+}a.instagram {
+	transition: 0.6s ease-in-out;
 }
 
 .facebook {
@@ -103,3 +117,4 @@ body {
 		left: 34%;
 	}
 }
+/* CSS FOOTER - FIM */

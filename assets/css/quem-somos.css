@@ -1,21 +1,20 @@
-html{
+#html-quem-somos{
     background-color:#F8F8FF;
-<<<<<<< HEAD
     font-family: 'Playfair Display', serif;
 }
 
-body{
+#body-quem-somos{
     background-color: #f8f8ff;
     font-family: 'Playfair Display', serif;
 }
 
 @media(min-width:768px){
     
-    .card{
+    .blocos{
         display: inline-block;
         width:30%;
         background-color:rgba(248,248,255,0.6);
-        border-radius: 65px;
+        border-radius: 141px;
         text-align: center;
         margin-left: 20px;
         margin-top: 122px;
@@ -24,7 +23,6 @@ body{
     .content{
         background-color: #f8f8ff;
         height: 538px;
-        margin-top: 20px;
         background-image: url(background.jpg);  
         background-size: cover; 
         position: absolute;
@@ -34,7 +32,7 @@ body{
     
 }
 
-.card{
+.blocos{
     font-family: 'Playfair Display', serif;
 }
 
@@ -42,9 +40,19 @@ body{
     font-family: 'Playfair Display', serif;
 }
 
+.blocos-texto{
+    color:#660000;
+}
+.blocos:hover{
+    box-shadow: 0 0 0 999999px rgba(102,0,0,0.7);
+    transform: scale(1.3); 
+    transition: 0.8s;
+    background-color: #F8F8FF;
+}
+
 @media(max-width:767px){
     
-    .card{
+    .blocos{
         text-align: center;
         display:inline-block;
         width: 100%;
@@ -52,7 +60,7 @@ body{
         background-color: rgba(248,248,255,0.6);
         height: auto;
         border:1px solid #660000;
-        border-radius: 70px;
+        border-radius: 141px;
         padding: 10px;
         font-family: 'Playfair Display', serif;
     }
@@ -63,55 +71,4 @@ body{
         background-color:#F8F8FF;
         font-family: 'Playfair Display', serif;
     }
-    
-=======
-}
-nav{
-    background-color: #F8F8FF;
-}
-#logo{
-    color:#2c2c2c;
-}
-#menu{
-    color:#660000;
-}
-body{
-    background-color: #f8f8ff;
-}
-footer{
-    background-color:#660000;
-    color:#F8F8FF;
-}
-@media(min-width:768px){
-.card{
-    display: inline-block;
-    width:30%;
-    background-color:rgba(248,248,255,0.6);
-    border-radius: 65px;
-    text-align: center;
-    margin-left: 20px;
-    margin-top: 90px;
-}
-.content{
-    background-color: #f8f8ff;
-    height: 538px;
-    margin-top: 20px;
-    background-image: url(backgroun-top.jpg);  
-    background-size: cover;
-        
-}
-}
-@media(max-width:767px){
-    .card{
-    display:inline-block;
-    width: 90%;
-    margin-top:30px;
-   
-    }
-
-    .content{
-        display: inline-block;
-        height:550px;
-    }
->>>>>>> master
 }
