@@ -1,85 +1,53 @@
-
-html,header,body{
+/*CSS PAGINA DE PRODUTOS*/
+.html-produtos,.head-produtos,.body-produtos{
 	width: : 100%;
 	background-color: #F8F8FF;
 	font-family: playfair display;
 }
-h2#titulo{
-	color: #660000;
-	text-align: center;
-}
-#logo{
-	position: relative;
-	width: 11%;
-	float: left;
-	right: 80px;
-}
-.navbar {
-	font-size: 20px;
-	position: relative;
-	width: 100%;
-	text-align: center;
-}
 
-ul#menu li{
-	font-size: 15px;
-	padding: 20px;
-}
 
-nav#botao li{
-	display: inline-block;
-	padding-bottom: 20px;
-}
-#info {
+#info-produtos {
 	position: relative;
 	border-radius: 4px;	
 	width: 100px;
 	height: 30px;
 
 }
-#info:hover {
+#info-produtos:hover {
 	background-color: #660000;
 	color: #FFF;
 }
-h3#titulo {
+.titulo-h3-produtos {
 	text-align: center;
 	color: #660000;
 
 }
-img#foto{
+.foto-produtos{
 	border-radius: 10px;
 	width: 100%;
 	height: 80%;
 }
-ul#bot-mudar {
-	position: relative;
-	text-align: center;
-	font-size: 30px;
-}
-nav#naveg{
-	vertical-align: middle;
 
-}
-#pesquisa , #filtro{
+#pesquisa-produtos , #filtro-produtos{
 	width: 100%;
 	display: inline-block;
 	vertical-align: middle;
 	margin: 10%;
 	align-items: center;
 }
-#filtro:hover {
+#filtro-produtos:hover {
 	color: #fff;
 	background-color: #660000;
 }
-#pesq{
+#pesq-produtos{
 	position: relative;
 	left: 35%;
 }
-#ok{
+#bot-enter{
 	position: relative;
 	left: 0.7%;
 }
-#ok:hover{
+#bot-enter:hover{
 	color: #fff;
 	background-color: #660000;
 }
