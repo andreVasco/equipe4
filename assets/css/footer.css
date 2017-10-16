@@ -1,4 +1,5 @@
-html {
+/* CSS FOOTER - INICIO */
+#html-footer {
   height: 100%;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
@@ -116,3 +117,4 @@ a.facebook:hover {
 		left: 34%;
 	}
 }
+/* CSS FOOTER - FIM */
