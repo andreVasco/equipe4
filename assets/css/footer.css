@@ -4,24 +4,24 @@ html {
   font-family: "Playfair Display", serif;
 }
 
-body {
+#body-footer {
 	position: relative;
 	margin: 0px;
 	min-height: 100%;
 	background-color: #F8F8FF;
 }
-.col-md-4 {
+#footer .col-md-4 {
 	padding-right: 0;
 	padding-left: 0;
 }
-.card { /* cada card eh uma das 3 secoes do footer */
+#footer .card { /* cada card eh uma das 3 secoes do footer */
 	background-color: #660000;
 	border: none;
 	border-radius: 0;
 	height: 60px;
 	color: #F8F8FF;
 }
-.card-text {
+#footer .card-text {
 	position: absolute;
 }
 .icones-sociais {
