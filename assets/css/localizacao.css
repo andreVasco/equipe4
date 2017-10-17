@@ -22,4 +22,9 @@ body-localizacao{
   margin-left: auto;
   margin-right: auto;
 }
+@media(min-width: 320px) {
+#mapa-localizacao {
+	width: 100%;
+	
+}}
 /*FIM DA PAGINA DE LOCALIZACAO*/

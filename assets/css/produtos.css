@@ -4,8 +4,6 @@
 	background-color: #F8F8FF;
 	font-family: playfair display;
 }
-
-
 #info-produtos {
 	position: relative;
 	border-radius: 4px;	
@@ -31,7 +29,6 @@
 #pesquisa-produtos , #filtro-produtos{
 	width: 100%;
 	display: inline-block;
-	vertical-align: middle;
 	margin: 10%;
 	align-items: center;
 }
@@ -53,4 +50,32 @@
 }
 #NeB{
 	left: 50%;
+}
+@media(min-width: 768px) {
+.projetos-responsivos-produtos{
+	width: 80%;
+	margin-top: 0;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+}
+@media(min-width: 992px) {
+.projetos-responsivos-produtos{
+	width: 70%;
+	padding-left: 0px;
+	padding-right: 15px;
+}
+.container-produtos{
+	margin: 0px;
+}
+}
+@media(min-width: 1200px) {
+.projetos-responsivos-produtos{
+	width: 60%;
+	padding-left: 0px;
+	padding-right: 15px;
+}
+.container-produtos{
+	margin: 0px;
+}
 }
