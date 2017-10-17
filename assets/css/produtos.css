@@ -1,5 +1,5 @@
 /*CSS PAGINA DE PRODUTOS*/
-.html-produtos,.head-produtos,.body-produtos{
+.html-produtos,.head-produtos,.body-produtos,#body-menu {
 	width: : 100%;
 	background-color: #F8F8FF;
 	font-family: playfair display;
@@ -51,6 +51,14 @@
 #NeB{
 	left: 50%;
 }
+#body-menu{
+	position: relative;
+	padding-bottom: 10px;
+
+}
+.nav-menu{
+}
+
 @media(min-width: 768px) {
 .projetos-responsivos-produtos{
 	width: 80%;
