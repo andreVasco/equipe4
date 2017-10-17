@@ -17,7 +17,8 @@
         border-radius: 141px;
         text-align: center;
         margin-left: 20px;
-        margin-top: 122px;
+        margin-top: 80px;
+        margin-bottom: 26px;
     }
     
     .content{
@@ -25,24 +26,29 @@
         height: 538px;
         background-image: url(background.jpg);  
         background-size: cover; 
-        position: absolute;
+        position: relative;
         width: 100%;
-        height:100%;
     }
     
 }
 
 .blocos{
     font-family: 'Playfair Display', serif;
+    padding: 15px;
 }
 
 .content{
     font-family: 'Playfair Display', serif;
 }
 
+.icone{
+    font-size: 9em;
+}
+
 .blocos-texto{
     color:#660000;
 }
+
 .blocos:hover{
     box-shadow: 0 0 0 999999px rgba(102,0,0,0.7);
     transform: scale(1.3); 
@@ -63,12 +69,19 @@
         border-radius: 141px;
         padding: 10px;
         font-family: 'Playfair Display', serif;
+        margin-bottom: 26px;
     }
     
     .content{
         display: inline-block;
         height:550px;
         background-color:#F8F8FF;
+        margin-bottom: 26px;
         font-family: 'Playfair Display', serif;
     }
+    
+    .missao{
+        margin-bottom: 40px;
+    }
+    
 }

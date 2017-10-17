@@ -35,7 +35,7 @@
 	background-color: #660000;
 }
 button#login{
-	position: absolute;
+	position: relative;
 	bottom: 26%;
 	left: 93%;
 	background-color: #f8f8ff;

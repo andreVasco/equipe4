@@ -24,20 +24,18 @@
 #slideshow-Homepage{
     width:100%;
     font-size: 2em;
-    margin-top: 50px;
     background-color: #F8F8FF;
     font-family: 'Playfair Display', serif;
 }
 
 .row-home{
     margin-top: 25px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .destaque{
-    border:3px solid #660000;
     text-align: center;
-    border-radius:60px; 
+    border: 2px dashed #660000; 
     padding:15px;
 }
 
