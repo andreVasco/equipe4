@@ -16,11 +16,13 @@ body-localizacao{
 	font-family: playfair display;
 
 }
-
 #mapa-localizacao {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.footer-localizacao{
+	position: absolute;
 }
 @media(min-width: 320px) {
 #mapa-localizacao {
