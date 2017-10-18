@@ -1,15 +1,17 @@
 /*CSS PAGINA DE PRODUTOS*/
-.html-produtos,.head-produtos,.body-produtos,#body-menu {
-	width: : 100%;
+
+html.html-produtos,body.body-produtos,#body-menu {
+	width: 100%;
 	background-color: #F8F8FF;
 	font-family: playfair display;
+	background-size: 100% auto;
 }
+
 #info-produtos {
 	position: relative;
-	border-radius: 4px;	
+	border-radius: 2px;	
 	width: 100px;
 	height: 30px;
-
 }
 #info-produtos:hover {
 	background-color: #660000;
@@ -21,70 +23,118 @@
 
 }
 .foto-produtos{
+	position: relative;
 	border-radius: 10px;
 	width: 100%;
 	height: 80%;
+}.foto-produtos:focus{
+
 }
 
-#pesquisa-produtos , #filtro-produtos{
+#pesquisa-produtos{
 	width: 100%;
-	display: inline-block;
-	margin: 10%;
-	align-items: center;
+}
+
+#filtro-produtos{
+	width: 84%;
+}
+#bot-enter{
+	width: 15%;
+    margin-left: 85%;
+    bottom: 50px;
+    position: relative;
 }
 #filtro-produtos:hover {
 	color: #fff;
 	background-color: #660000;
 }
-#pesq-produtos{
-	position: relative;
-	left: 35%;
-}
-#bot-enter{
-	position: relative;
-	left: 0.7%;
-}
+
+
 #bot-enter:hover{
 	color: #fff;
 	background-color: #660000;
 }
 #NeB{
-	left: 50%;
+	margin-bottom: 5px;
 }
+
+
+@media(min-width: 768px) {
+#filtro-produtos{
+	margin-top: 10px;
+    width: 100%;
+    margin-left: 108px;
+
+}
+#bot-enter{
+	margin-top: 16px;
+	width: 6%;
+}
+#pesquisa-produtos{
+	position: relative;
+    margin-top: 10px;
+    margin-left: 111px;
+}}
+@media(min-width: 992px) {
+#filtro-produtos{
+	margin-top: 10px;
+    width: 100%;
+    left: 5px;
+    position: relative;
+
+}
+#bot-enter{
+	margin-top: 16px;
+    width: 5%;
+    position: relative;
+    right: 33px;
+
+}
+#pesquisa-produtos{
+	position: relative;
+    margin-top: 10px;
+    left: 1px;
+    padding-right: 190px;
+}}
+@media(min-width: 1200px) {
+#filtro-produtos{
+	margin-top: 10px;
+    width: 100%;
+    left: 159px;
+    float: right;
+}
+#bot-enter{
+	margin-top: 16px;
+    width: 3%;
+    position: relative;
+    right: 31px;
+}
+#pesquisa-produtos{
+	position: relative;
+    margin-top: 10px;
+    margin-right: 230px;
+    left: 50px;
+}}
+
+/*FIM DA PAGINA CSS DE PRODUTOS */
+/*ALGUMAS ADAPTAÇÕES DO MENU 
 #body-menu{
 	position: relative;
 	padding-bottom: 10px;
-
+	background-size: cover;
+	background-color: #f8f8ff;
+	top: 0px;
+}
+.menu-links{
+	display: flex;
 }
 .nav-menu{
+	position: relative;
 }
-
-@media(min-width: 768px) {
-.projetos-responsivos-produtos{
-	width: 80%;
-	margin-top: 0;
-	padding-right: 0px;
-	padding-left: 0px;
-}
-}
-@media(min-width: 992px) {
-.projetos-responsivos-produtos{
-	width: 70%;
-	padding-left: 0px;
-	padding-right: 15px;
-}
-.container-produtos{
-	margin: 0px;
-}
-}
-@media(min-width: 1200px) {
-.projetos-responsivos-produtos{
-	width: 60%;
-	padding-left: 0px;
-	padding-right: 15px;
-}
-.container-produtos{
-	margin: 0px;
+.nave-menu{
+	position: relative;
 	width: 100%;
+	justify-content: center;
 }
 }
+FIM DAS ADAPTAÇÕES*/
