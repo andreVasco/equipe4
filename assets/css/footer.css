@@ -1,11 +1,17 @@
 /* CSS FOOTER - INICIO */
 #html-footer {
   height: 100%;
+  width: 100%
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
 }
 
+#footer {
+	border-top: 1px solid #000;
+}
 #body-footer {
+	height: 100%;
+  	width: 100%;
 	position: relative;
 	margin: 0px;
 	min-height: 100%;
@@ -25,47 +31,63 @@
 #footer .card-text {
 	position: absolute;
 }
+.row {
+    margin-right: 0px; /* para tirar o espaco do footer que tava sobrando, fazendo aparecer uma scroll bar horizontal */
+   }
 .icones-sociais {
 	position: absolute;
-    top: -20%;
-    right: 57%;
+    top: 20%;
+    right: 53%;
+    width: 35%;
 }
-.icones-sociais li {
-	display: inline-block;
-}
-.icones-sociais a {
-	width: 48px;
-	height: 48px;
-	display: inline-block;
-	background-repeat: no-repeat;
-	font-size: 0.1px; /* "image-replacement" para esconder o texto do link e mostrar apenas os icones */
-}
-a.facebook:hover {
-	transform: rotate(360deg);
-}a.facebook {
+.fa-facebook {
+	font-size:36px !important;
+	color: #e0e0e0;	
+	margin-right: 7%;
 	transition: 0.6s ease-in-out;
-}a.twitter:hover {
+	-webkit-transition: 0.6s ease-in-out;
+	-ms-transition: 0.6s ease-in-out;
+	-moz-transition: 0.6s ease-in-out;	
+}
+.fa-facebook:hover {
 	transform: rotate(360deg);
-}a.twitter {
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+}
+.fa-twitter {
+	font-size:36px !important;
+	color: #e0e0e0;	
+	margin-right: 7%;
 	transition: 0.6s ease-in-out;
-}a.instagram:hover {
+	-webkit-transition: 0.6s ease-in-out;
+	-ms-transition: 0.6s ease-in-out;
+	-moz-transition: 0.6s ease-in-out;
+}
+.fa-twitter:hover {
 	transform: rotate(360deg);
-}a.instagram {
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+}
+.fa-instagram {
+	font-size:36px !important;
+	color: #e0e0e0;
+	margin-right: 7%;
 	transition: 0.6s ease-in-out;
+	-webkit-transition: 0.6s ease-in-out;
+	-ms-transition: 0.6s ease-in-out;
+	-moz-transition: 0.6s ease-in-out;
 }
-
-.facebook {
-	background-image: url(../images/facebook-gray-icon.png);
-}
-.twitter {	
-	background-image: url(../images/twitter-gray-icon.png);
-}
-.instagram {
-	background-image: url(../images/instagram-gray-icon.png);
+.fa-instagram:hover {
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
 }
 .nome {
 	top: 4%;
-    right: 25%;
+    right: 29%;
     font-size: 134%;
     font-weight: bold
 }

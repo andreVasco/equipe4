@@ -6,6 +6,9 @@
 #body-quem-somos{
     background-color: #f8f8ff;
     font-family: 'Playfair Display', serif;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 @media(min-width:768px){
