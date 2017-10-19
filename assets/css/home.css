@@ -42,6 +42,7 @@
 
 .imgfld-home{
     position: relative;
+    min-width: 0px;
 }
 
 @media(max-width:768px){
@@ -65,13 +66,20 @@
         height: 100%;
     }
     
-    #highlights{
-        position: relative;
-        padding-left: 0px; 
-    }
-
 }
 
+.carousel-inner img {
+    min-height: 250px;
+    min-width: 100%;
+}
+
+@media(min-width:768px){
+    
+    #highlights{
+        padding-left: 150px;
+    }
+    
+}
 
 .destaque:hover{
     -webkit-transform: scale(1.1);
@@ -86,12 +94,8 @@
 }
 
 #highlights{
-    background:-webkit-linear-gradient(left, #660000,#f8f8ff);
-     background:-o-linear-gradient(left, #660000,#f8f8ff);
-     background:-moz-linear-gradient(left, #660000,#f8f8ff);
-     background:linear-gradient(left, #660000,#f8f8ff);
+    background-color:#660000;
     color: #F8F8FF;
-    padding-left: 150px;
 }
 
 /*FIM DO CSS DA HOMEPAGE*/

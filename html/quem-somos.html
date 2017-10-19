@@ -12,48 +12,50 @@
         <link rel="stylesheet" type="text/css" href="../assets/css/menu1.css">
          <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
         <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
-        <title>Oreman Motors - Quem Somos</title>
+        <title>Oreman Motors - Sobre Nós</title>
     </head>
     
     <body id="body-quem-somos">
         
-        <!--HERE COMES THE MENU-->
-<body id="body-menu">
-    <!--COMEÇO MENU-->
-      <nav  class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-              <img src="../assets/images/LogoTransparente1.png" class="d-inline-block align-top logo-menu" alt="Oreman motors">
-            </a>
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
-          </div>
-              <div class="collapse navbar-collapse" id="collapse-navbar">
-              <ul id="menu"  class="nav navbar-nav ">
-                  <li class="nav-item"><a id="let" href="home.html" target="_blank">Home</a></li>
-                  <li class="nav-item"><a id="let" href="quem-somos.html" target="_blank">Sobre nós</a></li>
-                  <li class="nav-item"><a id="let" href="produtos.html" target="_blank">Produtos</a></li>
-                  <li class="nav-item"><a id="let" href="contato.html" target="_blank">Contato</a></li>
-                  <li class="nav-item"><a id="let" href="localizacao.html" target="_blank">Localização</a></li>
-              </ul>
-              </div>
-            <!-- icon login-->
-            <button href="login.html" target="_blank" role="button" id="login" type="button" class="btn btn-default btn-lg">
-              <span  class="glyphicon glyphicon-user" aria-hidden="true"></span> 
-            </button>
-            <!-- fim icon login-->
-        </div>
-      </nav>
-    <!--FIM DO MENU-->
-</body>
-        <!--HERE ENDS THE MENU-->
+        <!--MENU BEGIN-->
+      
+            <header class="body-menu">
+		      <nav  class="navbar navbar-default">
+		      	<div  class="container">
+			        <div class="navegador-tamanho">
+			          <div class="navbar-header">
+			            <a >
+			              <img src="../assets/images/LogoTransparente1.png" class="d-inline-block align-top logo-menu" alt="Oreman motors">
+			            </a>
+			               <button type="button" class="navbar-toggle collapsed" id="botao-collapse-menu" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+			                  <span class="sr-only">Toggle navigation</span>
+			                  <span class="icon-bar"></span>
+			                  <span class="icon-bar"></span>
+			                  <span class="icon-bar"></span>
+			               </button>
+			          </div>
+			              <div class="collapse navbar-collapse" id="collapse-navbar">
+			              <ul id="menu"  class="nav navbar-nav ">
+			                  <li class="nav-item"><a id="let" href="home.html" target="_blank">Home</a></li>
+			                  <li class="nav-item"><a id="let" href="quem-somos.html" target="_blank">Sobre nós</a></li>
+			                  <li class="nav-item"><a id="let" href="produtos.html" target="_blank">Produtos</a></li>
+			                  <li class="nav-item"><a id="let" href="contato.html" target="_blank">Contato</a></li>
+			                  <li class="nav-item"><a id="let" href="localizacao.html" target="_blank">Localização</a></li>
+			              </ul>
+			              </div>
+			            <!-- icon login-->
+			            <button href="login.html" target="_blank" role="button" id="login" type="button" class="btn btn-default btn-lg">
+			              <span  class="glyphicon glyphicon-user" aria-hidden="true"></span> 
+			            </button>
+			        </div>    <!-- fim icon login-->
+		        </div>
+		      </nav>
+		</header>
+		
+        <!--MENU END-->
         
-    <main class="content">
+    <section  id="teste-js" class="container-fluid ">
+        <main class="content">
     
         <!--CONTENT CARDS BEGIN-->
 
@@ -89,7 +91,7 @@
                 <div class="card-body">
                   <h2 class="card-title">Empresa</h2>
                   <p class="card-text">
-                    <strong><em>Oreman Motors</em> surgiu em <br>
+                    <strong>A <em>Oreman Motors</em> surgiu em <br>
                         2009 com o conceito de revolucionar<br>
                         o mercado de automóveis de <em>luxo</em><br>
                         no Brasil. Com mais de 13 filiais<br> 
@@ -98,6 +100,7 @@
                     </p>
                 </div>
             </div>
+                
             <!--EMPRESA END-->
                 
             <!--MISSÃO BEGIN-->
@@ -117,7 +120,8 @@
                     </p>
                 </div>
             </div>
-            <!--EMPRESA BEGIN-->
+                
+            <!--MISSÃO END-->
                 
       </div>
     </div>
@@ -125,30 +129,31 @@
         <!--CONTENT CARDS END-->
 
     </main>
+        </section>   
         
         <!-- ADDING JQUERY/JAVASCRIPT-->
         <script src="../Assets/js/jquery.js"></script>
         <script src="../Assets/bootstrap/js/bootstrap.min.js"></script>
-        <!------------------------>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	   <script src="../assets/bootstrap/js/bootstrap.js"></script>
+	   <script src="../assets/js/collapse-navebar.js"></script>
+       <!------------------------>
         
-        <!--HERE COMES THE FOOTER-->
+        <!--FOOTER BEGIN-->
         
-<body id="body-footer">
-
-	<!-- Footer comeca aqui -->
-
-	<footer id="footer">
+    <body id="body-footer">
+	   <footer id="footer">
 		<div class="row">
 			<div class="col-12 col-md-4"> <!-- usei sistema de grid para o footer dividir em 3 linhas quando acessado por um dispositivo movel (width < 576px) -->
 				<div class="card">
-          <div class="card-body">
-            <p class="card-text icones-sociais">
-              <a class="facebook" href="https://facebook.com/oremanmotors"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a class="twitter" href="https://twitter.com/oremanmotors"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              <a class="instagram" href="https://twitter.com/oremanmotors"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </p>            
-          </div>
-        </div>
+					<div class="card-body">
+						<p class="card-text icones-sociais">
+							<a class="facebook" href="https://facebook.com/oremanmotors"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a class="twitter" href="https://twitter.com/oremanmotors"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a class="instagram" href="https://twitter.com/oremanmotors"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</p>						
+					</div>
+				</div>
 			</div>
 			<div class="col-12 col-md-4">
 				<div class="card">
@@ -167,13 +172,11 @@
 				</div>
 			</div>
 		</div>
-
-	</footer>
-
-	<!-- Footer termina aqui -->
-
-</body>
-        
-        <!--HERE ENDS THE FOOTER-->
-        
+	   </footer>
     </body>
+        
+        <!--FOOTER END-->
+        
+  </body>
+</html>
+    
