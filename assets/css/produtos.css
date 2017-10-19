@@ -5,8 +5,17 @@ html.html-produtos,body.body-produtos,#body-menu {
 	background-color: #F8F8FF;
 	font-family: playfair display;
 	background-size: 100% auto;
+	height: 
 }
+.btn-menu-loc{
+	bottom: 20px;
+	position: relative;
+}
+.footer-localizacao{
+	position: absolute;
+	margin: 0px;
 
+}
 #info-produtos {
 	position: relative;
 	border-radius: 2px;	

@@ -25,10 +25,11 @@
   margin-right: auto;
 }
 .footer-localizacao{
-	position: absolute;
+	position: relative;
 	bottom: 0px;
 
 }
+
 @media(min-width: 320px) {
 #mapa-localizacao {
 	width: 100%;
