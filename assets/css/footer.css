@@ -106,7 +106,8 @@
 
 @media(max-width: 1300px){ /* adequando o footer para laptop */
 	.icones-sociais {
-	right: 39%;
+	right: 41%;
+	width: 46%;
 	}
 	.telefone {
     left: 56%;
@@ -116,67 +117,50 @@
 	}
     .cidade {
     top: 43%;
-    right: 31%;
+    right: 34%;
 	}
 	.nome {
-	right: 13%;
+	right: 16%;
 }
-@media(max-width: 930px){ /* adequando o footer para um tablet */
+@media(max-width: 768px){ /* adequando o footer para um tablet */
 	.icones-sociais {
-		right: 24%;
+		right: 38%;
 	}
 	.telefone {
     	top: 46%;
-    	left: 44%;
+    	left: 46%;
 	}
 	.email {
-    	left: 38%;
+    	left: 18%;
 	}
     .cidade {
     	top: 49%;
-    	right: 43%;
+    	right: 31%;
 	}
 	.nome {
-		right: 37%;
+		right: 5%;
 	}
 }
-@media(max-width: 767px){ /* adequando o footer para um dispositivo movel*/
-	.icones-sociais {
-		right: 80%;
-	}
-	.nome {
-		right: 15%;
-	}
-	.cidade {
-		right: 32%;
-	}
-	.email {
-		left: 20%;
-	}
-	.telefone {
-		left: 34%;
-	}
-}
+
 @media(max-width: 425px){ /* adequando o footer para um dispositivo movel */
 	.icones-sociais {
-		right: 35%;
+		right: 18%;
 	}
 	.nome {
-		right: 23%;
+		right: 21%;
 	}
 	.cidade {
-		right: 36%;
+		right: 34%;
 	}
 	.email {
-		left: 25%;
+		left: 27%;
 	}
 	.telefone {
-		left: 37%;
+		left: 38%;
 	}
-}
-@media(max-width: 320px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
+}@media(max-width: 375px){ /* adequando o footer para um dispositivo movel */
 	.icones-sociais {
-		right: 30%;
+		right: 19%;
 	}
 	.nome {
 		right: 17%;
@@ -185,10 +169,28 @@
 		right: 33%;
 	}
 	.email {
-		left: 25%;
+		left: 24%;
 	}
 	.telefone {
-		left: 37%;
+		left: 36%;
+	}
+}
+@media(max-width: 320px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
+	.icones-sociais {
+		right: 21%;
+	}
+	.nome {
+		right: 11%;
+		top: -4%;
+	}
+	.cidade {
+		right: 31%;
+	}
+	.email {
+		left: 22%;
+	}
+	.telefone {
+		left: 33%;
 	}
 }
 /* CSS FOOTER - FIM */
