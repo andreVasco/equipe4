@@ -4,8 +4,8 @@ html.html-produtos,body.body-produtos,#body-menu {
 	width: 100%;
 	background-color: #F8F8FF;
 	font-family: playfair display;
-	background-size: 100%;
-	height: 100%;
+	background-size: 100% auto;
+	height: 
 }
 .btn-menu-loc{
 	bottom: 20px;

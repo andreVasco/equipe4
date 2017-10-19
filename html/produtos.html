@@ -15,7 +15,7 @@
 	</head>
 	<!--COMEÇO DO CORPO-->
 	<body class="body-produtos">
-		<header id="body-menu">
+		<div id="body-menu">
 		    <!--COMEÇO MENU-->
 		      <nav  class="navbar navbar-default">
 		        <div class="container">
@@ -40,14 +40,13 @@
 		              </ul>
 		              </div>
 		            <!-- icon login-->
-		            <div class="btn-menu-loc">
-			            <button href="login.html" target="_blank" role="button" id="login" type="button" class="btn btn-default btn-lg ">
-			              <span  class="glyphicon glyphicon-user" aria-hidden="true"></span> 
-			            </button>
-		    	    </div>
+		            <button href="login.html" target="_blank" role="button" id="login" type="button" class="btn btn-default btn-lg">
+		              <span  class="glyphicon glyphicon-user" aria-hidden="true"></span> 
+		            </button>
 		            <!-- fim icon login-->
-		       	 </div>
+		        </div>
 		      </nav>
+		    <!--FIM DO MENU-->
 		</header>
 		
 	    <!--FIM DO MENU-->
@@ -178,7 +177,9 @@
 	</body>
 <!--FIM DO CORPO-->
 <!--FOOTER-->
-	<footer class="footer-localizacao" id="footer">
+	<div id="body-footer" class="footer-localizacao">
+	<!-- Footer comeca aqui -->
+	<footer id="footer">
 		<div class="row">
 			<div class="col-12 col-md-4"> <!-- usei sistema de grid para o footer dividir em 3 linhas quando acessado por um dispositivo movel (width < 576px) -->
 				<div class="card">
@@ -210,6 +211,8 @@
 		</div>
 
 	</footer>
+	<!-- Footer termina aqui -->
+	</div>
 	<!--FIM DO FOOTER-->
 	<script src="../assets/js/jquery.js"></script>
 	<!--adicionando o popper que estava apareceendo faltando na página-->

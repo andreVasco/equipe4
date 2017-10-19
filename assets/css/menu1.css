@@ -35,10 +35,15 @@
 	background-color: #660000;
 }
 button#login{
-	position: absolute;
+	position: relative;
 	bottom: 26%;
 	left: 93%;
+	bottom: 20px;
 	background-color: #f8f8ff;
+}
+button#login:hover{
+	color: #fff;
+	background-color: #660000;
 }
 
 
