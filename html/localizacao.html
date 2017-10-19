@@ -6,11 +6,53 @@
 	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css"> <!-- reset-->
 	<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css"> <!-- link para acessar a pasta de css do bootstrap-->
 	<link rel="stylesheet" type="text/css" href="../assets/css/localizacao.css"> 
+	<link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/menu1.css">
 	<meta name="viewport"  content="width=device-width,initial-scale=1"> <!--Ajusta o site para o tamanho do dispositivo-->
 	<title>OREMAN MOTORS</title>
 	<link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
 </head>
 <body class="body-localizacao">
+	<!--MENU-->
+	<header id="body-menu">
+    <!--COMEÇO MENU-->
+      <nav  class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img src="../assets/images/LogoTransparente1.png" class="d-inline-block align-top logo-menu" alt="Oreman motors">
+            </a>
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+          </div>
+              <div class="collapse navbar-collapse" id="collapse-navbar">
+              <ul  class="nav navbar-nav menu">
+                  <li class="nav-item"><a id="let" href="home.html" target="_blank">Home</a></li>
+                  <li class="nav-item"><a id="let" href="quem-somos.html" target="_blank">Sobre nós</a></li>
+                  <li class="nav-item"><a id="let" href="produtos.html" target="_blank">Produtos</a></li>
+                  <li class="nav-item"><a id="let" href="contato.html" target="_blank">Contato</a></li>
+                  <li class="nav-item"><a id="let" href="localizacao.html" target="_blank">Localização</a></li>
+              </ul>
+              </div>
+            <!-- icon login-->
+            <button href="login.html" target="_blank" role="button" id="login" type="button" class="btn btn-default btn-lg">
+              <span  class="glyphicon glyphicon-user" aria-hidden="true"></span> 
+            </button>
+            <!-- fim icon login-->
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+
+	<!--FIM MENU-->
 	<!--MAPA E ENDEREÇO-->
 	<section class='container'>
 		<h2 id="titulo-h2-localizacao" >Localização:</h2>
@@ -26,5 +68,45 @@
 				</iframe>
 	</section>
 	<!--MAPA E ENDEEÇO-->
+
 </body>
+	<!--FOOTER-->
+	<div id="body-footer" class="footer-localizacao">
+
+	<!-- Footer comeca aqui -->
+	<footer id="footer">
+		<div class="row">
+			<div class="col-12 col-md-4"> <!-- usei sistema de grid para o footer dividir em 3 linhas quando acessado por um dispositivo movel (width < 576px) -->
+				<div class="card">
+          <div class="card-body">
+            <p class="card-text icones-sociais">
+              <a class="facebook" href="https://facebook.com/oremanmotors"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a class="twitter" href="https://twitter.com/oremanmotors"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a class="instagram" href="https://twitter.com/oremanmotors"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </p>            
+          </div>
+        </div>
+			</div>
+			<div class="col-12 col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<p class="card-text nome">Oreman Motors &copy;  2017</p>
+						<p class="card-text cidade">Juiz de Fora - Brasil</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<p class="card-text email">contato@oremanmotors.com</p>
+						<p class="card-text telefone">(12)3456-7890</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- Footer termina aqui -->
+	</div>
+
 </html>

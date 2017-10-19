@@ -64,7 +64,14 @@
         width:100%;
         height: 100%;
     }
+    
+    #highlights{
+        position: relative;
+        padding-left: 0px; 
+    }
+
 }
+
 
 .destaque:hover{
     -webkit-transform: scale(1.1);
@@ -84,6 +91,7 @@
      background:-moz-linear-gradient(left, #660000,#f8f8ff);
      background:linear-gradient(left, #660000,#f8f8ff);
     color: #F8F8FF;
+    padding-left: 150px;
 }
 
 /*FIM DO CSS DA HOMEPAGE*/

@@ -1,13 +1,16 @@
 /*PAGINA DE LOCALIZACAO*/
 
-body-localizacao{
+.body-localizacao{
 	background-color: #F8F8FF;
+	width: 100%;
+	position: absolute;
+
 }
 #titulo-h2-localizacao{
 	color: #660000;
 	text-align: center;
 	font-family: playfair display;
-	background-color: #fff;
+	background-color: #f8f8ff;
 }
 #endereco-localizacao{
 	color: #660000;
@@ -16,11 +19,15 @@ body-localizacao{
 	font-family: playfair display;
 
 }
-
 #mapa-localizacao {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.footer-localizacao{
+	position: absolute;
+	bottom: 0px;
+
 }
 @media(min-width: 320px) {
 #mapa-localizacao {
