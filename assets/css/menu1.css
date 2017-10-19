@@ -1,6 +1,6 @@
 
 /* CSS MENU - INICIO */
-#html-menu, #body-menu {
+#html-menu, .body-menu {
 	height: 100%;
 	font-family: 'Playfair Display', serif;
 }
@@ -30,60 +30,153 @@
 
 #let:hover{
 	border-radius: 8px;
-	border-color: #660000;
-	color: #fff;
-	background-color: #660000;
+	color: #660000;
 }
 button#login{
 	position: relative;
 	bottom: 26%;
 	left: 93%;
 	bottom: 20px;
-	background-color: #f8f8ff;
+	padding:0px;
+    border:0px;
+    color: #660000;
 }
 button#login:hover{
-	color: #fff;
-	background-color: #660000;
+	padding:0px;
+    border:0px;
+    color: #660000;
 }
 
-
-@media (max-width: 1025px){
-	a#let {
-		padding-right: 2px;
+@media (max-width: 1440px){
+	#let {
+		padding-left: 6px;
 	}
 	.logo-menu {
-    	width: 51%;
-    	position: relative;
-    	top: -25%;
+    	width: 55%;
+	    position: relative;
+	    top: 15px;
     }
-    button#login {
-    	bottom: 20%;
-    	left: 90%;
+   button#login {
+   		position: relative;
+	    bottom: 30px;
+	    right: 25px;
+	    padding: 0px;
+	    border: 0px;
+	    color: #660000;
+    }
+    #menu{
+    	font-size: 20px;
+    }
+    .navegador-tamanho{
+    	position: relative;
     }
 }
 
-@media (max-width: 769px){
+
+@media (max-width: 1024px){
+	a#let {
+		padding-right: 6px;
+	}
+	.logo-menu {
+    	width: 55%;
+    	position: relative;
+    	top: 13px;
+    }
+     #menu{
+    	font-size: 16px;
+    }
+   button#login {
+    bottom: 29px;
+    padding: 0px;
+    border: 0px;
+    color: #660000;
+   }
+}
+
+@media (max-width: 768px){
 	#menu {
 		left: 0%;
 		top: 19%;
-		font-size: 105%;	
+		font-size: 13px;
+		
 	}
 	a#let {
 		padding-right: 5px;
 		padding-left: 5px;
 	}
 	.logo-menu {
-	    width: 38%;
+	    width: 40%;
 	    position: relative;
-	    top: -1%;
-    	padding-right: 1%;
+	    top: 12px;
+	    padding-top: 10px;
 	}
 	button#login {
-    	bottom: 20%;
-    	left: 90%;
+    	bottom: 23px;
+    	padding:0px;
+    	border:0px;
+    	color: #660000;
     }
  }
+ @media(min-width: 320px) and (max-width: 550px) {
+button#login {
+	position: relative;
+    bottom: 35px;
+    left: 190px;
+    border:0px;
+    color: #660000;
+}
 
+.navegador-tamanho{
+	position: relative;
+    height: 0px;
+}
+.logo-menu {
+    position: relative;
+    width: 60%;
+    bottom: 0px;
+    top: 3px;
+}
+#botao-collapse-menu{
+	position: relative;
+	bottom: 0px;
+	width: 15%;
+	right: 3px;
+}
+.body-menu{
+	position: relative;
+	margin-bottom: 18px;
+}
+#menu {
+    left: 0%;
+    top: 0px;
+    font-size: 13px;
+    margin-top: 42px;   
+}
+}
+
+@media(min-width: 375px) and (max-width: 700px) {
+button#login {
+	position: relative;
+    bottom: 35px;
+    left: 230px;
+    border:0px;
+    color: #660000;
+}
+ @media(min-width: 425px) and (max-width: 700px) {
+button#login {
+	position: relative;
+    bottom: 35px;
+    left: 260px;
+    border:0px;
+    color: #660000;
+}
+.logo-menu {
+    position: relative;
+    width: 52%;
+    bottom: 0px;
+    top: 8px;
+}
+}
 
 /* CSS MENU - FIM */
 
