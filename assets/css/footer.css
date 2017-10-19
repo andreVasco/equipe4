@@ -123,23 +123,24 @@
 }
 @media(max-width: 930px){ /* adequando o footer para um tablet */
 	.icones-sociais {
-		right: 27%;
+		right: 24%;
 	}
 	.telefone {
-    left: 26%;
+    	top: 46%;
+    	left: 44%;
 	}
 	.email {
-    left: 6%;
+    	left: 38%;
 	}
     .cidade {
-    top: 43%;
-    right: 28%;
+    	top: 49%;
+    	right: 43%;
 	}
 	.nome {
-	right: 6%;
+		right: 37%;
 	}
 }
-@media(max-width: 767px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
+@media(max-width: 767px){ /* adequando o footer para um dispositivo movel*/
 	.icones-sociais {
 		right: 80%;
 	}
@@ -155,7 +156,8 @@
 	.telefone {
 		left: 34%;
 	}
-}@media(max-width: 425px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
+}
+@media(max-width: 425px){ /* adequando o footer para um dispositivo movel */
 	.icones-sociais {
 		right: 35%;
 	}
@@ -171,18 +173,19 @@
 	.telefone {
 		left: 37%;
 	}
-}@media(max-width: 320px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
+}
+@media(max-width: 320px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
 	.icones-sociais {
-		right: 27%;
+		right: 30%;
 	}
 	.nome {
-		right: 14%;
+		right: 17%;
 	}
 	.cidade {
 		right: 33%;
 	}
 	.email {
-		left: 22%;
+		left: 25%;
 	}
 	.telefone {
 		left: 37%;
