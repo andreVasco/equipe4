@@ -15,6 +15,17 @@
     font-family: 'Playfair Display', serif;
 }
 
+.direcao{
+    position: relative;
+    padding-top:100%;
+    height: 3em;
+    display: inline-block;
+    font-size: 20px;
+}
+
+figcaption p{
+    font-size: 1.5em;
+}
 #main-home{
     color:#660000;
     background-color: #F8F8FF;
@@ -26,6 +37,7 @@
     font-size: 2em;
     background-color: #F8F8FF;
     font-family: 'Playfair Display', serif;
+    height: 100%;
 }
 
 .row-home{
@@ -73,14 +85,6 @@
     min-width: 100%;
 }
 
-@media(min-width:768px){
-    
-    #highlights{
-        padding-left: 150px;
-    }
-    
-}
-
 .destaque:hover{
     -webkit-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -94,8 +98,17 @@
 }
 
 #highlights{
-    background-color:#660000;
-    color: #F8F8FF;
+    margin-top: 20px;
+    background-image: url(../images/back-high.jpg);
+    opacity: 0.8;
+    background-size: cover;
+    padding: 86px;
+}
+
+.high-texto{
+    opacity: 1.0;
+    color: #f8f8ff;
+    font-size: 4em;
 }
 
 /*FIM DO CSS DA HOMEPAGE*/
