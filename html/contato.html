@@ -2,12 +2,50 @@
 <html>
 	<head>
 	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<img class="img-responsive" src="../assets/images/logotransparente1.png>
+	<link rel="stylesheet" type="text/css" href="../assets/css/localizacao.css"> 
+	<link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/menu1.css">
+	<meta name="viewport"  content="width=device-width,initial-scale=1">
+	<title>OREMAN MOTORS</title>
+	<link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
-<body>
-	<section>
+<body id="body-contato">
+		        <header class="body-menu">
+		      <nav  class="navbar navbar-default">
+		      	<div  class="container">
+			        <div class="navegador-tamanho">
+			          <div class="navbar-header">
+			            <a >
+			              <img src="../assets/images/LogoTransparente1.png" class="d-inline-block align-top logo-menu" alt="Oreman motors">
+			            </a>
+			               <button type="button" class="navbar-toggle collapsed" id="botao-collapse-menu" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+			                  <span class="sr-only">Toggle navigation</span>
+			                  <span class="icon-bar"></span>
+			                  <span class="icon-bar"></span>
+			                  <span class="icon-bar"></span>
+			               </button>
+			          </div>
+			              <div class="collapse navbar-collapse" id="collapse-navbar">
+			              <ul id="menu"  class="nav navbar-nav ">
+			                  <li class="nav-item"><a id="let" href="home.html" target="_blank">Home</a></li>
+			                  <li class="nav-item"><a id="let" href="quem-somos.html" target="_blank">Sobre nós</a></li>
+			                  <li class="nav-item"><a id="let" href="produtos.html" target="_blank">Produtos</a></li>
+			                  <li class="nav-item"><a id="let" href="contato.html" target="_blank">Contato</a></li>
+			                  <li class="nav-item"><a id="let" href="localizacao.html" target="_blank">Localização</a></li>
+			              </ul>
+			              </div>
+			            <!-- icon login-->
+			            <button href="login.html" target="_blank" role="button" id="login" type="button" class="btn btn-default btn-lg">
+			              <span  class="glyphicon glyphicon-user" aria-hidden="true"></span> 
+			            </button>
+			        </div>    <!-- fim icon login-->
+		        </div>
+		      </nav>
+		</header>
+	<section id="contatos" class="container">
+	<div class="contatosdois">					
 	<h2>Contato</h2>
 	<p>Tire sua dúvida</p>
 	<form>
@@ -30,7 +68,46 @@
 	 <button type"button" class="btn btn-default">Enviar</button>
 	</form>
   </section>
+		</div>
+	<!--FOOTER BEGIN-->
+	        
+	    <body id="body-footer">
+		   <footer id="footer">
+			<div class="row">
+				<div class="col-12 col-md-4"> <!-- usei sistema de grid para o footer dividir em 3 linhas quando acessado por um dispositivo movel (width < 576px) -->
+					<div class="card">
+						<div class="card-body">
+							<p class="card-text icones-sociais">
+								<a class="facebook" href="https://facebook.com/oremanmotors"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a class="twitter" href="https://twitter.com/oremanmotors"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a class="instagram" href="https://instagram.com/oremanmotors"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</p>						
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<p class="card-text nome">Oreman Motors &copy;  2017</p>
+							<p class="card-text cidade">Juiz de Fora - Brasil</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card">
+						<div class="card-body">
+							<p class="card-text email">contato@oremanmotors.com</p>
+							<p class="card-text telefone">(12)3456-7890</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	  </footer>
+  <script src="../assets/js/jquery.js"></script>
+  <script src="../assets/bootstrap/js/bootstrap.min.js~HEAD"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="../assets/bootstrap/js/bootstrap.js"></script>
+ <script src="../assets/js/collapse-navebar.js"></script>
+						     
 </body>
-<script src="../assets/js/jquery.js"></script>
-<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 </html>
