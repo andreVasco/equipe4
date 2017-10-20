@@ -32,7 +32,8 @@
 	top: 0%;
 	font-size: 165%;
 	font-weight: bold;
-}.footer-cidade {
+}
+.footer-cidade {
 	top: 44%;
 	font-size: 125%;
 	font-weight: lighter;
@@ -48,9 +49,9 @@
 }
 .footer-email {
 	top: 7%;
-}.footer-telefone {
-	top: 45%;
-	
+}
+.footer-telefone {
+	top: 45%;	
 }
 .fa-facebook {
 	font-size:36px !important;
@@ -99,7 +100,8 @@
 }
 @media (max-width: 768px) {	
 	.footer-centro p {
-		left: 34%;
+		left: 31%;
+		width: 34%;
 	}
 	.footer-nome {
 		top: 4%;
@@ -109,11 +111,11 @@
     	top: 44%;
 	}
 	.footer-fim p {
-		left: 71%;
-		font-size: 118%;
+    	font-size: 100%;		
+		left: 68%;
 	}
 	.footer-email {
-		top: 4.5%;
+		top: 11.5%;
 	}
 	.footer-telefone {
 		top: 42%;
@@ -123,51 +125,81 @@
 	.icones-sociais {
 		right: 18%;
 	}
-	.nome {
-		right: 21%;
+	.icones-sociais li {
+		display: block;
 	}
-	.cidade {
-		right: 34%;
+	.footer-centro p {
+	    left: 30%;
+	    width: 67%;
 	}
-	.email {
-		left: 27%;
+	.footer-nome {
+	    top: 6%;
+	    font-size: 160%;
 	}
-	.telefone {
-		left: 38%;
+	.footer-cidade {
+		top: 33%;
+		right: 25%;
+		font-size: 125%;
 	}
-}@media(max-width: 375px){ /* adequando o footer para um dispositivo movel */
+	.footer-fim p {    
+   	 	font-size: 100%;
+		left: 40%;   	 	
+	}
+	.footer-email {
+		top: 65%;
+	}
+	.footer-telefone {
+		top: 80%;
+		left: 51% !important;
+	}
+}
+@media(max-width: 375px){ /* adequando o footer para um dispositivo movel */
 	.icones-sociais {
 		right: 19%;
 	}
-	.nome {
-		right: 17%;
+	.footer-centro p {
+		left: 25%;
+		width: 75%;
 	}
-	.cidade {
-		right: 33%;
+	.footer-nome {		
+		font-size: 150%;
 	}
-	.email {
-		left: 24%;
+	.footer-cidade {
+		top: 30%;
 	}
-	.telefone {
-		left: 36%;
+	.footer-fim p {
+		width: 33%;
+	}
+	.footer-email {
+		left: 37% !important;
+		top: 60%;
+	}
+	.footer-telefone {
+		left: 43% !important;
+		top: 75%;
 	}
 }
 @media(max-width: 320px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
 	.icones-sociais {
 		right: 21%;
 	}
-	.nome {
-		right: 11%;
-		top: -4%;
+	.footer-nome {
+    	font-size: 130%;
 	}
-	.cidade {
-		right: 31%;
+
+	.footer-cidade {
+  		font-size: 115%;
+  		top: 26%;
 	}
-	.email {
-		left: 22%;
+	.footer-fim p {
+    	font-size: 95%;
+}
+	.footer-email {
+	    left: 35% !important;
+	    top: 62%;
 	}
-	.telefone {
-		left: 33%;
+	.footer-telefone {
+		left: 45% !important;
 	}
 }
 /* CSS FOOTER - FIM */
