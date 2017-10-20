@@ -1,44 +1,56 @@
-/* CSS FOOTER - INICIO */
-#html-footer {
-  height: 100%;
-  width: 100%
-  box-sizing: border-box;
-  font-family: "Playfair Display", serif;
-}
-
 #footer {
-	border-top: 1px solid #000;
-}
-#body-footer {
-	height: 100%;
-  	width: 100%;
-	position: relative;
-	margin: 0px;
-	min-height: 100%;
-	background-color: #F8F8FF;
-}
-#footer .col-md-4 {
-	padding-right: 0;
-	padding-left: 0;
-}
-#footer .card { /* cada card eh uma das 3 secoes do footer */
 	background-color: #660000;
-	border: none;
-	border-radius: 0;
-	height: 60px;
+	height: 15%;
+	border-top: 1px solid #000;
+	position: relative;
+	font-family: sans-serif;
+}
+.footer-inicio {
+	position: relative;
+	height: 15%;
+}
+.icones-sociais {	
+    position: relative;
+    left: -2%;
+    width: 30%;
+}
+.icones-sociais li {
+	position: relative;
+	display: inline-block;
+	margin: .4em;
+	left: 2%;
+	margin-top: 1em;
+}
+.footer-centro p {
+	position: absolute;
+	text-align: center;
+	width: 32%;
+	left: 32%;
 	color: #F8F8FF;
 }
-#footer .card-text {
-	position: absolute;
+.footer-nome {
+	top: 0%;
+	font-size: 165%;
+	font-weight: bold;
+}.footer-cidade {
+	top: 44%;
+	font-size: 125%;
+	font-weight: lighter;
 }
-.row {
-    margin-right: 0px; /* para tirar o espaco do footer que tava sobrando, fazendo aparecer uma scroll bar horizontal */
-   }
-.icones-sociais {
+.footer-fim p {
 	position: absolute;
-    top: 20%;
-    right: 53%;
-    width: 35%;
+	text-align: right;
+	color: #1c1c1c;
+	width: 25%;
+	left: 73.5%;
+	color: #F8F8FF;
+	font-size: 130%;
+}
+.footer-email {
+	top: 7%;
+}.footer-telefone {
+	top: 45%;
+	
 }
 .fa-facebook {
 	font-size:36px !important;
@@ -85,63 +97,28 @@
 	-ms-transform: rotate(360deg);
 	-moz-transform: rotate(360deg);
 }
-.nome {
-	top: 4%;
-    right: 29%;
-    font-size: 134%;
-    font-weight: bold
-}
-.cidade {
-	top: 46%;
-    right: 38%;
-}
-.email {
-	top: 10%;
-    left: 47%;
-}
-.telefone {
-	left: 58%;
-    top: 40%;
-}
-
-@media(max-width: 1300px){ /* adequando o footer para laptop */
-	.icones-sociais {
-	right: 41%;
-	width: 46%;
+@media (max-width: 768px) {	
+	.footer-centro p {
+		left: 34%;
 	}
-	.telefone {
-    left: 56%;
+	.footer-nome {
+		top: 4%;
+	    font-size: 145%;
 	}
-	.email {
-    left: 26%;
+	.footer-cidade {
+    	top: 44%;
 	}
-    .cidade {
-    top: 43%;
-    right: 34%;
+	.footer-fim p {
+		left: 71%;
+		font-size: 118%;
 	}
-	.nome {
-	right: 16%;
-}
-@media(max-width: 768px){ /* adequando o footer para um tablet */
-	.icones-sociais {
-		right: 38%;
+	.footer-email {
+		top: 4.5%;
 	}
-	.telefone {
-    	top: 46%;
-    	left: 46%;
-	}
-	.email {
-    	left: 18%;
-	}
-    .cidade {
-    	top: 49%;
-    	right: 31%;
-	}
-	.nome {
-		right: 5%;
+	.footer-telefone {
+		top: 42%;
 	}
 }
-
 @media(max-width: 425px){ /* adequando o footer para um dispositivo movel */
 	.icones-sociais {
 		right: 18%;
