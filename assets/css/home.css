@@ -38,6 +38,7 @@ figcaption p{
     background-color: #F8F8FF;
     font-family: 'Playfair Display', serif;
     height: 100%;
+    min-width: 100%;
 }
 
 .row-home{
@@ -78,6 +79,11 @@ figcaption p{
         height: 100%;
     }
     
+    .escalade{
+        margin-bottom: 50px;
+    }
+
+   
 }
 
 .carousel-inner img {
@@ -102,13 +108,26 @@ figcaption p{
     background-image: url(../images/back-high.jpg);
     opacity: 0.8;
     background-size: cover;
-    padding: 86px;
+    padding: 46px;
 }
 
 .high-texto{
     opacity: 1.0;
     color: #f8f8ff;
     font-size: 4em;
+}
+
+.footer-localizacao{
+	position: relative;
+	bottom: 0px;
+	margin-top: 10px;
+}
+
+@media(max-width:321px)
+{
+    #main-home{
+        min-width: 100%;
+    }
 }
 
 /*FIM DO CSS DA HOMEPAGE*/
