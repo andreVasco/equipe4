@@ -1,0 +1,72 @@
+.body-contato{
+	background-color: #F8F8FF;
+	width: 100%;
+	position: absolute;
+
+}
+#titulo-h2-contato{
+	color: #660000;
+	text-align: center;
+	font-family: 'Playfair Display';
+	background-color: #F8F8FF;
+}
+#subtitulo-contato{
+	color:#660000;
+	text-align:center;
+	font-family:'Playfair Display';
+	background-color:#F8F8FF;
+}
+
+#footer{
+	position: relative;
+	bottom: -40px;
+
+}
+#msg
+{
+	font-size:20px;
+	text-align:center;
+}
+
+.btn_submit{
+	position:absolute;
+    display:block;
+    width:80px;
+    height:26px;
+    font-weight:bold;
+    border:none;
+    left:1100px;
+}
+
+
+.formulario{ float:left; width:100%; height:auto; font-family: 'Playfair Display', sans-serif;}
+.formulario ul{display: table; margin:10px 0 10px 18%;}
+.formulario ul li{float: none; list-style: none; margin: 0 30px 5px 0; }
+
+.formulario label{ width:20%; float:left; text-align:right; padding:10px 15px 0 0;}
+.formulario label.error { float: none; position: relative; top:-5px; left:21%; color: #f00; vertical-align: top; font-size: 12px; text-align: right; display: block; border-left:3px solid #f00;  padding: 0px 0 0 5px; margin: 0 0 5px 0;}
+
+.formulario input{padding:8px; margin:0px 0 10px 0; border:1px solid #bab9b9; font-weight:400; font-size:16px; color:#333; display:block; outline: none; 
+	-webkit-transition: background 0.5s ease-out; -moz-transition: background 0.5s ease-out; transition: background 0.5s ease-out;} 
+.formulario input:focus{border:1px solid #bab9b9; background: #F8F8FF;}
+.formulario input.formcontrol{ width:50%;}
+
+.formulario select{padding:8px; margin:0px 0 10px 0; border:1px solid #bab9b9; font-weight:400; font-size:16px; color:#333; display:block; outline: none;
+	-webkit-transition: background 0.5s ease-out; -moz-transition: background 0.5s ease-out; transition: background 0.5s ease-out;}
+.formulario select:focus{border:1px solid #bab9b9; background: #F8F8FF;}
+.formulario select.formcontrol{ width:50%;}
+.
+.formulario textarea{padding:8px; margin:0px 0 10px 0; border:1px solid #bab9b9; font-weight:400; font-size:16px; color:#333; display:block; outline: none;
+	-webkit-transition: background 0.5s ease-out; -moz-transition: background 0.5s ease-out; transition: background 0.5s ease-out;}
+.formulario textarea:focus{border:1px solid #bab9b9; background: #F8F8FF;}
+.formulario textarea.formcontrol{ width:50%;}
+
+@media only screen and (max-width:989px){
+	.formulario{ float:none; width:80%; margin:auto;}
+	.formulario ul{margin:10px 0 10px 0%;}
+	.formulario label{width: 100%; text-align: left; float: none; margin:0 0 7px 0; display: block;}
+	.formulario label.error {left:0%;}
+
+	.formulario input.formcontrol{ width:80%;}
+	.formulario select.formcontrol{ width:80%;}
+	.formulario textarea.formcontrol{ width:80%;}
