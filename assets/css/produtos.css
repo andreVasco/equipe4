@@ -29,7 +29,8 @@ html.html-produtos,body.body-produtos,#body-menu {
 	border-radius: 3px;
 	width: 100%;
 	height: 80%;
-}.foto-produtos:hover{
+}
+.box-produto:hover{
 	box-shadow: 2px 2px 2px 2px #8B8989;
 }
 
