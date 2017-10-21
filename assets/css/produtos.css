@@ -122,24 +122,3 @@ html.html-produtos,body.body-produtos,#body-menu {
 }}
 
 /*FIM DA PAGINA CSS DE PRODUTOS */
-/*ALGUMAS ADAPTAÇÕES DO MENU 
-#body-menu{
-	position: relative;
-	padding-bottom: 10px;
-	background-size: cover;
-	background-color: #f8f8ff;
-	top: 0px;
-}
-.menu-links{
-	display: flex;
-}
-.nav-menu{
-	position: relative;
-}
-.nave-menu{
-	position: relative;
-	width: 100%;
-	justify-content: center;
-}
-}
-FIM DAS ADAPTAÇÕES*/
