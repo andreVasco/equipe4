@@ -16,7 +16,7 @@
    </head>
 
  <!--MENU BEGIN-->
-    <body>  
+    <body class="body-contatos"> 
              <header class="body-menu">
 			      <nav  class="navbar navbar-default">
 			      	<div  class="container">
@@ -48,39 +48,39 @@
 			        </div>
 			      </nav>
 			</header>
+						
+			<div class="container form-cont" >		
+				<form class="form-horizontal">
+				  <div class="form-group">
+				    <label for="#" id="frase" class="col-sm-3 control-label">Nome Completo:</label>
+				    <div class="col-sm-7">
+				      <input type="password" class="form-control" id="inputPassword3" placeholder="Nome Completo">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="#" id="frase" class="col-sm-3 control-label">Email:</label>
+				    <div class="col-sm-7">
+				      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="#" id="frase" class="col-sm-3 control-label">Mensagem:</label>
+				    <div class="col-sm-7">
+				 		<textarea class="form-control" placeholder="Mensagem" ></textarea>
+				    </div>
+				  </div>
+				   <div align="center">
+				      <button type="submit" class="btn btn-default" id="bot-enviar">enviar</button>
+				  </div>
+				</form>
+			</div>
+	</body>
 
-<section id="contatos" class="container">
-	<div class="formulario">
-		<form id="form" autocomplete="off">
-		<h2 id="titulo-h2-contato">Contato</h2>
-			<p id="subtitulo-contato">Tire sua dúvida</p>
-			<form>
-		      <div class="form-group">
-			  <label for="contato nome">Nome:</label>
-			    <input class="form control" id="contato nome"type="text" size="100" maxlength="160" placeholder="Seu nome">
-		          </div>
-				<div class="form-group">
-					<label for="contato email">Email:</label>
-					<input type="email" class="form control" id="contato email" size="100"maxlength="250"placeholder="Seu email">
-				 </div>
-				 <div class="form-group">
-				 	<label for="contato assunto_">Assunto:</label>
-				 	<input class="form control" id="contato assunto"type="text"size="100"maxlength="35" placeholder="Assunto da mensagem">
-				 	</div>
-				 <div class="form-group">
-				 <h2 id="msg">Mensagem:</h2>
-					 <textarea rows="10" cols="150" maxlength="500"></textarea>
-					 </div>
-					 <button type"button" class="btn_submit">Enviar</button>
-					</form>
-				  </section>
-				</div>
-			</body>
 			 
-	  	 	<body id="body-footer" class="footer-localizacao">
+	  	 	
 	<!-- Footer comeca aqui -->
 
-	<footer id="footer">
+	<footer id="footer" id="body-footer" class="footer-contatos">
 		<div class="wrapper">
 			<div class="footer-inicio">
 				<ul class="icones-sociais">
@@ -108,5 +108,5 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
    <script src="../assets/bootstrap/js/bootstrap.js"></script>
    <script src="../assets/js/collapse-navebar.js"></script>
-</body>
+
 </html>
