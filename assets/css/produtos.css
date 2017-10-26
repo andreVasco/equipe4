@@ -62,6 +62,14 @@ html.html-produtos,body.body-produtos,#body-menu {
 #NeB{
 	margin-bottom: 5px;
 }
+.footer-produtos{
+	position: relative;
+	bottom: 0px;
+	margin-top: 10px;
+	top: 3px;
+	border-top: 200px solid #f8f8ff;
+
+}
 
 
 @media(min-width: 768px) {
