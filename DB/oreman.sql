@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2017 at 12:33 AM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.10
+-- Generation Time: 27-Out-2017 às 19:58
+-- Versão do servidor: 10.1.26-MariaDB
+-- PHP Version: 7.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,31 +25,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `login`
---
-
-CREATE TABLE `login` (
-  `nome` varchar(255) DEFAULT NULL,
-  `usuario` varchar(255) DEFAULT NULL,
-  `senha` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `telefone` int(10) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `produtos`
+-- Estrutura da tabela `produtos`
 --
 
 CREATE TABLE `produtos` (
-  `nome` varchar(50) DEFAULT NULL,
+  `nome` varchar(30) DEFAULT NULL,
   `categoria` varchar(50) DEFAULT NULL,
   `descricao` varchar(500) DEFAULT NULL,
   `preco` decimal(10,2) DEFAULT NULL,
   `enderecoImagem` varchar(255) DEFAULT NULL,
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `produtos`
+--
+
+INSERT INTO `produtos` (`nome`, `categoria`, `descricao`, `preco`, `enderecoImagem`, `id`) VALUES
+('Audi 1', NULL, NULL, NULL, 'https://www.oportunidadeaudi.com.br/images/destaques/Q3_549x330.jpg', 5),
+('Audi 2', NULL, NULL, NULL, 'https://www.oportunidadeaudi.com.br/images/destaques/Q7_549x330.jpg', 6),
+('Audi 3', NULL, NULL, NULL, 'https://www.oportunidadeaudi.com.br/images/destaques/A3sportback_549x330.jpg', 7),
+('Audi 4', NULL, NULL, NULL, 'https://www.oportunidadeaudi.com.br/images/destaques/A4_549x330.jpg', 8),
+('Audi 5', NULL, NULL, NULL, 'https://www.oportunidadeaudi.com.br/images/destaques/A3_549x330.jpg', 9);
 
 --
 -- Indexes for dumped tables
@@ -69,7 +66,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
