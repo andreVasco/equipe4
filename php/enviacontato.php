@@ -5,7 +5,7 @@ $nome = $_POST["nome"];
 $email = $_POST["email"];
 $mensagem = $_POST["mensagem"];
 
-require_once("PHPMailerAut0load.php");
+require_once("PHPMailerAutoload.php");
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
