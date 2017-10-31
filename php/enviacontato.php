@@ -8,7 +8,7 @@ $email = $_POST["email"];
 $telefone = $_POST["telefone"];
 $mensagem = $_POST["mensagem"];
 
-$query = "insert into produtos (nome, email, telefone, mensagem) values ('{$nome}', '{$email}', '{$telefone}' , '{$mensagem})";
+$query = "insert into contato (nome, email, telefone, mensagem) values ('{$nome}', '{$email}', '{$telefone}' , '{$mensagem})";
 
 if(mysqli_query($conexao, $query)) { 
 ?>
