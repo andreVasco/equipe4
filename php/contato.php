@@ -1,5 +1,4 @@
-<?php 
-?>
+<?php include("conecta.php"); ?>
 
 <!doctype html>
 <html id="html-contato">
@@ -58,25 +57,36 @@
 					<p  id="paragrafo-cont">Retornaremos assim que possível.</p>
 
 				</div>
-					<form class="form-horizontal" method="POST" action="enviacontato.php">
+					<form class="form-horizontal" method="post" action="enviacontato.php">
+                        
 					  <div class="form-group">
 					    <label for="#" id="frase" class="col-sm-3 control-label">Nome Completo:</label>
 					    <div class="col-sm-7">
-					      <input type="text" class="form-control" id="inputPassword3" placeholder="Nome Completo">
+					      <input type="text" class="form-control" id="inputPassword3" placeholder="Nome Completo" name="nome">
 					    </div>
 					  </div>
+                        
 					  <div class="form-group">
 					    <label for="#" id="frase" class="col-sm-3 control-label">Email:</label>
 					    <div class="col-sm-7">
-					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
 					    </div>
 					  </div>
+                        
+                        <div class="form-group">
+					    <label for="#" id="frase" class="col-sm-3 control-label">Telefone:</label>
+					    <div class="col-sm-7">
+					      <input type="text" class="form-control" id="inputEmail3" placeholder="Telefone de contato" name="telefone">
+					    </div>
+					  </div>
+                        
 					  <div class="form-group">
 					    <label for="#" id="frase" class="col-sm-3 control-label">Mensagem:</label>
 					    <div class="col-sm-7">
 					 		<textarea class="form-control" placeholder="Mensagem" ></textarea>
 					    </div>
 					  </div>
+                        
 					   <div align="center">
 					      <button type="submit" class="btn btn-default" id="bot-enviar">enviar</button>
 					  </div>

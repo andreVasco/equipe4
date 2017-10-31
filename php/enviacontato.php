@@ -1,55 +1,30 @@
+<?php include("conecta.php"); ?>
+
 <?php
 session_start();
 
 $nome = $_POST["nome"];
 $email = $_POST["email"];
+$telefone = $_POST["telefone"];
 $mensagem = $_POST["mensagem"];
 
-require_once("PHPMailerAutoload.php");
+$query = "insert into produtos (nome, email, telefone, mensagem) values ('{$nome}', '{$email}', '{$telefone}' , '{$mensagem})";
 
-//Create a new PHPMailer instance
-$mail = new PHPMailer();
+if(mysqli_query($conexao, $query)) { 
+?>
+    <p class="alert-success">
+        Mensagem enviada com sucesso!
+    </p>
 
-//Tell PHPMailer to use SMTP
-$mail->isSMTP();
+<?php } else { ?>
 
-//Set the hostname of the mail server
-$mail->Host = 'smtp.gmail.com';
+    <p class="alert-danger">
+        ERRO: Sua mensagem não foi enviada.
+    </p>
 
-//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-$mail->Port = 587;
+<?php } ?>
 
-//Set the encryption system to use - ssl (deprecated) or tls
-$mail->SMTPSecure = 'tls';
+?>
 
-//Whether to use SMTP authentication
-$mail->SMTPAuth = true;
 
-//Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "oremanmotors@gmail.com";
 
-//Password to use for SMTP authentication
-$mail->Password = "codejrequipe4";
-
-//Set who the message is to be sent from
-$mail->setFrom($email);
-$mail->addAddress('oremanmotors@gmail.com', 'EQUIPE OREMAN');
-
-//Set the subject line
-$mail->Subject = "Mensagem do cliente";
-
-//Read an HTML message body from an external file, convert referenced images to embedded,
-//convert HTML into a basic plain-text alternative body
-$mail->msgHTML("<html>de: {$nome} <br/>email: {$email} <br/>mensagem: {$mensagem}</html>");
-$mail->AltBody = " de: {$nome} \n email: {$email} \n mensagem: {$mensagem}";
-
-//Send email and verify success/error
-if ($mail->send()) {
-   $_SESSION["success"] = "Sua mensagem foi enviada!";
-   header("Location: ../html/home.html");
-} else {
-   $_SESSION["danger"] = "ERRO: Sua mensagem não foi enviada!" . $mail->ErrorInfo;
-    header("Location:contato.php");
-}
-
-die();
