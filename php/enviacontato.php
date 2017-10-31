@@ -5,21 +5,16 @@ $nome = $_POST["nome"];
 $email = $_POST["email"];
 $mensagem = $_POST["mensagem"];
 
-use PHPMailer\PHPMailer\PHPMailer;
-require '../PHPMailer-master/src/SMTP.php';
+require_once("PHPMailerAut0load.php");
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
 
 //Tell PHPMailer to use SMTP
 $mail->isSMTP();
-$mail->SMTPDebug = 2;
 
 //Set the hostname of the mail server
 $mail->Host = 'smtp.gmail.com';
-// use
-// $mail->Host = gethostbyname('smtp.gmail.com');
-// if your network does not support SMTP over IPv6
 
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
 $mail->Port = 587;
