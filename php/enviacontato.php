@@ -1,3 +1,8 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
+</head>
+
 <?php
 session_start();
 
@@ -15,7 +20,7 @@ $query = "INSERT INTO  contato (nome, email, telefone, mensagem) VALUES ('{$nome
 //verifica sucesso ou falha
 if(mysqli_query($conexao, $query)) { 
 ?>
-    <p class="alert-success">
+    <p align="center" class="text-success">
         Mensagem enviada com sucesso!
     </p>
 
@@ -23,13 +28,12 @@ if(mysqli_query($conexao, $query)) {
     
 $msg = mysqli_error($conexao);?>
 
-    <p class="alert-danger">
+    <p align="center" class="text-danger">
         ERRO: Sua mensagem não foi enviada.  <?= $msg ?>
     </p>
 
 <?php } ?>
 
-?>
-
+</html>
 
 
