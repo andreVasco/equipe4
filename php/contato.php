@@ -56,7 +56,7 @@
 					<p id="titulo-cont">Entre em contato!</p>
 					<p  id="paragrafo-cont">Retornaremos assim que possível.</p>
 
-				</div>
+				</div> 
 					<form class="form-horizontal" method="post" action="enviacontato.php">
                         
 					  <div class="form-group">
@@ -76,14 +76,14 @@
                         <div class="form-group">
 					    <label for="#" id="frase" class="col-sm-3 control-label">Telefone:</label>
 					    <div class="col-sm-7">
-					      <input type="text" class="form-control" id="inputEmail3" placeholder="Telefone de contato" name="telefone">
+					      <input type="number" class="form-control" id="inputEmail3" placeholder="Telefone de contato" name="telefone">
 					    </div>
 					  </div>
                         
 					  <div class="form-group">
 					    <label for="#" id="frase" class="col-sm-3 control-label">Mensagem:</label>
 					    <div class="col-sm-7">
-					 		<textarea class="form-control" placeholder="Mensagem" ></textarea>
+					 		<textarea type="text" class="form-control" placeholder="Escreva aqui sua Mensagem" name="mensagem"></textarea>
 					    </div>
 					  </div>
                         
