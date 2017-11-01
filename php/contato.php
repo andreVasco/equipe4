@@ -7,9 +7,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css"> <!-- reset-->
 		<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css"> <!-- link para acessar a pasta de css do bootstrap-->
-		<link rel="stylesheet" type="text/css" href="../assets/css/contato.css"> 
-		<link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
-		<link rel="stylesheet" type="text/css" href="../assets/css/menu1.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/estilos.css"> 
 		<meta name="viewport"  content="width=device-width,initial-scale=1"> <!--Ajusta o site para o tamanho do dispositivo-->
 		<title>OREMAN MOTORS</title>
 		<link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
