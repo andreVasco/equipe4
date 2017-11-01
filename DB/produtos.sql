@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 01-Nov-2017 às 01:44
+-- Generation Time: 01-Nov-2017 às 03:51
 -- Versão do servidor: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -29,24 +29,21 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `produtos` (
-  `nome` varchar(30) DEFAULT NULL,
-  `categoria` varchar(50) DEFAULT NULL,
-  `descricao` varchar(500) DEFAULT NULL,
-  `preco` decimal(10,2) DEFAULT NULL,
-  `enderecoImagem` varchar(255) DEFAULT NULL,
-  `id` int(11) NOT NULL
+  `nome` varchar(20) NOT NULL,
+  `descricao` varchar(500) NOT NULL,
+  `capa` varchar(500) NOT NULL,
+  `albumid` int(11) NOT NULL,
+  `preco` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `produtos`
 --
 
-INSERT INTO `produtos` (`nome`, `categoria`, `descricao`, `preco`, `enderecoImagem`, `id`) VALUES
-('Audi 1', NULL, NULL, NULL, 'https://www.oportunidadeaudi.com.br/images/destaques/Q3_549x330.jpg', 5),
-('Audi 2', NULL, NULL, NULL, 'https://www.oportunidadeaudi.com.br/images/destaques/Q7_549x330.jpg', 6),
-('Audi 3', NULL, NULL, NULL, 'https://www.oportunidadeaudi.com.br/images/destaques/A3sportback_549x330.jpg', 7),
-('Audi 4', NULL, NULL, NULL, 'https://www.oportunidadeaudi.com.br/images/destaques/A4_549x330.jpg', 8),
-('Audi 5', NULL, NULL, NULL, 'https://www.oportunidadeaudi.com.br/images/destaques/A3_549x330.jpg', 9);
+INSERT INTO `produtos` (`nome`, `descricao`, `capa`, `albumid`, `preco`) VALUES
+('Mercedez', 'Olha este carro', 'http://www2.mercedes-benz.com.br/content/media_library/brasil/mpc_brasil/brazil_models/home_carrossel/welcome-screen.object-Single-MEDIA.tmp/1000x370_EMB-redux.jpg', 1, '10000.00'),
+('Mercedez 2', 'carrão', 'http://www2.mercedes-benz.com.br/content/media_library/brasil/mpc_brasil/brazil_models/home_carrossel/A-Class-180.object-Single-MEDIA.tmp/1000x370_destaque_home_classe_a.jpg', 2, '100000.00'),
+('Mercedez 3', 'esse carro é foda', 'http://www2.mercedes-benz.com.br/content/media_library/brasil/mpc_brasil/brazil_models/home_carrossel/imagem4.object-Single-MEDIA.tmp/04_GClass.jpg', 3, '15.00');
 
 --
 -- Indexes for dumped tables
@@ -56,7 +53,7 @@ INSERT INTO `produtos` (`nome`, `categoria`, `descricao`, `preco`, `enderecoImag
 -- Indexes for table `produtos`
 --
 ALTER TABLE `produtos`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`albumid`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -66,7 +63,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

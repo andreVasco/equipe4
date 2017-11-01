@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 01-Nov-2017 às 01:44
+-- Generation Time: 01-Nov-2017 às 03:51
 -- Versão do servidor: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -45,6 +45,10 @@ INSERT INTO `contato` (`nome`, `email`, `telefone`, `mensagem`) VALUES
 ('FERNANDA', 'fernandananda95@yahoo.com.br', 99427575, 'TESTE'),
 ('FERNANDA', 'fernandananda95@yahoo.com.br', 99427575, 'TESTE'),
 ('Fernanda', 'dev4@codejr.com.br', 327273733, 'Boa noite'),
+('Teste', 'dev4@codejr.com.br', 99427575, 'teste'),
+('FERNANDA', 'dev4@codejr.com.br', 99427575, 'teste'),
+('FERNANDA', 'dev4@codejr.com.br', 99427575, 'teste'),
+('FERNANDA', 'fernandananda95@yahoo.com.br', 99427575, 'teste'),
 ('Teste', 'dev4@codejr.com.br', 99427575, 'teste');
 COMMIT;
 

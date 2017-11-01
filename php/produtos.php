@@ -86,7 +86,7 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 					<?php while ($produto = mysqli_fetch_assoc($resultado)) { ?>
 	  				<div class="col-sm-6 col-md-4 col-lg-3">
 							<figure class="thumbnail box-produto">
-								<img src=" <?php echo $produto['enderecoImagem']; ?> " class="foto-produtos" alt="Carro preto">
+								<img src=" <?php echo $produto['capa'];  ?>  class="foto-produtos" alt="Carro preto">
 									<figcaption class="caption">
 										<h3 class="titulo-h3-produtos"><?php echo $produto['nome'];  ?></h3>
 										<p><a href="info.html" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
