@@ -1,0 +1,943 @@
+/* ESTILOS CSS DE TODAS AS PÁGINAS DO SITE*/
+
+/*INÍCIO DO CSS DA HOMEPAGE*/
+
+.carousel-example-generic{
+    background-color:#F8F8FF;
+    font-family: 'Playfair Display', serif;
+}
+
+#html-home{
+    background-color:#F8F8FF;
+    font-family: 'Playfair Display', serif;
+}
+
+#body-home{
+     background-color:#F8F8FF;
+    font-family: 'Playfair Display', serif;
+}
+
+.direcao{
+    position: relative;
+    padding-top:100%;
+    height: 3em;
+    display: inline-block;
+    font-size: 20px;
+}
+
+figcaption p{
+    font-size: 1.5em;
+}
+#main-home{
+    color:#660000;
+    background-color: #F8F8FF;
+    font-family: 'Playfair Display', serif;
+}
+
+#slideshow-Homepage{
+    width:100%;
+    font-size: 2em;
+    background-color: #F8F8FF;
+    font-family: 'Playfair Display', serif;
+    height: 100%;
+    min-width: 100%;
+}
+
+.row-home{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.destaque{
+    text-align: center;
+    border: 5px solid #660000;
+    border-radius: 8px;
+    padding:15px;
+}
+
+.imgfld-home{
+    position: relative;
+    min-width: 0px;
+}
+
+@media(max-width:768px){
+    
+    .carousel-caption{
+        font-size: 0.5em;
+    }
+
+    .col-sm-6{
+        margin-bottom: 30px;
+    }   
+    
+    .row-home{
+        margin-bottom: -40px;
+    }
+    
+    #slideshow-homepage{
+        position: relative;
+        line-height: 5;
+        width:100%;
+        height: 100%;
+    }
+    
+    .escalade{
+        margin-bottom: 50px;
+    }
+
+   
+}
+
+.carousel-inner img {
+    min-height: 250px;
+    min-width: 100%;
+}
+
+.destaque:hover{
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.60s;
+    -o-transition: 0.60s;
+    -moz-transition: 0.60s;
+    transition: 0.60s;
+    background-color: #F8F8FF;
+}
+
+#highlights{
+    margin-top: 20px;
+    background-image: url(../images/back-high.jpg);
+    opacity: 0.8;
+    background-size: cover;
+    padding: 46px;
+}
+
+.high-texto{
+    opacity: 1.0;
+    color: #f8f8ff;
+    font-size: 4em;
+}
+
+.footer-localizacao{
+	position: relative;
+	bottom: 0px;
+	margin-top: 10px;
+}
+
+@media(max-width:321px)
+{
+    #main-home{
+        min-width: 100%;
+    }
+}
+
+/*FIM DO CSS DA HOMEPAGE*/
+
+/*INÍCIO DO CSS DA PÁGINA DE CONTATOS*/
+
+.body-contatos{
+	background-color: #f8f8ff;
+	width: 100%;
+	position: relative;
+
+}
+#titulo-h2-contato{
+	color: #660000;
+	text-align: center;
+	font-family: 'Playfair Display';
+	background-color: #F8F8FF;
+}
+#subtitulo-contato{
+	color:#660000;
+	text-align:center;
+	font-family:'Playfair Display';
+	background-color:#F8F8FF;
+}
+
+
+.footer-contatos{
+	position: relative;
+	bottom: 0px;
+	margin-top: 10px;
+	top: 335px;
+
+}
+.formulario{
+	position: relative;
+	width: 100%;
+}
+#msg
+{
+	font-size:20px;
+	text-align:center;
+}
+#bot-enviar:hover{
+	background-color: #660000;
+	color: #fff;
+	transition: 1s;
+}
+#frase{
+	left: 10px;
+}
+.form-cont{
+	position: relative;
+	top: 10px;
+}
+.complemento{
+	transition: 0.5s;
+	margin-right: 40%;
+	margin-left: 40%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+    border-radius:100%;
+    width:180px;
+    height:180px;
+    background-color: #660000;
+  	box-shadow: 2px 2px 2px 2px  #a6a6a6;
+}
+#titulo-cont{
+    font-size: 18px;
+    position: relative;
+    top: 50px;
+    color: #f8f8ff;
+    font-style: italic;
+    left: 15px;
+
+}
+#paragrafo-cont{
+	font-size: 11px;
+    top: 55px;
+    color: #f8f8ff;
+    font-style: italic;
+    position: relative;
+    left: 3px;
+}
+
+/*FIM DO CSS DA PÁGINA DE CONTATOS*/
+
+
+/*INÍCIO DO CSS DA PÁGINA DE LOCALIZAÇÃO*/
+
+.body-localizacao{
+	background-color: #F8F8FF;
+	width: 100%;
+	position: absolute;
+
+}
+.complemento{
+	transition: 0.5s;
+	margin-right: 40%;
+	margin-left: 40%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+    border-radius:100%;
+    width:180px;
+    height:180px;
+    background-color: #660000;
+  	box-shadow: 2px 2px 2px 2px  #a6a6a6;
+}
+
+
+#oreman{
+	font-size: 20px;
+}
+#endereco-localizacao{
+	color:  #f8f8ff;
+	display: block;
+	text-align: center;
+	font-family: playfair display;
+	position: relative;
+    top: 40px;
+    font-style: italic;
+
+}
+#mapa-localizacao {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-localizacao{
+	position: relative;
+	bottom: 0px;
+	margin-top: 10px;
+	top: 3px;
+	border-top: 200px solid #f8f8ff;
+
+}
+@media(min-width: 320px)and (max-width: 425px) {
+.complemento{
+	transition: 0.5s;
+	margin-right: 40%;
+	margin-left: 40%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+    border-radius:100%;
+    width:100px;
+    height:100px;
+    background-color: #660000;
+  	box-shadow: 2px 2px 2px 2px  #a6a6a6;
+}
+
+
+#oreman{
+	font-size: 10px;
+	position: relative;
+	bottom: 5px;
+}
+#endereco-localizacao{
+	color:  #f8f8ff;
+	display: block;
+	text-align: center;
+	font-family: playfair display;
+	position: relative;
+    top: 20px;
+    font-style: italic;
+    font-size: 8px;
+}
+}
+
+@media(min-width: 320px) {
+#mapa-localizacao {
+	width: 100%;
+	
+}
+}
+
+/*FIM DO CSS DA PÁGINA DE LOCALIZAÇÃO*/
+
+
+/*INÍCIO DO CSS DA PÁGINA DE PRODUTOS*/
+
+html.html-produtos,body.body-produtos,#body-menu {
+	width: 100%;
+	background-color: #F8F8FF;
+	font-family: playfair display;
+	background-size: 100% auto;
+	height: 
+}
+
+#info-produtos {
+	position: relative;
+	border-radius: 2px;	
+	width: 100px;
+	height: 30px;
+}
+#info-produtos:hover {
+	background-color: #660000;
+	color: #FFF;
+	transition: 0.5s;
+}
+.titulo-h3-produtos {
+	text-align: center;
+	color: #660000;
+
+}
+.foto-produtos{
+	position: relative;
+	border-radius: 3px;
+	width: 100%;
+	height: 80%;
+}
+.box-produto:hover{
+	box-shadow: 2px 2px 2px 2px #8B8989;
+}
+
+#pesquisa-produtos{
+	width: 100%;
+}
+
+#filtro-produtos{
+	width: 84%;
+}
+#bot-enter{
+	width: 15%;
+    margin-left: 85%;
+    bottom: 50px;
+    position: relative;
+}
+#filtro-produtos:hover {
+	color: #fff;
+	background-color: #660000;
+	transition: 0.5s;
+}
+
+
+#bot-enter:hover{
+	color: #fff;
+	background-color: #660000;
+	transition: 0.5s;
+}
+#NeB{
+	margin-bottom: 5px;
+}
+.footer-produtos{
+	position: relative;
+	bottom: 0px;
+	margin-top: 10px;
+	top: 3px;
+	border-top: 200px solid #f8f8ff;
+
+}
+
+
+@media(min-width: 768px) {
+#filtro-produtos{
+	margin-top: 10px;
+    width: 100%;
+    margin-left: 108px;
+
+}
+#bot-enter{
+	margin-top: 16px;
+	width: 6%;
+}
+#pesquisa-produtos{
+	position: relative;
+    margin-top: 10px;
+    margin-left: 111px;
+}}
+@media(min-width: 992px) {
+#filtro-produtos{
+	margin-top: 10px;
+    width: 100%;
+    left: 5px;
+    position: relative;
+
+}
+#bot-enter{
+	margin-top: 16px;
+    width: 5%;
+    position: relative;
+    right: 33px;
+
+}
+#pesquisa-produtos{
+	position: relative;
+    margin-top: 10px;
+    left: 1px;
+    padding-right: 190px;
+}
+}
+
+@media(min-width: 1200px) {
+#filtro-produtos{
+	margin-top: 10px;
+    width: 100%;
+    left: 159px;
+    float: right;
+}
+#bot-enter{
+	margin-top: 16px;
+    width: 3%;
+    position: relative;
+    right: 31px;
+}
+#pesquisa-produtos{
+	position: relative;
+    margin-top: 10px;
+    margin-right: 230px;
+    left: 50px;
+}
+}
+
+/*FIM DO CSS DA PÁGINA DE PRODUTOS*/
+
+
+/*INÍCIO DO CSS DA PÁGINA SOBRE NÓS*/
+
+#html-quem-somos{
+    background-color:#F8F8FF;
+    font-family: 'Playfair Display', serif;
+}
+
+#body-quem-somos{
+    background-color: #f8f8ff;
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    position: relative;
+}
+
+@media(min-width:768px){
+
+        .blocos{
+            display: inline-block;
+            width:30%;
+            background-color:rgba(102,0,0,0.7);
+            color: #f8f8ff;
+            border-radius: 5px;
+            text-align: center;
+            margin-left: 20px;
+            margin-top: 80px;
+            margin-bottom: 86px;
+        }
+
+        .content{
+            height: 100%;
+            background-color: #f8f8ff;
+            background-size: cover; 
+            position: relative;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        .blocos:hover{
+        box-shadow: 0 0 0 999999px rgba(0,0,3,0.7);
+        transform: scale(1.2); 
+        transition: 0.8s;
+        background-color: #660000;
+        color: #f8f8ff;
+    }
+    
+}
+
+.blocos{
+    font-family: 'Playfair Display', serif;
+    padding: 15px;
+    font-size: 1em;
+}
+
+.content{
+    font-family: 'Playfair Display', serif;
+}
+
+.icone{
+    font-size: 9em;
+}
+
+.blocos-texto{
+    color:#660000;
+}
+
+@media(max-width:767px){
+
+        .blocos{
+            text-align: center;
+            display:inline-block;
+            width: 100%;
+            color:#f8f8ff;
+            margin-top:30px;
+            background-color: rgba(102,0,0,0.7);
+            height: auto;
+            border:5px solid #660000;
+            border-radius: 10px;
+            padding: 30px;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 30px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .content{
+            display: inline-block;
+            height:100%;
+            background-color:#F8F8FF;
+            margin-bottom: 26px;
+            font-family: 'Playfair Display', serif; 
+            background-size: cover;
+            min-height: 100%;
+        }
+
+        .missao{
+            margin-bottom: 40px;
+        }
+
+        .blocos:hover{
+        box-shadow: 0 0 0 999999px rgba(0,0,3,0.7);
+        transform: scale(1.05); 
+        transition: 0.8s;
+        color: #f8f8ff;
+        background-color: rgba(102,0,0,1.0);
+    }
+    
+}
+
+.footer-localizacao{
+	position: absolute;
+	bottom: 0px;	
+}
+
+
+/*FIM DO CSS DA PÁGINA SOBRE NÓS*/
+
+
+/*INÍCIO DO CSS DO FOOTER*/
+
+#footer {
+	background-color: #660000;
+	height: 15%;
+	border-top: 1px solid #000;
+	position: relative;
+	font-family: sans-serif;
+}
+.footer-inicio {
+	position: relative;
+	height: 15%;
+}
+.icones-sociais {	
+    position: relative;
+    left: -2%;
+    width: 30%;
+}
+.icones-sociais li {
+	position: relative;
+	display: inline-block;
+	margin: .4em;
+	left: 2%;
+	margin-top: 1em;
+}
+.footer-centro p {
+	position: absolute;
+	text-align: center;
+	width: 32%;
+	left: 32%;
+	color: #F8F8FF;
+}
+.footer-nome {
+	top: 0%;
+	font-size: 165%;
+	font-weight: bold;
+}
+.footer-cidade {
+	top: 44%;
+	font-size: 125%;
+	font-weight: lighter;
+}
+.footer-fim p {
+	position: absolute;
+	text-align: right;
+	color: #1c1c1c;
+	width: 25%;
+	left: 73.5%;
+	color: #F8F8FF;
+	font-size: 130%;
+}
+.footer-email {
+	top: 7%;
+}
+.footer-telefone {
+	top: 45%;	
+}
+.fa-facebook {
+	font-size:36px !important;
+	color: #e0e0e0;	
+	margin-right: 7%;
+	transition: 0.6s ease-in-out;
+	-webkit-transition: 0.6s ease-in-out;
+	-ms-transition: 0.6s ease-in-out;
+	-moz-transition: 0.6s ease-in-out;	
+}
+.fa-facebook:hover {
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+}
+.fa-twitter {
+	font-size:36px !important;
+	color: #e0e0e0;	
+	margin-right: 7%;
+	transition: 0.6s ease-in-out;
+	-webkit-transition: 0.6s ease-in-out;
+	-ms-transition: 0.6s ease-in-out;
+	-moz-transition: 0.6s ease-in-out;
+}
+.fa-twitter:hover {
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+}
+.fa-instagram {
+	font-size:36px !important;
+	color: #e0e0e0;
+	margin-right: 7%;
+	transition: 0.6s ease-in-out;
+	-webkit-transition: 0.6s ease-in-out;
+	-ms-transition: 0.6s ease-in-out;
+	-moz-transition: 0.6s ease-in-out;
+}
+.fa-instagram:hover {
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+}
+@media (max-width: 768px) {	
+	.footer-centro p {
+		left: 31%;
+		width: 34%;
+	}
+	.footer-nome {
+		top: 4%;
+	    font-size: 145%;
+	}
+	.footer-cidade {
+    	top: 44%;
+	}
+	.footer-fim p {
+    	font-size: 100%;		
+		left: 68%;
+	}
+	.footer-email {
+		top: 11.5%;
+	}
+	.footer-telefone {
+		top: 42%;
+	}
+}
+@media(max-width: 425px){ /* adequando o footer para um dispositivo movel */
+	.icones-sociais {
+		right: 18%;
+	}
+	.icones-sociais li {
+		display: block;
+	}
+	.footer-centro p {
+	    left: 30%;
+	    width: 67%;
+	}
+	.footer-nome {
+	    top: 6%;
+	    font-size: 160%;
+	}
+	.footer-cidade {
+		top: 33%;
+		right: 25%;
+		font-size: 125%;
+	}
+	.footer-fim p {    
+   	 	font-size: 100%;
+		left: 40%;   	 	
+	}
+	.footer-email {
+		top: 65%;
+	}
+	.footer-telefone {
+		top: 80%;
+		left: 51% !important;
+	}
+}
+@media(max-width: 375px){ /* adequando o footer para um dispositivo movel */
+	.icones-sociais {
+		right: 19%;
+	}
+	.footer-centro p {
+		left: 25%;
+		width: 75%;
+	}
+	.footer-nome {		
+		font-size: 150%;
+	}
+	.footer-cidade {
+		top: 30%;
+	}
+	.footer-fim p {
+		width: 33%;
+	}
+	.footer-email {
+		left: 37% !important;
+		top: 60%;
+	}
+	.footer-telefone {
+		left: 43% !important;
+		top: 75%;
+	}
+}
+@media(max-width: 320px){ /* adequando o footer para um dispositivo movel, tendo o iPhone 5 como base */
+	.icones-sociais {
+		right: 21%;
+	}
+	.footer-nome {
+    	font-size: 130%;
+	}
+
+	.footer-cidade {
+  		font-size: 115%;
+  		top: 26%;
+	}
+	.footer-fim p {
+    	font-size: 95%;
+}
+	.footer-email {
+	    left: 35% !important;
+	    top: 62%;
+	}
+	.footer-telefone {
+		left: 45% !important;
+	}
+}
+
+/*FIM DO CSS DO FOOTER*/
+
+
+/*INÍCIO DO CSS DO MENU*/
+
+#html-menu, .body-menu {
+	height: 100%;
+	font-family: 'Playfair Display', serif;
+}
+.navbar {
+	position: relative;
+    width: 100%;
+    margin: 0;
+}
+.logo-menu {
+	border-right: 2px solid #666666;
+    padding-right: 9%;
+}
+#menu {
+    position: relative;
+    margin-left: 45%;
+    bottom: 20px;
+    display: inline-block;
+}
+#let{
+	position: relative;
+}
+
+#let:hover{
+	
+	color: #660000;
+}
+
+
+
+@media (min-width: 1200px){
+    a#let {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 20px;
+        bottom: 10px;
+
+    }
+    .logo-menu {
+        width: 55%;
+        position: relative;
+        top: 20px;
+    }
+  
+}
+
+@media (min-width: 1024px)and (max-width: 1200px){
+	a#let {
+		padding-right: 10px;
+        font-size: 15px;
+        bottom: 10px;
+
+	}
+	.logo-menu {
+    	width: 50%;
+    	position: relative;
+    	top: 20px;
+    }
+  
+}
+@media (min-width: 768px)and (max-width: 1023px){
+    a#let {
+        padding-right: 8px;
+        font-size: 10px;
+
+
+
+    }
+    .logo-menu {
+        width: 45%;
+        position: relative;
+        top: 25px;
+    }
+    
+  
+}
+ @media(min-width: 453px) and (max-width: 767px) {
+
+
+.logo-menu {
+    position: relative;
+    width:  42%;
+    bottom: 0px;
+    top: 3px;
+}
+
+
+#menu {
+    left: 0%;
+    top: 0px;
+    font-size: 13px;
+    margin-top: 42px;   
+}
+}
+
+
+
+ @media(min-width: 320px) and (max-width: 453px) {
+
+
+.logo-menu {
+    position: relative;
+    width:  67%;
+    bottom: 0px;
+    top: 3px;
+}
+
+
+#menu {
+    left: 0%;
+    top: 0px;
+    font-size: 13px;
+    margin-top: 42px;   
+}
+}
+
+/*FIM DO CSS DO MENU*/
+
+
+/*INÍCIO DO CSS DA PÁGINA DE LOGIN*/
+
+.body-login{
+    padding-bottom: 10px;
+    position: absolute;
+    background-color: ##f8f8ff;
+    width: 100%;
+    height: 50%;
+	
+}
+.footer-login{
+	position: relative;
+	bottom: 0px;
+	margin-top: 10px;
+	top: 3px;
+	border-top: 300px solid #fff;
+
+}
+
+#tit-h2{
+	text-align: center;
+	color: #660000;
+}
+#frase{
+	left: 10px;
+	color: #660000;
+}
+.login-form{
+	vertical-align: middle;
+}
+#bot-enviar{
+	background-color: #f8f8ff;
+	color: #660000;
+
+}
+#bot-enviar:hover{
+	background-color: #660000;
+	color: #f8f8ff;
+	transition: 1s;
+
+}
+.teste{
+	background-color: #fff;
+	padding: 10px;
+}
+
+/*FIM DO CSS DA PÁGINA DE LOGIN*/
