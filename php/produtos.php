@@ -67,15 +67,6 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 							<div  class="form-group">
 							<input id="pesquisa-produtos" type="text" class="form-control" placeholder="Pesquisar"> 
 							</div>
-							<div class="form-group">
-								<select  id="filtro-produtos" class="form-control">
-								  <option disabled selected>Filtrar por:</option>
-								  <option>Cor</option>
-								  <option>Marca</option>
-								  <option>Modelo</option>
-								  <option>Ano</option>
-								</select>
-							</div>
 							<button id="bot-enter" type="button" class="btn btn-default">
 			 					 <span type="link" class="glyphicon glyphicon-search" aria-hidden="true"></span>
 							</button>
@@ -86,7 +77,7 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 					<?php while ($produto = mysqli_fetch_assoc($resultado)) { ?>
 	  				<div class="col-sm-6 col-md-4 col-lg-3">
 							<figure class="thumbnail box-produto">
-								<img src=" <?php echo $produto['capa'];  ?>  class="foto-produtos" alt="Carro preto">
+								<img src=" <?php echo $produto['capa']; ?>"  class="foto-produtos" alt="Carro preto">
 									<figcaption class="caption">
 										<h3 class="titulo-h3-produtos"><?php echo $produto['nome'];  ?></h3>
 										<p><a href="info.html" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>

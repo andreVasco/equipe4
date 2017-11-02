@@ -35,24 +35,19 @@ html.html-produtos,body.body-produtos,#body-menu {
 }
 
 #pesquisa-produtos{
-	width: 100%;
+	width: 85%;
+	margin-top: 10px;
+
 }
 
-#filtro-produtos{
-	width: 84%;
-}
 #bot-enter{
 	width: 15%;
     margin-left: 85%;
     bottom: 50px;
     position: relative;
-}
-#filtro-produtos:hover {
-	color: #fff;
-	background-color: #660000;
-	transition: 0.5s;
-}
+    margin-top: 16px;
 
+}
 
 #bot-enter:hover{
 	color: #fff;
@@ -76,17 +71,18 @@ html.html-produtos,body.body-produtos,#body-menu {
 #filtro-produtos{
 	margin-top: 10px;
     width: 100%;
-    margin-left: 108px;
+    margin-left: 160px;
 
 }
 #bot-enter{
 	margin-top: 16px;
-	width: 6%;
+    width: 6%;
+    right: 120px;
 }
 #pesquisa-produtos{
-	position: relative;
+	position: absolute;
     margin-top: 10px;
-    margin-left: 111px;
+    margin-left: 160px;
 }}
 @media(min-width: 992px) {
 #filtro-produtos{
@@ -120,13 +116,22 @@ html.html-produtos,body.body-produtos,#body-menu {
 	margin-top: 16px;
     width: 3%;
     position: relative;
-    right: 31px;
+    right: 165px;
 }
 #pesquisa-produtos{
 	position: relative;
     margin-top: 10px;
     margin-right: 230px;
     left: 50px;
+}
+@media(min-width: 1300px) {
+
+#bot-enter{
+	margin-top: 16px;
+    width: 3%;
+    position: relative;
+    right: 200px;
+
 }}
 
 /*FIM DA PAGINA CSS DE PRODUTOS */

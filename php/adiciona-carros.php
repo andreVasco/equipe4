@@ -1,31 +1,38 @@
+<html>
+
 <?php
-$servername='localhost';
-$username='root';
-$password='';
-$dbname='oreman';
+session_start();
 
-//Create Connection
-$conn = new sqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-
-//get values from form
-$name=$_POST['name'];
-$categoria=$_POST['categoria'];
-$descricao=$_POST['descricao'];
-$preco=$_POST['preco'];
-$endereco=$_POST['endereco'];
+$nome = $_POST["nome"];
+$descricao = $_POST["descricao"];
+$capa = $_POST["capa"];
+$preco = $_POST["preco"];
+$categoria = $_POST["categoria"];
 
 
-//Insert Values
-$sql = "INSERT INTO  produtos (nome , categoria , descricao , preco , enderecoImagem) VALUES ('{$nome}','{$categoria}','{$descricao}',{$preco},'{$endereco}')";
-//To check whether data is inserted properly or not
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
+//abre a conexão
+$conexao = mysqli_connect('localhost', 'root','', 'oreman');
 
-$conn->close();
+//cria a query
+$query = "INSERT INTO  produtos (nome, descricao, capa, preco, categoria) VALUES ('{$nome}', '{$descricao}', '{$capa}', {$preco}, '{$categoria}')";
+
+//verifica sucesso ou falha
+if(mysqli_query($conexao, $query)) { 
 ?>
+    <p align="center" class="text-success">
+        Produto cadastrado com sucesso!
+    </p>
+    <a align="center" href="produtos.php" target="_blank">Página de produtos</a>
+
+
+<?php } else { 
+    
+$msg = mysqli_error($conexao);?>
+
+    <p align="center" class="text-danger">
+        ERRO! Produto não cadastrado!  <?= $msg ?>
+    </p>
+
+<?php } ?>
+
+</html>
