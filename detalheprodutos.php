@@ -6,12 +6,15 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 	<head>
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css"> <!-- reset-->
-		<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css"> <!-- link para acessar a pasta de css do bootstrap-->
+		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css"> 
 		<link rel="stylesheet" type="text/css" href="../assets/css/estilos.css"> 
-		<meta name="viewport"  content="width=device-width,initial-scale=1"> <!--Ajusta o site para o tamanho do dispositivo-->
+		<meta name="viewport"  content="width=device-width,initial-scale=1"> 
 		<link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../assets/css/animate.css">
+		<link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/menu1.css">
 	<title>DETALHES DO PRODUTO</title>
 
 </head>
