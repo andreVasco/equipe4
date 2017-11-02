@@ -16,6 +16,8 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 		<?php
 		$id=@$_GET["id"];
 		$sel="select p.*,c.nome ao categorias from produtos p inner join categorias c on (p.idcategoria=c.id)where produtoid =".$id;
+		
+
 			$resutaldo = mysqli_query($conexao,$sel);
 			$produto = mysqli_fetch_assoc($resultado);
 		?>
@@ -25,16 +27,16 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 			<tr>
 			<td>FOTO</td>
 			<td>
-				<img src="<?php echo $produto["endereco"]?>" width="200" />
+				<img src="<?php echo $produto["endereco"]?>" width="200" /> <!--Pegando a imagem -->
 				</td>
 			</tr>
 				<tr>
 			<td>ID</td>
-			<td><?php echo $produto["id"];?></td>
+			<td><?php echo $produto["id"];?></td>			<!--Pegando o id do produto-->
 				</tr>
 			<tr>
 			<td>NOME</td>
-			<td><?php echo $produto["nome"];?></td>
+			<td><?php echo $produto["nome"];?></td>			<!--Pegando o nome do produto do banco de dados-->
 			  </tr>
 				<tr>
 			<td>PREÇO</td>
@@ -43,6 +45,10 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 				<tr>
 			<td>DESCRIÇÃO</td>
 			<td><?php echo $produto["descricao"];?></td>
+				</tr>
+					<tr>
+			<td>CATEGORIA</td>
+			<td><?php echo $produto["categoria"];?></td>
 				</tr>
 				</table>
 			</div>
