@@ -18,19 +18,17 @@ $query = "INSERT INTO  produtos (nome, descricao, capa, preco, categoria) VALUES
 
 //verifica sucesso ou falha
 if(mysqli_query($conexao, $query)) { 
-?>
-    <p align="center" class="text-success">
-        Produto cadastrado com sucesso!
-    </p>
-    <a align="center" href="produtos.php" target="_blank">Página de produtos</a>
 
+	header("Location:lista-produtos.php?cadastro=true");
+    die();
+  }
 
-<?php } else { 
+ else { 
     
 $msg = mysqli_error($conexao);?>
 
     <p align="center" class="text-danger">
-        ERRO! Produto não cadastrado!  <?= $msg ?>
+        ERRO! Produto não cadastrado!  
     </p>
 
 <?php } ?>

@@ -1,4 +1,11 @@
-<?php include("conecta.php"); ?>
+<?php include("conecta.php");
+include("banco-produtos.php"); 
+
+$id = $_GET['id'];
+$produto = BuscaProduto($conexao, $id);
+
+
+?>
  
  <html>
  	<head>
@@ -14,40 +21,45 @@
 	<!--COMEÇO DO CORPO-->
 	<body class="body-login">
             <div class="container  login-form">
-                   <form class="form-horizontal teste" method="post" action="adiciona-carros.php">
-                      <h2 id="tit-h2" >CADASTRAR CARRO</h2>
-                      <div class="form-group">
+                   <form class="form-horizontal teste" method="post" action="altera-carro.php">
+                   	 <h2 id="tit-h2" >ALTERAR CARRO</h2>
+            
+                   	  <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Nome:</label>
                         <div class="col-sm-7">
-                          <input class="form-control" type="text" name="nome" placeholder="Digite aqui">
+                          <input class="form-control" type="text" name="nome"  value="<?=$produto['nome']?>" >
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Descricao:</label>
                         <div class="col-sm-7">
-                          <textarea class="form-control" type="text"  name="descricao" placeholder="Digite aqui"></textarea>
+                          <textarea class="form-control" type="text"  name="descricao"><?=$produto['descricao'] ?></textarea>
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Capa:</label>
                         <div class="col-sm-7">
-                          <input class="form-control" type="text" name="capa" placeholder="Digite aqui">
+                          <input class="form-control" type="text" name="capa" value="<?=$produto['capa']?>" >
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Preço:</label>
                         <div class="col-sm-7">
-                          <input class="form-control" type="number" name="preco" placeholder="Digite aqui">
+                          <input class="form-control" type="number" name="preco" value="<?=$produto['preco']?>" >
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Categoria:</label>
                         <div class="col-sm-7">
-                          <input class="form-control"  type="text" name="categoria"  placeholder="Digite aqui">
+                          <input class="form-control"  type="text" name="categoria"  value="<?=$produto['categoria']?>" >
                         </div>
                       </div>
+                          <input class="form-control" type="hidden" name="id"  value="<?=$produto['albumid']?>" >
+                        
+                      </div>
+
                        <div align="center">
-                          <button type="submit" class="btn btn-default" id="bot-enviar">CADASTRAR</button>
+                          <button type="submit" class="btn btn-default" id="bot-enviar">Alterar</button>
                       </div>
                 </form>         
             </div>
@@ -55,5 +67,4 @@
   </body>  
 					    
 </html>
-
 

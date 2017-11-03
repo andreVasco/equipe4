@@ -2,7 +2,6 @@
 <?php include("conecta.php");
 $resultado = mysqli_query($conexao, "select * from produtos");
 
-
  ?>
  
 
@@ -77,7 +76,7 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 					<?php while ($produto = mysqli_fetch_assoc($resultado)) { ?>
 	  				<div class="col-sm-6 col-md-4 col-lg-3">
 							<figure class="thumbnail box-produto">
-								<img src=" <?php echo $produto['capa']; ?>"  class="foto-produtos" alt="Carro preto">
+								<img src="<?php echo $produto['capa']; ?>"  class="foto-produtos" alt="Carro preto">
 									<figcaption class="caption">
 										<h3 class="titulo-h3-produtos"><?php echo $produto['nome'];  ?></h3>
 										<p><a href="info.html" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
@@ -104,9 +103,11 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 	</body>
 <!--FIM DO CORPO-->
 <!--FOOTER-->
-	<div id="body-footer" class="footer-localizacao">
+
 	<!-- Footer comeca aqui -->
-	<footer id="footer">
+	<div id="body-footer" >
+	<div  id="footer-produtos">
+	<footer id="footer" >
 		<div class="wrapper">
 			<div class="footer-inicio">
 				<ul class="icones-sociais">
@@ -124,10 +125,8 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 				<p class="footer-telefone">(12)3456-7890</p>
 			</div>
 		</div>
-
-
+	</div>
 	</footer>
-	<!-- Footer termina aqui -->
 	</div>
 	<!--FIM DO FOOTER-->
 	<script src="../assets/js/jquery.js"></script>

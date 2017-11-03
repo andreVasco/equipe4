@@ -311,6 +311,9 @@ figcaption p{
 
 
 /*INÍCIO DO CSS DA PÁGINA DE PRODUTOS*/
+#alt-del {
+	color: #fff;
+}
 
 html.html-produtos,body.body-produtos,#body-menu {
 	width: 100%;

@@ -5,7 +5,7 @@ html.html-produtos,body.body-produtos,#body-menu {
 	background-color: #F8F8FF;
 	font-family: playfair display;
 	background-size: 100% auto;
-	height: 
+	position: relative;
 }
 
 #info-produtos {
@@ -35,14 +35,13 @@ html.html-produtos,body.body-produtos,#body-menu {
 }
 
 #pesquisa-produtos{
-	width: 85%;
-	margin-top: 10px;
+	width: 100%;
 
 }
 
 #bot-enter{
 	width: 15%;
-    margin-left: 85%;
+    margin-left: 80%;
     bottom: 50px;
     position: relative;
     margin-top: 16px;
@@ -55,43 +54,47 @@ html.html-produtos,body.body-produtos,#body-menu {
 	transition: 0.5s;
 }
 #NeB{
-	margin-bottom: 5px;
-}
-.footer-produtos{
 	position: relative;
-	bottom: 0px;
-	margin-top: 10px;
-	top: 3px;
-	border-top: 200px solid #f8f8ff;
+    top: 440px;
+    margin-top: 10px;
+}
+
+#footer-produtos{
+	
+	position: relative;
+    bottom: 0px;
+    top: 450px;
 
 }
 
+@media(min-width: 308px) {
 
-@media(min-width: 768px) {
-#filtro-produtos{
-	margin-top: 10px;
-    width: 100%;
-    margin-left: 160px;
-
-}
 #bot-enter{
-	margin-top: 16px;
-    width: 6%;
-    right: 120px;
+	width: 15%;
+    margin-left: 80%;
+    bottom: 65px;
+    position: relative;
 }
 #pesquisa-produtos{
-	position: absolute;
+	width: 80%;
+    margin-top: 10px;
+}}
+
+@media(min-width: 768px) {
+
+#bot-enter{
+	position: relative;
+    width: 6%;
+    right: 12px;
+    bottom: 50px;
+}
+#pesquisa-produtos{
+	position: relative;
     margin-top: 10px;
     margin-left: 160px;
+    width: 120%;
 }}
 @media(min-width: 992px) {
-#filtro-produtos{
-	margin-top: 10px;
-    width: 100%;
-    left: 5px;
-    position: relative;
-
-}
 #bot-enter{
 	margin-top: 16px;
     width: 5%;
@@ -103,15 +106,10 @@ html.html-produtos,body.body-produtos,#body-menu {
 	position: relative;
     margin-top: 10px;
     left: 1px;
-    padding-right: 190px;
+    width: 170%;
 }}
 @media(min-width: 1200px) {
-#filtro-produtos{
-	margin-top: 10px;
-    width: 100%;
-    left: 159px;
-    float: right;
-}
+
 #bot-enter{
 	margin-top: 16px;
     width: 3%;
@@ -121,10 +119,16 @@ html.html-produtos,body.body-produtos,#body-menu {
 #pesquisa-produtos{
 	position: relative;
     margin-top: 10px;
-    margin-right: 230px;
     left: 50px;
+    width: 160%;
 }
 @media(min-width: 1300px) {
+#pesquisa-produtos{
+	position: relative;
+    margin-top: 10px;
+    left: 50px;
+    width: 180%;
+}
 
 #bot-enter{
 	margin-top: 16px;
@@ -135,3 +139,9 @@ html.html-produtos,body.body-produtos,#body-menu {
 }}
 
 /*FIM DA PAGINA CSS DE PRODUTOS */
+
+/*LISTA PRODUTOS */
+
+#alt-del {
+	color: #fff;
+}
