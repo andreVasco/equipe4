@@ -1,6 +1,10 @@
+<?php
 
-<?php include("conecta.php");
-$resultado = mysqli_query($conexao, "select * from produtos");
+$produto = $_GET["prod"];
+if($produto !== '')
+	{
+	include("conecta.php");
+
 
  ?>
  
@@ -61,8 +65,7 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 	    <!--FIM DO MENU-->
 			<!--PÁGINA DE PRODUTOS-->
 			<section  id="teste-js" class="container-fluid ">
-				<!--PESQUISA E FILTRO-->
-					<form class="form-inline formulario-produtos" method="GET" action="pesquisa-produtos.php" >
+				<form class="form-inline formulario-produtos" method="GET" action="pesquisa-produtos.php" >
 							<div  class="form-group">
 							<input id="pesquisa-produtos" type="text" name="prod" class="form-control" placeholder="Pesquisar"> 
 							</div>
@@ -70,24 +73,26 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 			 					 <span type="link" class="glyphicon glyphicon-search" aria-hidden="true"></span>
 							</button>
 					</form>
-				<!--FIM PESQUISA E FILTROS-->
-				<!--Imagens dos carros-->
-				<div class="row">
-					<?php while ($produto = mysqli_fetch_assoc($resultado)) { ?>
-	  				<div class="col-sm-6 col-md-4 col-lg-3">
-							<figure class="thumbnail box-produto">
-								<img src="<?php echo $produto['capa']; ?>"  class="foto-produtos" alt="Carro preto">
-									<figcaption class="caption">
-										<h3 class="titulo-h3-produtos"><?php echo $produto['nome'];  ?></h3>
-										<p><a href="info.html" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
-									</figcaption>
-							</figure>
-					</div>
-					<?php } ?>
-				</div>
-					
-					
-			<!--FIM DAS IMAGENS DOS CARROS-->
+
+<?php 
+						$itens = mysqli_query($conexao, "SELECT * FROM produtos WHERE nome LIKE '{$produto}' OR descricao LIKE '{$produto}' OR capa LIKE '{$produto}' OR preco LIKE '{$produto}' OR categoria LIKE '{$produto}' ");
+						
+						?>
+						<div class="row">
+						<?php 
+						while ($tot_itens = mysqli_fetch_array($itens))
+						{ ?>
+				  				<div class="col-sm-6 col-md-4 col-lg-3">
+										<figure class="thumbnail box-produto">
+											<img src="<?php echo $tot_itens['capa']; ?>"  class="foto-produtos" alt="Carro preto">
+												<figcaption class="caption">
+													<h3 class="titulo-h3-produtos"><?php echo $tot_itens['nome'];  ?></h3>
+													<p><a href="info.html" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
+												</figcaption>
+										</figure>
+								</div>
+				  <?php } ?>
+
 			</section>
 	<!--FIM DA PÁGINA DE PRODUTOS-->
 	<!--BOTÕES < > -->
@@ -138,3 +143,4 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 
 </html>
 
+<?php } ?>
