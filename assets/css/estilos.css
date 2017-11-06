@@ -1019,3 +1019,56 @@ figcaption p{
 }
 
 /*FIM DO CSS DA PÁGINA DE LOGIN*/
+
+
+/*INÍCIO DO CSS DO ESCOPO DO PAINEL ADMINISTRATIVO*/
+
+.titulo-painel-adm{
+    background-color: #660000;
+    color: #f8f8ff;
+    font-size: 3em;
+    margin-top: 0px;
+    float: right;
+    margin-left: 0px;
+    width: 77%;
+    height: 90px;
+    text-align: center;
+}
+
+.menu-vertical-painel{
+    width: 23%;
+    height: 80%;
+    position: absolute;
+    margin-left:0;
+    background-color: #660000;
+    color: #f8f8ff;
+}
+
+.painel-lista-vertical{
+    list-style: none;
+    font-size: 2.4em;
+    height: 100%;
+    padding: 40px;
+}
+
+.link-painel{
+    color: #f8f8ff;
+    padding:  20px;
+}
+
+.item-painel{
+    margin-bottom: 15x;
+}
+
+/*FIM DO CSS DO ESCOPO DO PAINEL ADMINISTRATIVO*/
+
+
+/*INÍCIO DO CSS DA ÁREA DE MENSAGENS DO PAINEL ADMINISTRATIVO*/
+
+.conteudo-painel-mensagens{
+    background-color:#F8F8FF;
+    font-family: 'Playfair Display', serif;
+    color:#660000;
+}
+
+/*FIM DO CSS DA ÁREA DE MENSAGENS DO PAINEL ADMINISTRATIVO*/
