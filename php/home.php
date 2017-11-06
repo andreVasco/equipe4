@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<hmtl id="html-home">
+    
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../Assets/CSS/estilos.css">
+        <link rel="stylesheet" href="../Assets/bootstrap/CSS/bootstrap.min.css">
+         <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/animate.css">
+        <link href="../assets/js/jquery.js">
+        <title>Oreman Motors - Home</title>
+    </head>
+    
+    <body id="body-home">
+        
+        <!--MENU BEGIN-->
+      <header class="body-menu">
+            <nav  class="navbar navbar-default">
+              <div  class="container">
+                <div class="navegador-tamanho">
+                  <div class="navbar-header">
+                    <a href="home.html">
+                      <img src="../assets/images/LogoTransparente1.png" class="d-inline-block align-top logo-menu" alt="Oreman motors">
+                    </a>
+                       <button type="button" class="navbar-toggle collapsed" id="botao-collapse-menu" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                       </button>
+                  </div>
+                      <div class="collapse navbar-collapse" id="collapse-navbar">
+                      <ul id="menu"  class="nav navbar-nav ">
+                          <li class="nav-item"><a id="let" class="animated  zoomIn" href="home.html" target="_blank">Home</a></li>
+                          <li class="nav-item"><a id="let" class="animated  zoomIn"  href="quem-somos.html" target="_blank">Sobre nós</a></li>
+                          <li class="nav-item"><a id="let" class="animated  zoomIn"  href="produtos.html" target="_blank">Produtos</a></li>
+                          <li class="nav-item"><a id="let" class="animated  zoomIn" href="contato.html" target="_blank">Contato</a></li>
+                          <li class="nav-item"><a id="let" class="animated  zoomIn" href="localizacao.html" target="_blank">Localização</a></li>
+                          <li class="nav-item"><a id="let" class="animated  zoomIn" href="login.html" target="_blank">Login</a></li>
+
+                      </ul>
+                      </div>
+
+                </div>    
+              </div>
+            </nav>
+      </header>
+		
+        <!--MENU END-->
+        <section id="teste-js" >                    
+        <main id="main-home">
+
+        <!--HOME SLIDESHOW BEGIN-->
+
+            <section id="slideshow-Homepage">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
+                    <!------------------------>
+                    
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <figure class="item active">
+                            <img src="../assets/images/carro1-slide.jpg" class="img-fluid imgfld-home bigImg" alt="Responsive image">
+                            <figcaption class="carousel-caption">
+                                <h1>Lamborghini Aventador</h1>
+                                <p>Luxo com potência.</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="item">
+                            <img src="../assets/images/interior-slide.jpg" class="img-fluid imgfld-home bigImg" alt="Responsive image">
+                            <figcaption class="carousel-caption">
+                                <h1>Interiores Personalizados</h1>
+                                <p>Dê sua cara para seu veículo.</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="item">
+                            <img src="../assets/images/carro2-slide.jpg"     class="img-fluid imgfld-home bigImg" alt="Responsive image">
+                            <figcaption class="carousel-caption">
+                                <h1>"Carros merecem ser bem feitos"</h1>
+                                <cite>Enzo Ferrari.</cite>
+                            </figcaption>
+                        </figure>
+                    <figure class="item">
+                            <img src="../assets/images/carro3-slide.jpg" class="img-fluid imgfld-home bigImg" alt="Responsive image">
+                            <figcaption class="carousel-caption">
+                                <h1>Volvo V40</h1>
+                                <p>A diferença está nos detalhes.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!------------------------>
+                    
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <i class="fa fa-arrow-circle-o-left direcao fa-3x" aria-hidden="true"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <i class="fa fa-arrow-circle-o-right direcao fa-3x" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+         </section>
+
+            <!--HOME SLIDESHOW END-->
+
+            <!--HOME HIGHLIGHTS BEGIN-->
+            <div id="highlights">
+            <h2 class="high-texto">Nossos Destaques</h2>
+            </div>
+                <div class="container">
+                <div class="row row-home">
+              <div class="col-sm-6">
+                <div class="card destaque">
+                  <div class="card-body">
+                    <img src="../Assets/images/carro1-destaque.png" class="img-fluid imgfld-home bigImg" alt="Responsive image">
+                    <p class="card-text">
+                        <strong>BMW Z4</strong><br>
+                        2.O Conversível<br>
+                        Automático<br>
+                        Opções de seminovos à partir de 125 mil<br>
+                      </p>
+                    <a href="produtos.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+                </div>
+                    
+              <div class="col-sm-6">
+                <div class="card destaque">
+                  <div class="card-body">
+                    <img src="../Assets/images/carro2-destaque.png" class="img-fluid imgfld-home bigImg" alt="Responsive image">
+                    <p class="card-text">
+                        <strong>Mustang GT 2017</strong><br>
+                        Motor V8 5.0 Gasolina<br>
+                        Automático<br>
+                        Sistema de navegação integrado<br>
+                      </p>
+                      <a href="produtos.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+                
+            <div class="row row-home">
+              <div class="col-sm-6">
+                <div class="card destaque">
+                  <div class="card-body">
+                    <img src="../Assets/images/carro3-destaque.png" class="img-fluid imgfld-home bigImg" alt="Responsive image">
+                    <p class="card-text">
+                        <strong>Audi A8</strong><br>
+                        4.0 TFSI<br>
+                        Automático ou Manual<br>
+                        Sistema Turbo<br>
+                      </p>
+                      <a href="produtos.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+              </div>
+                
+              <div class="col-sm-6 escalade">
+                <div class="card destaque">
+                  <div class="card-body">
+                    <img src="../Assets/images/carro4-destaque.png" class="img-fluid imgflgd-home bigImg" alt="Responsive image">
+                    <p class="card-text">
+                        <strong>Escalade</strong><br>
+                        Motor Turbo de 306CV<br>
+                        Porta malas de 640L<br>
+                        Melhor SUV da categoria<br>
+                      </p>
+                    <a href="produtos.html" class="btn btn-danger">Ver Detalhes</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+                <!--HOME HIGHLIGHTS END-->
+
+        </main>
+        
+        
+<body id="body-footer" class="footer-localizacao-home">
+
+	<!-- Footer comeca aqui -->
+
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="footer-inicio">
+				<ul class="icones-sociais">
+					<li><a class="facebook" href="https://facebook.com/oremanmotors"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a class="twitter" href="https://twitter.com/oremanmotors"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a class="instagram" href="https://twitter.com/oremanmotors"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<div class="footer-centro">
+				<p class="footer-nome">Oreman Motors &copy; 2017</p>
+				<p class="footer-cidade">Juiz de Fora - Brasil</p>
+			</div>
+			<div class="footer-fim">
+				<p class="footer-email">contato@oremanmotors.com</p>
+				<p class="footer-telefone">(12)3456-7890</p>
+			</div>
+		</div>
+
+
+	</footer>
+        
+        <!--HERE ENDS THE FOOTER-->
+        
+        <!--ADDING JQUERY/JAVASCRIPT-->
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/bootstrap/js/bootstrap.min.js~HEAD"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	   <script src="../assets/bootstrap/js/bootstrap.js"></script>
+	   <script src="../assets/js/collapse-navebar.js"></script>
+       <!------------------------>
+        
+    </body>
+</hmtl>
