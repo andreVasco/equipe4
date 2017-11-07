@@ -64,8 +64,9 @@ html.html-produtos,body.body-produtos,#body-menu {
 #bot-enter{
 	width: 15%;
     margin-left: 80%;
-    bottom: 65px;
     position: relative;
+    top: -50px;
+
 }
 #pesquisa-produtos{
 	width: 80%;
@@ -78,7 +79,7 @@ html.html-produtos,body.body-produtos,#body-menu {
 	position: relative;
     width: 6%;
     right: 12px;
-    bottom: 50px;
+    top: -35px;
 }
 #pesquisa-produtos{
 	position: relative;
@@ -92,6 +93,7 @@ html.html-produtos,body.body-produtos,#body-menu {
     width: 5%;
     position: relative;
     right: 33px;
+    top: -50px;
 
 }
 #pesquisa-produtos{
@@ -107,6 +109,8 @@ html.html-produtos,body.body-produtos,#body-menu {
     width: 3%;
     position: relative;
     right: 165px;
+    top: -50px;
+
 }
 #pesquisa-produtos{
 	position: relative;
@@ -127,6 +131,8 @@ html.html-produtos,body.body-produtos,#body-menu {
     width: 3%;
     position: relative;
     right: 200px;
+    top: -50px;
+
 
 }}
 
