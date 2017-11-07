@@ -1,34 +1,51 @@
+<?php
+include("conecta.php"); 
+session_start();
+if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
+    header('location:login.php');
+    exit(); 
+}
+else {
+}
+?>
+
+
 <!DOCTYPE html>
-<html>
-<head>
-        <link type="text/css" rel="stylesheet" href="../assets/css/escopo-painel.css">
-        <link type="text/css" rel="stylesheet" href="../assets/css/painel-mensagem.css">
-        <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
-        <link rel="stylesheet" href="../Assets/bootstrap/CSS/bootstrap.min.css">
+<html class="html-produtos">
+
+    <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport"  content="width=device-width,initial-scale=1"> <!--Ajusta o site para o tamanho do dispositivo-->
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
-        <title>Painel Administrativo - OREMAN</title>
-</head>
-<body class="conteudo-painel-mensagens">
-    
-    <!--INICIO DO ESQUELETO DO PAINEL ADMINISTRATIVO-->
-    
-     <img src="../asset/images/logo-brand.png">
-        <h1 class="titulo-painel-adm">PAINEL ADMINISTRATIVO</h1>
-        <nav >
+        <link rel="stylesheet" type="text/css" href="../assets/css/reset.css"> <!-- reset-->
+        <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css"> <!-- link para acessar a pasta de css do bootstrap-->
+        <link rel="stylesheet" type="text/css" href="../assets/css/estilos .css">
+        <title>Painel administrativo</title>
+        <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
+        <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="stylesheet" href="../assets/css/animate.css">
+
+
+    </head>
+    <!--COMEÇO DO CORPO-->
+    <body class="body-produtos">
+         <header class="body-menu">
+             
+            <h1 class="titulo-painel">Painel admnistrativo</h1>
+            <img src="../assets/images/icon.png" class="logo-painel left">
+            <img src="../assets/images/icon.png" class="logo-painel right">         
+        </header>
         <div class="menu-vertical-painel">
-        <ul class="painel-lista-vertical">
-            <li class="item-painel"><a class="link-painel" href="painel-inicio.php">Início</a></li>
-            <li class="item-painel"><a class="link-painel" href="painel-produtos.php">Produtos</a></li>
-            <li class="item-painel"><a class="link-painel" href="painel-mensagens.php">Mensagens</a></li>
-            <li class="item-painel"><a class="link-painel" href="#">Não Sei</a></li>
-            <li class="item-painel"><a class="link-painel" href="#">Não Sei</a></li>
-            <li class="item-painel"><a class="link-painel" href="#">Sair</a></li>
-        </ul>
+            <ul class="painel-lista-vertical">
+                <li class="item-painel"><a class="link-painel" href="cadastro-carros.php">Adicionar Produto</a></li>
+                <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Alterar/Remover Produto</a></li>
+                <li class="item-painel"><a class="link-painel" href="cadastro-login.php"">Adicionar Login</a></li>
+                <li class="item-painel"><a class="link-painel" href="lista-login.php">Alterar/Remover Login</a></li>
+                <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens recebidas</a></li>
+                <li class="item-painel"><a class="link-painel logout" href="logout.php">Sair</a></li>
+            </ul>
         </div>
-        </nav>
+
     
     <!--FIM DO ESQUELETO DO PAINEL ADMINISTRATIVO-->
     
