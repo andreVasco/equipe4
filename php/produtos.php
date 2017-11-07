@@ -66,9 +66,10 @@ $resultado = mysqli_query($conexao, "select * from produtos");
 							<div  class="form-group">
 							<input id="pesquisa-produtos" type="text" name="prod" class="form-control" placeholder="Pesquisar"> 
 							</div>
-							<button id="bot-enter" type="button" class="btn btn-default">
-			 					 <span type="link" class="glyphicon glyphicon-search" aria-hidden="true"></span>
-							</button>
+							<div id="bot-enter">
+                   		    <button  type="submit" class="btn btn-default glyphicon glyphicon-search"></button>
+                   			</div>
+
 					</form>
 				<!--FIM PESQUISA E FILTROS-->
 				<!--Imagens dos carros-->

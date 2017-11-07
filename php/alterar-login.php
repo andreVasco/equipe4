@@ -1,4 +1,9 @@
-<?php include("conecta.php"); ?>
+<?php include("conecta.php");
+include("banco-produtos.php"); 
+
+$id = $_GET['id'];
+$usuario = BuscaUsuario($conexao, $id);
+?>
 
 <!DOCTYPE html>
 <html>
@@ -18,27 +23,28 @@
           <div id="teste-js">
             <div class="container  login-form">
                    <form class="form-horizontal teste" action="adiciona-login.php" method="POST">
-                      <h2 id="tit-h2" >Cadastro</h2>
+                      <h2 id="tit-h2" >Alterar Usuário</h2>
                       <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Usuário:</label>
                         <div class="col-sm-7">
-                          <input type="text" class="form-control" id="inputPassword3" name="usuario" placeholder="Digite aqui">
+                          <input type="text" class="form-control" id="inputPassword3" name="usuario" value="<?=$usuario['usuario']?>" placeholder="Digite aqui">
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Senha:</label>
                         <div class="col-sm-7">
-                          <input type="password" class="form-control" id="inputEmail3" name="senha" placeholder="Digite aqui">
+                          <input type="password" class="form-control" id="inputEmail3" name="senha" value="<?=$usuario['senha']?>" placeholder="Digite aqui">
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Email:</label>
                         <div class="col-sm-7">
-                          <input type="email" class="form-control" id="inputPassword3" name="email" placeholder="Digite aqui">
+                          <input type="email" class="form-control" id="inputPassword3" name="email" value="<?=$usuario['email']?>" placeholder="Digite aqui">
                         </div>
+                         <input class="form-control" type="hidden" name="id"  value="<?=$usuario['id']?>" >
                       </div>
                        <div align="center">
-                          <button type="submit" class="btn btn-default" id="bot-enviar">CADASTRAR</button>
+                          <button type="submit" class="btn btn-default" id="bot-enviar">Alterar</button>
                       </div>
                 </form>         
             </div>

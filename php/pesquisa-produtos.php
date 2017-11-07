@@ -1,8 +1,13 @@
 <?php
 
 $produto = $_GET["prod"];
-if($produto !== '')
+
+if ($_GET["prod"] == '')
 	{
+		header('location:produtos.php?');
+	}
+
+else {
 	include("conecta.php");
 
 
@@ -69,17 +74,24 @@ if($produto !== '')
 							<div  class="form-group">
 							<input id="pesquisa-produtos" type="text" name="prod" class="form-control" placeholder="Pesquisar"> 
 							</div>
-							<button id="bot-enter" type="button" class="btn btn-default">
-			 					 <span type="link" class="glyphicon glyphicon-search" aria-hidden="true"></span>
-							</button>
+							<div id="bot-enter">
+                   		    <button   type="submit" class="btn btn-default glyphicon glyphicon-search"></button>
+                   			</div>
+							
+					
+							
 					</form>
 
-<?php 
+						<?php 
 						$itens = mysqli_query($conexao, "SELECT * FROM produtos WHERE nome LIKE '{$produto}' OR descricao LIKE '{$produto}' OR capa LIKE '{$produto}' OR preco LIKE '{$produto}' OR categoria LIKE '{$produto}' ");
+
 						
 						?>
 						<div class="row">
 						<?php 
+						$res = mysqli_num_rows($itens);
+						if($res !== '')
+						{
 						while ($tot_itens = mysqli_fetch_array($itens))
 						{ ?>
 				  				<div class="col-sm-6 col-md-4 col-lg-3">
@@ -91,7 +103,16 @@ if($produto !== '')
 												</figcaption>
 										</figure>
 								</div>
-				  <?php } ?>
+				  <?php } } 
+
+				  		if($res == '') {
+				  			?>
+
+				  			<p class="text-danger" align="center">Nada encontrado! <?php '$produto' ?> </p>
+
+				  			<?php
+				  		}
+				  		?>
 
 			</section>
 	<!--FIM DA PÁGINA DE PRODUTOS-->

@@ -39,14 +39,6 @@ html.html-produtos,body.body-produtos,#body-menu {
 
 }
 
-#bot-enter{
-	width: 15%;
-    margin-left: 80%;
-    bottom: 50px;
-    position: relative;
-    margin-top: 16px;
-
-}
 
 #bot-enter:hover{
 	color: #fff;
