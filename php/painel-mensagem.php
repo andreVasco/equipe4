@@ -10,7 +10,7 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
 ?>
 
 <!DOCTYPE html>
-<html class="html-produtos">
+<html class="html-painel">
 
     <head>
         <meta charset="utf-8">
@@ -27,7 +27,7 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
 
     </head>
     <!--COMEÇO DO CORPO-->
-    <body class="body-produtos">
+    <body class="body-painel">
          <header class="body-menu">
              
             <h1 class="titulo-painel">Painel admnistrativo</h1>
@@ -65,7 +65,7 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
         
     //RECEBE O RETORNO DA FUNÇÃO E MOSTRA PRO ADMINISTRADOR 
     ?>
-        
+    <h3 class="titulo-msg-recebidas">Mensagens recebidas:</h3>    
     <table class="table table-striped table-bordered">
     <?php 
         $mensagens = listaMensagens($conexao);

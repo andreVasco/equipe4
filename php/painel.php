@@ -11,7 +11,7 @@ else {
 
 
 <!DOCTYPE html>
-<html class="html-produtos">
+<html class="html-painel">
 
 	<head>
 		<meta charset="utf-8">
@@ -28,7 +28,7 @@ else {
 
 	</head>
 	<!--COMEÇO DO CORPO-->
-	<body class="body-produtos">
+	<body class="body-painel">
 		 <header class="body-menu">
 		     
 		    <h1 class="titulo-painel">Painel admnistrativo</h1>
