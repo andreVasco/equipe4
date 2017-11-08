@@ -18,7 +18,7 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../assets/css/reset.css"> <!-- reset-->
         <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css"> <!-- link para acessar a pasta de css do bootstrap-->
-        <link rel="stylesheet" type="text/css" href="../assets/css/estilos .css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
         <title>Painel administrativo</title>
         <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
         <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
