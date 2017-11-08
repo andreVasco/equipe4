@@ -977,7 +977,6 @@ figcaption p{
     position: absolute;
     background-color: ##f8f8ff;
     width: 100%;
-    height: 50%;    
 }
 
 .footer-login{
@@ -991,6 +990,8 @@ figcaption p{
 #tit-h2{
     text-align: center;
     color: #660000;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 #frase{
@@ -1045,7 +1046,7 @@ figcaption p{
 }
 .menu-vertical-painel{
     width: 22%;
-    height: 80%;
+    height: 500px;
     position: absolute;
     margin-left:0;
     background-color: #5b5b58;
@@ -1082,5 +1083,9 @@ figcaption p{
     font-family: 'Playfair Display', serif;
     color:#660000;
 }
-
+.titulo-msg-recebidas{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+}
 /*FIM DO CSS DA ÁREA DE MENSAGENS DO PAINEL ADMINISTRATIVO*/

@@ -14,6 +14,26 @@
 	</head>
 	<!--COMEÇO DO CORPO-->
 	<body class="body-login">
+    <!-- PAINEL INICIO -->
+
+    <header class="body-menu">
+             
+            <h1 class="titulo-painel">Painel admnistrativo</h1>
+            <img src="../assets/images/icon.png" class="logo-painel left">
+            <img src="../assets/images/icon.png" class="logo-painel right">         
+        </header>
+        <div class="menu-vertical-painel">
+            <ul class="painel-lista-vertical">
+                <li class="item-painel"><a class="link-painel" href="cadastro-carros.php">Adicionar Produto</a></li>
+                <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Alterar/Remover Produto</a></li>
+                <li class="item-painel"><a class="link-painel" href="cadastro-login.php">Adicionar Login</a></li>
+                <li class="item-painel"><a class="link-painel" href="lista-login.php">Alterar/Remover Login</a></li>
+                <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens recebidas</a></li>
+                <li class="item-painel"><a class="link-painel logout" href="logout.php">Sair</a></li>
+            </ul>
+        </div>
+    
+    <!-- PAINEL FIM-->
             <div class="container  login-form">
                    <form class="form-horizontal teste" method="post" action="adiciona-carros.php">
                       <h2 id="tit-h2" >CADASTRAR CARRO</h2>
