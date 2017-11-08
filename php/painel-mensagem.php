@@ -1,12 +1,12 @@
 <?php
 include("conecta.php"); 
 session_start();
+
 if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
     header('location:login.php');
     exit(); 
 }
-else {
-}
+
 ?>
 
 
@@ -56,9 +56,9 @@ else {
 
     //FUNÇÃO QUE LISTA AS MENSAGENS
     function listaMensagens($conexao) {
-    $mensagens = array();
-    $resultado = mysqli_query($conexao, "select * from contato");
-    while($mensagem = mysqli_fetch_assoc($resultado)) {
+        $mensagens = array();
+        $resultado = mysqli_query($conexao, "select * from contato");
+        while($mensagem = mysqli_fetch_assoc($resultado)) {
             array_push($mensagens, $mensagem);
         }
     return $mensagens;
