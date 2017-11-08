@@ -9,7 +9,6 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html class="html-produtos">
 
@@ -39,13 +38,12 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
             <ul class="painel-lista-vertical">
                 <li class="item-painel"><a class="link-painel" href="cadastro-carros.php">Adicionar Produto</a></li>
                 <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Alterar/Remover Produto</a></li>
-                <li class="item-painel"><a class="link-painel" href="cadastro-login.php"">Adicionar Login</a></li>
+                <li class="item-painel"><a class="link-painel" href="cadastro-login.php">Adicionar Login</a></li>
                 <li class="item-painel"><a class="link-painel" href="lista-login.php">Alterar/Remover Login</a></li>
                 <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens recebidas</a></li>
                 <li class="item-painel"><a class="link-painel logout" href="logout.php">Sair</a></li>
             </ul>
         </div>
-
     
     <!--FIM DO ESQUELETO DO PAINEL ADMINISTRATIVO-->
     
@@ -64,7 +62,10 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
     return $mensagens;
     }
 
-    //RECEBE O RETORNO DA FUNÇÃO E MOSTRA PRO ADMINISTRADOR ?>
+        
+    //RECEBE O RETORNO DA FUNÇÃO E MOSTRA PRO ADMINISTRADOR 
+    ?>
+        
     <table class="table table-striped table-bordered">
     <?php 
         $mensagens = listaMensagens($conexao);
@@ -77,6 +78,7 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
             }
         ?>   
     </table>
+        
 </body>
 
 </html>
