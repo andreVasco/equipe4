@@ -14,26 +14,6 @@
 	</head>
 	<!--COMEÇO DO CORPO-->
 	<body class="body-login">
-    <!-- PAINEL INICIO -->
-
-    <header class="body-menu">
-             
-            <h1 class="titulo-painel">Painel admnistrativo</h1>
-            <img src="../assets/images/icon.png" class="logo-painel left">
-            <img src="../assets/images/icon.png" class="logo-painel right">         
-        </header>
-        <div class="menu-vertical-painel">
-            <ul class="painel-lista-vertical">
-                <li class="item-painel"><a class="link-painel" href="cadastro-carros.php">Adicionar Produto</a></li>
-                <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Alterar/Remover Produto</a></li>
-                <li class="item-painel"><a class="link-painel" href="cadastro-login.php">Adicionar Login</a></li>
-                <li class="item-painel"><a class="link-painel" href="lista-login.php">Alterar/Remover Login</a></li>
-                <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens recebidas</a></li>
-                <li class="item-painel"><a class="link-painel logout" href="logout.php">Sair</a></li>
-            </ul>
-        </div>
-    
-    <!-- PAINEL FIM-->
             <div class="container  login-form">
                    <form class="form-horizontal teste" method="post" action="adiciona-carros.php">
                       <h2 id="tit-h2" >CADASTRAR CARRO</h2>
@@ -50,12 +30,6 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="#" id="frase" class="col-sm-3 control-label">Capa:</label>
-                        <div class="col-sm-7">
-                          <input class="form-control" type="text" name="capa" placeholder="Digite aqui">
-                        </div>
-                      </div>
-                      <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Preço:</label>
                         <div class="col-sm-7">
                           <input class="form-control" type="number" name="preco" placeholder="Digite aqui">
@@ -67,9 +41,16 @@
                           <input class="form-control"  type="text" name="categoria"  placeholder="Digite aqui">
                         </div>
                       </div>
+                      <form action="upload.php" method="post" enctype="multipart/form-data">
+                        <div align="center">
+                        <label for="imagem">Imagem:</label>
+                          <input  type="file" required name="imagem" value="Carregar imagem"  >
+                        </div>
+                    
                        <div align="center">
-                          <button type="submit" class="btn btn-default" id="bot-enviar">CADASTRAR</button>
+                          <button type="submit" class="btn btn-default" name="submit" id="bot-enviar">CADASTRAR</button>
                       </div>
+                      </form>
                 </form>         
             </div>
         </div>

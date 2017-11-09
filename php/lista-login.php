@@ -4,7 +4,7 @@ include("banco-produtos.php") ?>
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/produtos.css">
 </head>
 <body>
 

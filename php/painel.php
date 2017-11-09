@@ -11,7 +11,7 @@ else {
 
 
 <!DOCTYPE html>
-<html class="html-painel">
+<html class="html-produtos">
 
 	<head>
 		<meta charset="utf-8">
@@ -19,7 +19,7 @@ else {
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css"> <!-- reset-->
 		<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css"> <!-- link para acessar a pasta de css do bootstrap-->
-		<link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/estilos .css">
 		<title>Painel administrativo</title>
 		<link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
 		<link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,7 +28,7 @@ else {
 
 	</head>
 	<!--COMEÇO DO CORPO-->
-	<body class="body-painel">
+	<body class="body-produtos">
 		 <header class="body-menu">
 		     
 		    <h1 class="titulo-painel">Painel admnistrativo</h1>

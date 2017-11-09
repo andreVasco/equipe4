@@ -37,12 +37,6 @@ $produto = BuscaProduto($conexao, $id);
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="#" id="frase" class="col-sm-3 control-label">Capa:</label>
-                        <div class="col-sm-7">
-                          <input class="form-control" type="text" name="capa" value="<?=$produto['capa']?>" >
-                        </div>
-                      </div>
-                      <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Preço:</label>
                         <div class="col-sm-7">
                           <input class="form-control" type="number" name="preco" value="<?=$produto['preco']?>" >
@@ -54,13 +48,18 @@ $produto = BuscaProduto($conexao, $id);
                           <input class="form-control"  type="text" name="categoria"  value="<?=$produto['categoria']?>" >
                         </div>
                       </div>
+                      <div>
                           <input class="form-control" type="hidden" name="id"  value="<?=$produto['albumid']?>" >
-                        
                       </div>
-
-                       <div align="center">
-                          <button type="submit" class="btn btn-default" id="bot-enviar">Alterar</button>
+                       <form action="upload.php" method="post" enctype="multipart/form-data">
+                        <div align="center">
+                        <label  for="imagem">Imagem:</label>
+                          <input  type="file" required name="imagem"  value="<?=$produto['capa']?>" >
+                        </div>
+                           <div align="center">
+                          <button type="submit" class="btn btn-default" name="submit" id="bot-enviar">Alterar</button>
                       </div>
+                      </form>
                 </form>         
             </div>
         </div>
