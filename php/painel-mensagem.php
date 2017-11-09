@@ -28,32 +28,46 @@ else {
 
     </head>
     <!--COMEÇO DO CORPO-->
-    <body class="body-produtos">
-         <header class="body-menu">
-             
-            <h1 class="titulo-painel">Painel admnistrativo</h1>
-            <img src="../assets/images/icon.png" class="logo-painel left">
-            <img src="../assets/images/icon.png" class="logo-painel right">         
-        </header>
-        <div class="menu-vertical-painel">
-            <ul class="painel-lista-vertical">
-                <li class="item-painel"><a class="link-painel" href="cadastro-carros.php">Adicionar Produto</a></li>
-                <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Alterar/Remover Produto</a></li>
-                <li class="item-painel"><a class="link-painel" href="cadastro-login.php"">Adicionar Login</a></li>
-                <li class="item-painel"><a class="link-painel" href="lista-login.php">Alterar/Remover Login</a></li>
-                <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens recebidas</a></li>
-                <li class="item-painel"><a class="link-painel logout" href="logout.php">Sair</a></li>
-            </ul>
-        </div>
+	<body class="body-produtos">
+		 <header class="body-menu">
+		      <nav  class="navbar navbar-default">
+		      	<div  class="container">
+			        <div class="navegador-tamanho">
+			          <div class="navbar-header">
+			           <a href="home.html">
+			              <img src="../assets/images/LogoTransparente1.png" class="d-inline-block align-top logo-menu" alt="Oreman motors">
+			            </a>
+			               <button type="button" class="navbar-toggle collapsed" id="botao-collapse-menu" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+			                  <span class="sr-only">Toggle navigation</span>
+			                  <span class="icon-bar"></span>
+			                  <span class="icon-bar"></span>
+			                  <span class="icon-bar"></span>
+			               </button>
+			          </div>
+			              <div class="collapse navbar-collapse" id="collapse-navbar">
+			              <ul id="menu"  class="nav navbar-nav ">
+			                  <li class="nav-item"><a id="let"  href="cadastro-carros.php" target="_blank">Adicionar Carro</a></li>
+			                  <li class="nav-item"><a id="let"  href="lista-produtos.php" target="_blank">Alterar/Remover Carro</a></li>
+			                  <li class="nav-item"><a id="let"  href="cadastro-login.php" target="_blank">Adicionar Login</a></li>
+			                  <li class="nav-item"><a id="let"  href="lista-login.php" target="_blank">Alterar/Remover Login</a></li>
 
-    
+			              </ul>
+			              </div>
+
+			        </div>    
+		        </div>
+		      </nav>
+		    	  <div align="center">
+					<button  class="btn btn-default">
+					<a  href="logout.php">Sair</a>
+					</button>
+				  </div>
+		</header>
+		
     <!--FIM DO ESQUELETO DO PAINEL ADMINISTRATIVO-->
     
     
     <?php
-    //ABRE A CONEXÃO COM O BANCO DE DADOS
-    $conexao = mysqli_connect('localhost', 'root','', 'oreman');
-
     //FUNÇÃO QUE LISTA AS MENSAGENS
     function listaMensagens($conexao) {
     $mensagens = array();
@@ -67,8 +81,8 @@ else {
     //RECEBE O RETORNO DA FUNÇÃO E MOSTRA PRO ADMINISTRADOR ?>
     <table class="table table-striped table-bordered">
     <?php 
-        $mensagens = listaMensagens($conexao);
-        foreach($mensagens as $mensagem){ ?>
+        $mensagens-vetor = listaMensagens($conexao);
+        foreach($mensagens-vetor as $mensagem){ ?>
             <tr>
                 <td><?=$mensagem['nome']?></td>
                 <td><?=$mensagem['mensagem']?></td>
