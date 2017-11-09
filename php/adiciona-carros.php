@@ -5,7 +5,7 @@ session_start();
 
 $nome = $_POST["nome"];
 $descricao = $_POST["descricao"];
-$capa = $_POST["capa"];
+$capa = $_POST["imagem"];
 $preco = $_POST["preco"];
 $categoria = $_POST["categoria"];
 
