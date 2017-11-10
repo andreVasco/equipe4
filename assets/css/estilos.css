@@ -15,8 +15,9 @@
 }
 
 #body-home{
-     background-color:#F8F8FF;
+    background-color:#F8F8FF;
     font-family: 'Playfair Display', serif;
+    margin-top: 0;
 }
 
 .direcao{
@@ -862,6 +863,7 @@ figcaption p{
     position: relative;
     width: 100%;
     margin: 0;
+    margin-bottom: 0 !important;
 }
 
 .logo-menu {
