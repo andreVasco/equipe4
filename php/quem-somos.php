@@ -35,12 +35,12 @@
                   </div>
                       <div class="collapse navbar-collapse" id="collapse-navbar">
                       <ul id="menu"  class="nav navbar-nav ">
-                          <li class="nav-item"><a id="let" class="animated  zoomIn" href="home.php" target="_blank">Home</a></li>
-                          <li class="nav-item"><a id="let" class="animated  zoomIn"  href="quem-somos.php" target="_blank">Sobre nós</a></li>
-                          <li class="nav-item"><a id="let" class="animated  zoomIn"  href="produtos.php" target="_blank">Produtos</a></li>
-                          <li class="nav-item"><a id="let" class="animated  zoomIn" href="contato.php" target="_blank">Contato</a></li>
-                          <li class="nav-item"><a id="let" class="animated  zoomIn" href="localizacao.php" target="_blank">Localização</a></li>
-                          <li class="nav-item"><a id="let" class="animated  zoomIn" href="login.php" target="_blank">Login</a></li>
+                          <li class="nav-item"><a target="_self" id="let" class="animated  zoomIn" href="home.php" target="_blank">Home</a></li>
+                          <li class="nav-item"><a target="_self" id="let" class="animated  zoomIn"  href="quem-somos.php" target="_blank">Sobre nós</a></li>
+                          <li class="nav-item"><a target="_self" id="let" class="animated  zoomIn"  href="produtos.php" target="_blank">Produtos</a></li>
+                          <li class="nav-item"><a target="_self" id="let" class="animated  zoomIn" href="contato.php" target="_blank">Contato</a></li>
+                          <li class="nav-item"><a target="_self" id="let" class="animated  zoomIn" href="localizacao.php" target="_blank">Localização</a></li>
+                          <li class="nav-item"><a target="_self" id="let" class="animated  zoomIn" href="login.php" target="_blank">Login</a></li>
 
                       </ul>
                       </div>
