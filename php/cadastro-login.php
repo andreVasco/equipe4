@@ -15,8 +15,24 @@
 
   </head>
   <body class="body-login">
-          <div id="teste-js">
-            <div class="container  login-form">
+    <header class="body-menu">
+         
+        <h1 class="titulo-painel">Painel admnistrativo</h1>
+        <img src="../assets/images/icon.png" class="logo-painel left">
+        <img src="../assets/images/icon.png" class="logo-painel right">       
+    </header>
+    <div class="menu-vertical-painel">
+          <ul class="painel-lista-vertical">
+            <li class="item-painel"><a class="link-painel" href="cadastro-carros.php">Adicionar Produto</a></li>
+            <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Alterar/Remover Produto</a></li>
+            <li class="item-painel"><a class="link-painel" href="cadastro-login.php">Adicionar Login</a></li>
+            <li class="item-painel"><a class="link-painel" href="lista-login.php">Alterar/Remover Login</a></li>
+            <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens recebidas</a></li>
+            <li class="item-painel"><a class="link-painel logout" href="logout.php">Sair</a></li>
+          </ul>
+    </div>
+    <div id="teste-js">
+       <div class="container  login-form">
                    <form class="form-horizontal teste" action="adiciona-login.php" method="POST">
                       <h2 id="tit-h2" >Cadastro</h2>
                       <div class="form-group">
@@ -40,9 +56,9 @@
                        <div align="center">
                           <button type="submit" class="btn btn-default" id="bot-enviar">CADASTRAR</button>
                       </div>
-                </form>         
-            </div>
+                  </form>         
         </div>
+    </div>
        
   </body>  
 

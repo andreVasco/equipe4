@@ -17,7 +17,7 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../assets/css/reset.css"> <!-- reset-->
         <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css"> <!-- link para acessar a pasta de css do bootstrap-->
-        <link rel="stylesheet" type="text/css" href="../assets/css/estilos .css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
         <title>Painel administrativo</title>
         <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
         <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,39 +28,26 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
     <!--COMEÇO DO CORPO-->
 	<body class="body-produtos">
 		 <header class="body-menu">
-		      <nav  class="navbar navbar-default">
-		      	<div  class="container">
-			        <div class="navegador-tamanho">
-			          <div class="navbar-header">
-			           <a href="home.html">
-			              <img src="../assets/images/LogoTransparente1.png" class="d-inline-block align-top logo-menu" alt="Oreman motors">
-			            </a>
-			               <button type="button" class="navbar-toggle collapsed" id="botao-collapse-menu" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
-			                  <span class="sr-only">Toggle navigation</span>
-			                  <span class="icon-bar"></span>
-			                  <span class="icon-bar"></span>
-			                  <span class="icon-bar"></span>
-			               </button>
-			          </div>
-			              <div class="collapse navbar-collapse" id="collapse-navbar">
-			              <ul id="menu"  class="nav navbar-nav ">
-			                  <li class="nav-item"><a id="let"  href="cadastro-carros.php" target="_blank">Adicionar Carro</a></li>
-			                  <li class="nav-item"><a id="let"  href="lista-produtos.php" target="_blank">Alterar/Remover Carro</a></li>
-			                  <li class="nav-item"><a id="let"  href="cadastro-login.php" target="_blank">Adicionar Login</a></li>
-			                  <li class="nav-item"><a id="let"  href="lista-login.php" target="_blank">Alterar/Remover Login</a></li>
-
-			              </ul>
-			              </div>
-
-			        </div>    
-		        </div>
-		      </nav>
+             
+            <h1 class="titulo-painel">Painel admnistrativo</h1>
+            <img src="../assets/images/icon.png" class="logo-painel left">
+            <img src="../assets/images/icon.png" class="logo-painel right">         
+        </header>
+        <div class="menu-vertical-painel">
+            <ul class="painel-lista-vertical">
+                <li class="item-painel"><a class="link-painel" href="cadastro-carros.php">Adicionar Produto</a></li>
+                <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Alterar/Remover Produto</a></li>
+                <li class="item-painel"><a class="link-painel" href="cadastro-login.php">Adicionar Login</a></li>
+                <li class="item-painel"><a class="link-painel" href="lista-login.php">Alterar/Remover Login</a></li>
+                <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens recebidas</a></li>
+                <li class="item-painel"><a class="link-painel logout" href="logout.php">Sair</a></li>
+            </ul>
+        </div>
 		    	  <div align="center">
 					<button  class="btn btn-default">
 					<a  href="logout.php">Sair</a>
 					</button>
 				  </div>
-		</header>
 		
     <!--FIM DO ESQUELETO DO PAINEL ADMINISTRATIVO-->
     
