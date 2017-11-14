@@ -36,21 +36,17 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
         <div class="menu-vertical-painel">
             <ul class="painel-lista-vertical">
                 <li class="item-painel"><a class="link-painel" href="cadastro-carros.php">Adicionar Produto</a></li>
-                <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Alterar/Remover Produto</a></li>
+                <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Editar Produto</a></li>
                 <li class="item-painel"><a class="link-painel" href="cadastro-login.php">Adicionar Login</a></li>
-                <li class="item-painel"><a class="link-painel" href="lista-login.php">Alterar/Remover Login</a></li>
-                <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens recebidas</a></li>
+                <li class="item-painel"><a class="link-painel" href="lista-login.php">Editar Login</a></li>
+                <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens </a></li>
                 <li class="item-painel"><a class="link-painel logout" href="logout.php">Sair</a></li>
             </ul>
         </div>
-		    	  <div align="center">
-					<button  class="btn btn-default">
-					<a  href="logout.php">Sair</a>
-					</button>
-				  </div>
+
 		
     <!--FIM DO ESQUELETO DO PAINEL ADMINISTRATIVO-->
-    
+    <h3 class="titulo-mensagens">Mensagens Recebidas</h3>
     
     <?php
     //FUNÇÃO QUE LISTA AS MENSAGENS
@@ -64,12 +60,12 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
     }
 
     //RECEBE O RETORNO DA FUNÇÃO E MOSTRA PRO ADMINISTRADOR ?>
-    <table class="table table-striped table-bordered">
+    <table class="table table-striped table-bordered tabela-msg">
     <?php 
-        $mensagens-vetor = listaMensagens($conexao);
-        foreach($mensagens-vetor as $mensagem){ ?>
+        $mensagens = listaMensagens($conexao);
+        foreach($mensagens as $mensagem){ ?>
             <tr>
-                <td><?=$mensagem['nome']?></td>
+                <td class="nome-msg"><?=$mensagem['nome']?></td>
                 <td><?=$mensagem['mensagem']?></td>
             </tr>
         <?php 
