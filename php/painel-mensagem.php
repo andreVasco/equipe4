@@ -27,7 +27,26 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
     </head>
     <!--COMEÇO DO CORPO-->
 	<body class="body-produtos">
+<<<<<<< HEAD
 		 <?php include("painel.php"); ?>
+=======
+		 <header class="body-menu">
+             
+            <h1 class="titulo-painel">Painel admnistrativo</h1>
+            <img src="../assets/images/icon.png" class="logo-painel left">
+            <img src="../assets/images/icon.png" class="logo-painel right">         
+        </header>
+        <div class="menu-vertical-painel">
+            <ul class="painel-lista-vertical">
+                <li class="item-painel"><a class="link-painel" href="cadastro-carros.php">Adicionar Produto</a></li>
+                <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Editar Produto</a></li>
+                <li class="item-painel"><a class="link-painel" href="cadastro-login.php">Adicionar Login</a></li>
+                <li class="item-painel"><a class="link-painel" href="lista-login.php">Editar Login</a></li>
+                <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens </a></li>
+                <li class="item-painel"><a class="link-painel logout" href="logout.php">Sair</a></li>
+            </ul>
+        </div>
+>>>>>>> f36f3d1f6e659ec05f128e455305b1a597d46e38
 
 		
     <!--FIM DO ESQUELETO DO PAINEL ADMINISTRATIVO-->
@@ -46,10 +65,13 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
 
     //RECEBE O RETORNO DA FUNÇÃO E MOSTRA PRO ADMINISTRADOR ?>
     <table class="table table-striped table-bordered tabela-msg">
+<<<<<<< HEAD
         <tr>
                 <td class="coluna-nome">Nome</td>
                 <td class="coluna-texto">Mensagem</td>
         </tr>
+=======
+>>>>>>> f36f3d1f6e659ec05f128e455305b1a597d46e38
     <?php 
         $mensagens = listaMensagens($conexao);
         foreach($mensagens as $mensagem){ ?>

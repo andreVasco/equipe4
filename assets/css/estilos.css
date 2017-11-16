@@ -1096,6 +1096,7 @@ figcaption p{
 }
 
 .tabela-msg {
+<<<<<<< HEAD
     position: absolute;
     width: 50%;
     left: 28%;
@@ -1105,6 +1106,11 @@ figcaption p{
     text-align: center;
     font-weight: bold;
     font-size: 110%;
+=======
+    position: relative;
+    width: 50%;
+    left: 22%;
+>>>>>>> f36f3d1f6e659ec05f128e455305b1a597d46e38
 }
 
 /*FIM DO CSS DA ÁREA DE MENSAGENS DO PAINEL ADMINISTRATIVO*/
@@ -1121,6 +1127,7 @@ figcaption p{
 }
 .form-horizontal {
     padding-top: 3%;
+<<<<<<< HEAD
 }
 
 /* CSS EDITAR PRODUTOS */
@@ -1132,4 +1139,6 @@ figcaption p{
 .listalogin {
     left: 9%;
     position: relative;
+=======
+>>>>>>> f36f3d1f6e659ec05f128e455305b1a597d46e38
 }
