@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08-Nov-2017 às 19:36
+-- Generation Time: 16-Nov-2017 às 05:27
 -- Versão do servidor: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -63,6 +63,18 @@ CREATE TABLE `detalhesproduto` (
   `endereco` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `detalhesproduto`
+--
+
+INSERT INTO `detalhesproduto` (`id`, `albumid`, `endereco`) VALUES
+(0, 38, 'teste1.jpg'),
+(3, 37, 'teste4.jpg'),
+(4, 37, 'teste3.jpg'),
+(5, 37, 'teste4.jpg'),
+(6, 37, 'teste1.jpg'),
+(7, 38, 'teste1.jpg');
+
 -- --------------------------------------------------------
 
 --
@@ -72,7 +84,7 @@ CREATE TABLE `detalhesproduto` (
 CREATE TABLE `produtos` (
   `nome` varchar(20) NOT NULL,
   `descricao` varchar(500) NOT NULL,
-  `capa` varchar(500) NOT NULL,
+  `capa` varchar(700) NOT NULL,
   `preco` decimal(10,2) NOT NULL,
   `categoria` varchar(50) NOT NULL,
   `albumid` int(11) NOT NULL
@@ -83,10 +95,11 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`nome`, `descricao`, `capa`, `preco`, `categoria`, `albumid`) VALUES
-('Teste', 'teste, carro 1\r\n', 'http://www2.mercedes-benz.com.br/content/media_library/brasil/mpc_brasil/brazil_models/home_carrossel/imagem4.object-Single-MEDIA.tmp/04_GClass.jpg', '1800000.00', 'luxo', 13),
-('Teste5', 'teste teste', 'http://www2.mercedes-benz.com.br/content/media_library/brasil/mpc_brasil/brazil_models/home_carrossel/A-Class-180.object-Single-MEDIA.tmp/1000x370_destaque_home_classe_a.jpg', '1800000.00', 'luxo', 15),
-('Carro ', 'carro', 'http://www2.mercedes-benz.com.br/content/media_library/brasil/mpc_brasil/brazil_models/home_carrossel/bmb-c180-flex.object-Single-MEDIA.tmp/GLA-Banner-Home1000x370.jpg', '130000.00', 'luxo', 16),
-('Teste100', 'Testando', 'https://www.mercedes-benz.com.br/resources/media/banners/20160727_088ec838454c4a3c86ccd5222fbc0c4c_capaautos-1.png', '150000.00', 'esportivo', 17);
+('teste1', 'teste1', 'teste1.jpg', '111111.00', 'luxo', 37),
+('teste2', 'teste2', 'teste2.jpg', '22222.00', 'luxo', 38),
+('teste3', 'teste3', 'teste3.jpg', '3333.00', 'luxo', 39),
+('teste4', 'teste4', 'teste4.jpg', '4444.00', 'luxo', 40),
+('teste5', 'teste5', 'teste1.png', '555.00', 'luxo', 41);
 
 -- --------------------------------------------------------
 
@@ -106,8 +119,8 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`usuario`, `senha`, `email`, `id`) VALUES
-('Adm', 'adm123', 'oreman-motors@gmail.com', 1),
-('fernanda', '698dc19d489c4e4db73e28a713eab07b', 'fernandananda95@yahoo.com.br', 12);
+('fernanda', '698dc19d489c4e4db73e28a713eab07b', 'fernandananda95@yahoo.com.br', 12),
+('Adm', '80177534a0c99a7e3645b52f2027a48b', 'oreman-motors@gmail.com', 14);
 
 --
 -- Indexes for dumped tables
@@ -140,13 +153,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
