@@ -50,9 +50,9 @@
 			</header>
 						
 			<div class="container form-cont" >	
-				<div  class=" complemento  animated bounceInLeft">	
-					<p id="titulo-cont">Entre em contato!</p>
-					<p  id="paragrafo-cont">Retornaremos assim que possível.</p>
+				<div class="titulo-pagina-contatos">
+			         <h1>Entre em contato!</h1>
+                        <h3> Deixe sua crítica e sugestão.</h3>
 
 				</div> 
 					<form class="form-horizontal" method="post" action="enviacontato.php">
