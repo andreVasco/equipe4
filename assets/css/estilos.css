@@ -142,7 +142,7 @@ figcaption p{
 /*INÍCIO DO CSS DA PÁGINA DE CONTATOS*/
 
 .body-contatos{
-    background-color: #f8f8ff;
+    background: rgba(10,10,10,.7);
     width: 100%;
     position: relative;
 }
@@ -164,7 +164,7 @@ figcaption p{
 .footer-contatos{
     position: relative;
     bottom: 0px;
-    margin-top: -55px;
+    margin-top: 10px;
     top: 335px;
 }
 
@@ -193,28 +193,6 @@ figcaption p{
     top: 10px;
 }
 
-.titulo-pagina-contatos{
-    position: relative;
-    text-align: center;
-    margin-left: 80px;
-    margin-bottom: 60px;
-}
-
-.conteudo-contatos
-{
-    margin-bottom: -40px;
-}
-/*FIM DO CSS DA PÁGINA DE CONTATOS*/
-
-
-/*INÍCIO DO CSS DA PÁGINA DE LOCALIZAÇÃO*/
-
-.body-localizacao{
-    background-color: #F8F8FF;
-    width: 100%;
-    position: absolute;
-}
-
 .complemento{
     transition: 0.5s;
     margin-right: 40%;
@@ -228,49 +206,99 @@ figcaption p{
     box-shadow: 2px 2px 2px 2px  #a6a6a6;
 }
 
+#titulo-cont{
+    font-size: 18px;
+    position: relative;
+    top: 50px;
+    color: #f8f8ff;
+    font-style: italic;
+    left: 15px;
+}
+
+#paragrafo-cont{
+    font-size: 11px;
+    top: 55px;
+    color: #f8f8ff;
+    font-style: italic;
+    position: relative;
+    left: 3px;
+}
+
+/*FIM DO CSS DA PÁGINA DE CONTATOS*/
+
+
+/*INÍCIO DO CSS DA PÁGINA DE LOCALIZAÇÃO*/
+
+.body-localizacao{
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient, on left, #660000, #fff;
+}
+
+
 #oreman{
     font-size: 20px;
 }
 
 #endereco-localizacao{
-    color:  #f8f8ff;
-    display: block;
+    color: #660000;
+    display: inline-block;
     text-align: center;
     font-family: playfair display;
     position: relative;
-    top: 40px;
     font-style: italic;
+    width: 20%;
+    top: 50px;
+    left: 40%;
+    font-size: 15px;
+    box-shadow: 1px 1px 1px 1px #8B8989;
 }
 
 #mapa-localizacao {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    width: 100%;
+    display: inline-block;
+    padding-left: 20%;
+    padding-right: 20%;
+    position: relative;
+    float: left;
+    height: 300px;
+    top: 80px;
 }
 
 .footer-localizacao-loc{
     position: relative;
-    bottom: 0px;
-    margin-top: 10px;
-    top: 3px;
-    border-top: 200px solid #f8f8ff;
+    bottom: 0;
+    top: 410px;
 }
 
-@media(min-width: 320px)and (max-width: 425px) {
+@media(min-width: 500px)and (max-width: 800px) {
 
-    .complemento{
-        transition: 0.5s;
-        margin-right: 40%;
-        margin-left: 40%;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        border-radius:100%;
-        width:100px;
-        height:100px;
-        background-color: #660000;
-        box-shadow: 2px 2px 2px 2px  #a6a6a6;
+
+    #endereco-localizacao{
+    color: #660000;
+    display: block;
+    text-align: center;
+    font-family: playfair display;
+    position: relative;
+    top: 50px;
+    font-style: italic;
+    font-size: 10px;
+    width: 25%;
+    left: 37%;
+    box-shadow: 1px 1px 1px 1px #8B8989;
     }
+    
+}
 
+@media(min-width: 320px) and (max-width: 440px) {
+    
+    #mapa-localizacao {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 200px;
+    top: 50px;
+    }
     #oreman{
         font-size: 10px;
         position: relative;
@@ -278,22 +306,17 @@ figcaption p{
     }
     
     #endereco-localizacao{
-        color:  #f8f8ff;
-        display: block;
-        text-align: center;
-        font-family: playfair display;
-        position: relative;
-        top: 20px;
-        font-style: italic;
-        font-size: 8px;
-    }
-    
-}
-
-@media(min-width: 320px) {
-    
-    #mapa-localizacao {
-        width: 100%;
+    color: #660000;
+    display: block;
+    text-align: center;
+    font-family: playfair display;
+    position: relative;
+    top: 50px;
+    font-style: italic;
+    font-size: 10px;
+    width: 50%;
+    left: 25%;
+    box-shadow: 1px 1px 1px 1px #8B8989;
     }
     
 }
@@ -310,6 +333,7 @@ figcaption p{
 .html-produtos,.body-produtos{
     width: 100%;
     background-color: #F8F8FF;
+    font-family: playfair display;
     background-size: 100% auto;
     height: 
 }
@@ -970,14 +994,14 @@ figcaption p{
 
 #tit-h2{
     text-align: center;
-    color: #022B59;
+    color: #660000;
     margin-bottom: 5%;
     margin-top: 5%;
 }
 
 #frase{
     left: 10px;
-    color: #022B59;
+    color: #660000;
 }
 
 .login-form{
@@ -1007,8 +1031,8 @@ figcaption p{
 
 .titulo-painel {
     text-align: center;
-    color: #eee;
-    background-color: #022B59;
+    color: #750000;
+    background-color: #5b5b58;
     margin: 0;
     padding: 1.75%; 
     text-transform: uppercase;
@@ -1026,11 +1050,11 @@ figcaption p{
     right: 8%;
 }
 .menu-vertical-painel{
-    width: 18%;
+    width: 22%;
     height: 500px;
     position: absolute;
     margin-left:0;
-    background-color: #022B59;
+    background-color: #5b5b58;
 }
 
 .painel-lista-vertical{
@@ -1041,7 +1065,7 @@ figcaption p{
 }
 
 .link-painel{
-    color: #EEE;
+    color: #750000;
     padding:  5px;
     font-size: 65%; 
 }
@@ -1058,29 +1082,17 @@ figcaption p{
 
 
 /*INÍCIO DO CSS DA ÁREA DE MENSAGENS DO PAINEL ADMINISTRATIVO*/
-.titulo-mensagens {
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 3%;
-    margin-top: 3%;
-    color: #022B59;
-}
+
 .conteudo-painel-mensagens{
     background-color:#F8F8FF;
     font-family: 'Playfair Display', serif;
     color:#660000;
 }
-.nome-msg {
-    width: 35%;
+.titulo-msg-recebidas{
     text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2.5%;
 }
-
-.tabela-msg {
-    position: relative;
-    width: 50%;
-    left: 22%;
-}
-
 /*FIM DO CSS DA ÁREA DE MENSAGENS DO PAINEL ADMINISTRATIVO*/
 
 
@@ -1089,10 +1101,163 @@ figcaption p{
 .selecionar-arquivo {
     margin-bottom: 20px;
 }
+/*COMEÇO PAGINA DE DETALHES DO PRODUTO */
+.detalhes-produtos{
 
-.form-horizontal {
-    padding-left: 10%;
 }
-.form-horizontal {
-    padding-top: 3%;
+.lbox {
+    visibility: hidden;
+    opacity: 0;
+}
+.lbox:target {
+
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 27px;
+    position: fixed;
+    background-color: rgba(0,0,0,.8);
+}
+
+
+.lbox img {
+    opacity: 0;
+
+}
+.lbox:target img{
+    opacity: 1;
+    transition: opacity .4s linear;
+}
+
+#tit-mostruario {
+    position: relative;
+    color: #660000;
+    
+}
+
+#imagem-g {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+.fotos-alb{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    bottom: 0;
+    float: right;
+
+}
+.img-min{
+    width: 130px;
+    padding: 1px;
+    position: relative;
+    top: -620px;
+    left: -900px;
+    display: table;
+}
+
+.detalhes-produtos 
+{
+    width: 100%;
+     font-family: 'Playfair Display', serif;
+
+}
+
+.p-mostruario {
+    position: relative;
+    bottom: 50px;
+}
+
+#tamanho-coluna {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.box-img{
+    width: 100px;
+    margin: 150px auto;
+}
+#lista-det {
+    list-style: none;
+}
+
+#lista-car {
+    float: right;
+}
+
+.footer-det {
+    position: relative;
+    bottom: 0;
+}
+.det-foot {
+    position: relative;
+    bottom: 0;
+    top: 370px;
+}
+.btn-p{
+    color: #fff;
+    font-family: 'Arial';
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+#prev-p {
+    left: 5%;
+    top: 45%;
+
+}
+#next-p {
+    right:5%;
+    top: 45%;
+    
+}
+#close-p {
+    right:2%;
+    top:0;
+}
+#tit-det{
+    text-align: center;
+    color: #660000;
+}
+.tamanho-textos {
+    position: relative;
+    width: 30%;
+    float: right;
+    top: 20px;
+    left: 5%;
+}
+
+#imag-começo {
+    width: 80%;
+    position: relative;
+    right: 10%;
+    bottom: 80px;
+
+}
+
+#teste-det {
+    background-image: linear-gradient(to left,#000 ,#696969  );
+    color: #DCDCDC ;
+
+}
+.div-blocos {
+    width: 100%;
+}
+
+
+@media(min-width: 315px) and (max-width: 767px) {
+.tamanho-textos {
+    position: relative;
+    width: 100%;
+    float: left;
+    top: 20px;
+}
+  
+     
 }
