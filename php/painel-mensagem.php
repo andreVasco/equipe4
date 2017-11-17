@@ -10,7 +10,6 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
 
 <!DOCTYPE html>
 <html class="html-produtos">
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport"  content="width=device-width,initial-scale=1"> <!--Ajusta o site para o tamanho do dispositivo-->
@@ -22,31 +21,13 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
         <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
         <link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          <link rel="stylesheet" href="../assets/css/animate.css">
-
-
     </head>
-    <!--COMEÇO DO CORPO-->
-	<body class="body-produtos">
-		 <header class="body-menu">
-             
-            <h1 class="titulo-painel">Painel admnistrativo</h1>
-            <img src="../assets/images/icon.png" class="logo-painel left">
-            <img src="../assets/images/icon.png" class="logo-painel right">         
-        </header>
-        <div class="menu-vertical-painel">
-            <ul class="painel-lista-vertical">
-                <li class="item-painel"><a class="link-painel" href="cadastro-carros.php">Adicionar Produto</a></li>
-                <li class="item-painel"><a class="link-painel" href="lista-produtos.php">Editar Produto</a></li>
-                <li class="item-painel"><a class="link-painel" href="cadastro-login.php">Adicionar Login</a></li>
-                <li class="item-painel"><a class="link-painel" href="lista-login.php">Editar Login</a></li>
-                <li class="item-painel"><a class="link-painel" href="painel-mensagem.php">Mensagens </a></li>
-                <li class="item-painel"><a class="link-painel logout" href="logout.php">Sair</a></li>
-            </ul>
-        </div>
+    
+    <body class="body-produtos">
+    <!--INCLUINDO O ESQUELETO DO PAINEL-->
+         <?php include("painel.php"); ?>
 
-		
-    <!--FIM DO ESQUELETO DO PAINEL ADMINISTRATIVO-->
-    <h3 class="titulo-mensagens">Mensagens Recebidas</h3>
+    <h3 class="subtitulo-painel">Mensagens Recebidas</h3>
     
     <?php
     //FUNÇÃO QUE LISTA AS MENSAGENS
@@ -61,12 +42,16 @@ if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
 
     //RECEBE O RETORNO DA FUNÇÃO E MOSTRA PRO ADMINISTRADOR ?>
     <table class="table table-striped table-bordered tabela-msg">
+        <tr>
+                <td class="coluna-nome">Nome</td>
+                <td class="coluna-texto">Mensagem</td>
+        </tr>
     <?php 
         $mensagens = listaMensagens($conexao);
         foreach($mensagens as $mensagem){ ?>
             <tr>
                 <td class="nome-msg"><?=$mensagem['nome']?></td>
-                <td><?=$mensagem['mensagem']?></td>
+                <td class="texto-msg"><?=$mensagem['mensagem']?></td>
             </tr>
         <?php 
             }

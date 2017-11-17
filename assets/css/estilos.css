@@ -1031,8 +1031,8 @@ figcaption p{
 
 .titulo-painel {
     text-align: center;
-    color: #750000;
-    background-color: #5b5b58;
+    color: #eee;
+    background-color: #022B59;
     margin: 0;
     padding: 1.75%; 
     text-transform: uppercase;
@@ -1050,11 +1050,12 @@ figcaption p{
     right: 8%;
 }
 .menu-vertical-painel{
-    width: 22%;
+    width: 18%;
     height: 500px;
     position: absolute;
     margin-left:0;
-    background-color: #5b5b58;
+    background-color: #022B59;
+    font-family: sans-serif;
 }
 
 .painel-lista-vertical{
@@ -1065,7 +1066,7 @@ figcaption p{
 }
 
 .link-painel{
-    color: #750000;
+    color: #EEE;
     padding:  5px;
     font-size: 65%; 
 }
@@ -1078,20 +1079,46 @@ figcaption p{
 .logout {
     font-weight: bold;
 }
+.subtitulo-painel {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color: #022B59;
+    font-family: sans-serif;
+}
+
+#campo-cadastrocarro {
+    color: #022B59;
+    left: 10px;
+    padding-right: 5px;
+}
 /*FIM DO CSS DO ESCOPO DO PAINEL ADMINISTRATIVO*/
 
 
 /*INÍCIO DO CSS DA ÁREA DE MENSAGENS DO PAINEL ADMINISTRATIVO*/
 
+
 .conteudo-painel-mensagens{
     background-color:#F8F8FF;
-    font-family: 'Playfair Display', serif;
     color:#660000;
 }
-.titulo-msg-recebidas{
+.nome-msg {
+    width: 35%;
     text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2.5%;
+}
+
+.tabela-msg {
+    position: absolute;
+    width: 50%;
+    left: 28%;
+    top: 25%;
+    font-family: sans-serif;
+}
+.coluna-nome, .coluna-texto {
+    text-align: center;
+    font-weight: bold;
+    font-size: 110%;
 }
 /*FIM DO CSS DA ÁREA DE MENSAGENS DO PAINEL ADMINISTRATIVO*/
 
@@ -1101,6 +1128,31 @@ figcaption p{
 .selecionar-arquivo {
     margin-bottom: 20px;
 }
+
+/* CSS EDITAR PRODUTOS */
+.listaprod {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+/* CSS CADASTRO-LOGIN.PHP */
+#tit-cadastrologin {
+    color: #022B59;
+}
+#campo-cadastrologin {
+    color: #022B59;
+    left: 10px;
+    padding-right: 5px;
+}
+
+/* CSS EDITAR PRODUTOS */
+.listalogin {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
 /*COMEÇO PAGINA DE DETALHES DO PRODUTO */
 .detalhes-produtos{
 

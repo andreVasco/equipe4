@@ -8,7 +8,7 @@ function ListaProdutos($conexao) {
 	while ($produto = mysqli_fetch_assoc($resultado)) { ?>
 			  	<div class="col-sm-6 col-md-4 col-lg-3">
 					<figure class="thumbnail box-produto">
-						<img src='upload/<?php echo  $produto['capa']; ?>' >; 
+						<img src='upload/<?php echo  $produto['capa']; ?>' > 
 						<figcaption class="caption">
 							<h3 class="titulo-h3-produtos"> <?php echo $produto['nome']; ?> </h3>
 							<p>Descrição: <?php echo $produto['descricao'];  ?></p>

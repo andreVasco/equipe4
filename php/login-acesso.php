@@ -19,7 +19,7 @@ $usuario = ChecaUsuario($conexao, $email, $senha);
 			setTimeout ("window.location='painel.php'", 5000 );
 	<?php	}
 	  else { ?>
-	  	setTimeout ("window.location='painel-funcionarios.php'", 5000 );
+	  	setTimeout ("window.location='painel-mensagem.php'", 5000 );
 	 <?php } ?>
 	}
 
