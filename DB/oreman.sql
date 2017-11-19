@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Nov-2017 às 05:27
+-- Generation Time: 19-Nov-2017 às 22:02
 -- Versão do servidor: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -68,12 +68,14 @@ CREATE TABLE `detalhesproduto` (
 --
 
 INSERT INTO `detalhesproduto` (`id`, `albumid`, `endereco`) VALUES
-(0, 38, 'teste1.jpg'),
-(3, 37, 'teste4.jpg'),
-(4, 37, 'teste3.jpg'),
-(5, 37, 'teste4.jpg'),
-(6, 37, 'teste1.jpg'),
-(7, 38, 'teste1.jpg');
+(0, 44, 'teste1.jpg'),
+(1, 44, 'teste1.jpg'),
+(2, 44, 'teste2.jpg'),
+(3, 44, 'teste3.jpg'),
+(4, 44, 'teste4.jpg'),
+(5, 45, 'teste1.jpg'),
+(6, 45, 'teste3.jpg'),
+(7, 46, 'teste4.jpg');
 
 -- --------------------------------------------------------
 
@@ -84,9 +86,9 @@ INSERT INTO `detalhesproduto` (`id`, `albumid`, `endereco`) VALUES
 CREATE TABLE `produtos` (
   `nome` varchar(20) NOT NULL,
   `descricao` varchar(500) NOT NULL,
-  `capa` varchar(700) NOT NULL,
   `preco` decimal(10,2) NOT NULL,
   `categoria` varchar(50) NOT NULL,
+  `capa` varchar(700) NOT NULL,
   `albumid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -94,12 +96,13 @@ CREATE TABLE `produtos` (
 -- Extraindo dados da tabela `produtos`
 --
 
-INSERT INTO `produtos` (`nome`, `descricao`, `capa`, `preco`, `categoria`, `albumid`) VALUES
-('teste1', 'teste1', 'teste1.jpg', '111111.00', 'luxo', 37),
-('teste2', 'teste2', 'teste2.jpg', '22222.00', 'luxo', 38),
-('teste3', 'teste3', 'teste3.jpg', '3333.00', 'luxo', 39),
-('teste4', 'teste4', 'teste4.jpg', '4444.00', 'luxo', 40),
-('teste5', 'teste5', 'teste1.png', '555.00', 'luxo', 41);
+INSERT INTO `produtos` (`nome`, `descricao`, `preco`, `categoria`, `capa`, `albumid`) VALUES
+('Titulo', 'DescriÃ§Ã£o', '99999999.99', 'luxo', 'teste1.jpg', 44),
+('Teste 2', 'teste 2', '2222.00', 'esportivo', 'teste2.jpg', 45),
+('Teste 3', 'teste3', '99999999.99', 'luxo', 'teste3.jpg', 46),
+('teste 4', 'teste4', '99999999.99', 'luxo', 'teste4.jpg', 47),
+('teste 4', 'teste 4', '99999999.99', 'esportivo', 'teste1.jpg', 48),
+('teste5', 'teste 5', '665.99', 'luxo', 'teste2.jpg', 50);
 
 -- --------------------------------------------------------
 
@@ -153,7 +156,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `usuario`

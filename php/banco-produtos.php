@@ -16,10 +16,10 @@ function ListaProdutos($conexao) {
 							<p>Categoria: <?php echo $produto['categoria'];  ?></p>
 							<div align="center">
 								<button type="button" class="btn btn-danger">
-									<a id="alt-del" href="remover-produtos.php?id=<?php echo($produto['albumid'])?> ">Remover</a>
+									<a id="alt-del" href="remover-produtos.php?id=<?php echo($produto['albumid']) ?>">Remover</a>
 								</button>
 								<button type="button" class="btn btn-primary">
-									<a id="alt-del" href="alterar-produtos.php?id=<?php echo($produto['albumid'])?> "> Alterar</a>
+									<a id="alt-del" href="alterar-produtos.php?id=<?php echo($produto['albumid']) ?>">Alterar</a>
 								</button>
 							</div>
 						</figcaption>
@@ -35,9 +35,9 @@ function DeletaProduto($conexao, $id )
 
 }
 
-function AlteraProduto($conexao,$nome,$descricao,$capa,$preco,$categoria,$albumid)
+function AlteraProduto($conexao,$nome,$descricao,$preco,$categoria,$capa,$albumid)
 {
-	$query = "UPDATE produtos SET nome = '{$nome}', descricao = '{$descricao}', capa ='{$capa}', preco = {$preco}, categoria ='{$categoria}'  where albumid = '{$albumid}'";
+	$query = "UPDATE produtos SET nome = '{$nome}', descricao = '{$descricao}', preco = {$preco}, categoria ='{$categoria}',  capa ='{$capa}'  where albumid = '{$albumid}'";
 	return mysqli_query($conexao,$query);
 
 }
