@@ -1186,6 +1186,7 @@ figcaption p{
 #tit-mostruario {
     position: relative;
     color: #660000;
+    margin-top: 50px;
     
 }
 
@@ -1194,22 +1195,15 @@ figcaption p{
     left: 15%;
     top: 20%;
 }
-.fotos-alb{
+
+.fotos-alb {
     position: relative;
     list-style: none;
     display: inline-block;
-    bottom: 0;
-    float: right;
+    margin-top: 15%;
 
 }
-.img-min{
-    width: 130px;
-    padding: 1px;
-    position: relative;
-    top: -620px;
-    left: -900px;
-    display: table;
-}
+
 
 .detalhes-produtos 
 {
@@ -1302,14 +1296,18 @@ figcaption p{
     width: 100%;
 }
 
-
-@media(min-width: 315px) and (max-width: 767px) {
+@media(min-width: 315px) and (max-width: 700px) {
 .tamanho-textos {
     position: relative;
     width: 100%;
     float: left;
     top: 20px;
 }
+#imag-começo {
+    width: 0px;
+}
   
      
 }
+
+

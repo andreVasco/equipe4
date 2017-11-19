@@ -11,6 +11,7 @@ $albumid = 	$_GET['albumid'];
 		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css"> <!-- reset-->
 		<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css"> <!-- link para acessar a pasta de css do bootstrap-->
 		<link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/lightbox.css">
 		<title>OREMAN MOTORS</title>
 		<link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
 		<link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -96,48 +97,32 @@ $albumid = 	$_GET['albumid'];
   						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IEToKAELeqY" ></iframe>
 					</div>
 				</div>
-				
-				
-			<section class="fotos-alb">
+
+
+					<div class="row" id="li-detalhes">
+							<div class="col-sm-6 col-md-4 col-lg-3" >
+								<ul class="fotos-alb">
+									<li>
+									<?php
+									$lista = mysqli_query($conexao, "SELECT * from detalhesproduto join produtos on produtos.albumid = detalhesproduto.albumid  WHERE produtos.albumid like $albumid");
+									 while ($info = mysqli_fetch_assoc($lista)) { ?>
+										<a  href="upload/<?php echo $info["endereco"]; ?>" data-lightbox="roadtrip"><img src="upload/<?php echo $info["endereco"]; ?>" class="img-thumbnail" width="100" height="70" /></a>
+										<?php } ?>
+									</li>
+								</ul>
+							</div>
+					</div>
+			
+								
+			<section >
 				<div id="imag-começo">
 					<img src="upload/<?php echo $inform["capa"]?>" class="img-responsive" align="center" >
 				</div>
 			</section>
 
-				<?php
-								$lista = mysqli_query($conexao, "SELECT * from detalhesproduto join produtos on produtos.albumid = detalhesproduto.albumid  WHERE produtos.albumid like $albumid");
-								 while ($info = mysqli_fetch_assoc($lista)) { ?>
-
-				<div class="row">
-						<div class="col-sm-6 col-md-4 col-lg-3" id="lista-car">
-							<ul id="lista-det">
-								<li><a href="#img<?php echo $info["id"]; ?>"><img src="upload/<?php echo $info["endereco"]; ?>" class="img-min"></a></li>	
-							</ul>
-						</div>
-				</div>
-			
-			<section>
-				<div class="row">
-					<div class="col-sm-6 col-md-4 col-lg-3">
-						<div class="lbox"  id="img<?php echo $info["id"]; ?>" >
-							<div class="box_img">
-							
-								<a href="" class="btn-p" id="close-p">X</a> 
-								<div id="imagem-g"> 
-								<img src="upload/<?php echo $info["endereco"]; ?>"  class="img-responsive" align="center" >
-								
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					
-				</div>
-				<?php }  ?>
 			</div>
 			
-		</section>
-
+		
 		
 
 
@@ -203,6 +188,7 @@ $albumid = 	$_GET['albumid'];
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="../assets/bootstrap/js/bootstrap.js"></script>
 	<script src="../assets/js/collapse-navebar.js"></script>
+	<script src="../assets/js/lightbox.js"></script>
 
 
 </html>
