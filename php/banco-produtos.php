@@ -30,6 +30,8 @@ function ListaProdutos($conexao) {
 
 function DeletaProduto($conexao, $id )
 {
+	$del = "delete from detalhesproduto where albumid= {$id}";
+	mysqli_query($conexao , $del);
 	$query = "delete from produtos where albumid= {$id}";
 	return mysqli_query($conexao , $query);
 
