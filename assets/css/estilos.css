@@ -142,7 +142,7 @@ figcaption p{
 /*INÍCIO DO CSS DA PÁGINA DE CONTATOS*/
 
 .body-contatos{
-    background: rgba(10,10,10,.7);
+    background-color: #F8F8FF;
     width: 100%;
     position: relative;
 }

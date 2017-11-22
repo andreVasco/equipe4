@@ -1,3 +1,6 @@
+<?
+php include("conecta.php");
+?>
 <!DOCTYPE html>
 <hmtl id="html-home">
     
@@ -86,7 +89,7 @@
                             </figcaption>
                         </figure>
                         <figure class="item">
-                            <img src="../assets/images/carro2-slide.jpg"     class="img-fluid imgfld-home bigImg" alt="Responsive image">
+                            <img src="../assets/images/carro2-slide.png" class="img-fluid imgfld-home bigImg" alt="Responsive image">
                             <figcaption class="carousel-caption">
                                 <h1>"Carros merecem ser bem feitos"</h1>
                                 <cite>Enzo Ferrari.</cite>
@@ -132,7 +135,7 @@
                         Automático<br>
                         Opções de seminovos à partir de 125 mil<br>
                       </p>
-                    <a href="produtos.html" class="btn btn-danger">Ver Detalhes</a>
+                    <p><a href="produtos-detalhes.php?albumid=<?php echo $produto['albumid']; ?>" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
                     </div>
                 </div>
                 </div>
@@ -147,7 +150,7 @@
                         Automático<br>
                         Sistema de navegação integrado<br>
                       </p>
-                      <a href="produtos.html" class="btn btn-danger">Ver Detalhes</a>
+                      <p><a href="produtos-detalhes.php?albumid=<?php echo $produto['albumid']; ?>" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
                     </div>
                 </div>
               </div>
@@ -164,7 +167,7 @@
                         Automático ou Manual<br>
                         Sistema Turbo<br>
                       </p>
-                      <a href="produtos.html" class="btn btn-danger">Ver Detalhes</a>
+                      <p><a href="produtos-detalhes.php?albumid=<?php echo $produto['albumid']; ?>" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
                     </div>
                 </div>
               </div>
@@ -179,7 +182,7 @@
                         Porta malas de 640L<br>
                         Melhor SUV da categoria<br>
                       </p>
-                    <a href="produtos.html" class="btn btn-danger">Ver Detalhes</a>
+                    <p><a href="produtos-detalhes.php?albumid=<?php echo $produto['albumid']; ?>" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
                     </div>
                 </div>
               </div>
