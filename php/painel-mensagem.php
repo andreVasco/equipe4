@@ -41,6 +41,7 @@ include("banco-produtos.php");
         <tr>
                 <td class="coluna-nome">Nome</td>
                 <td class="coluna-texto">Mensagem</td>
+                <td class="coluna-telefone">Telefone</td>
         </tr>
     <?php 
         $mensagens = listaMensagens($conexao);
@@ -48,6 +49,7 @@ include("banco-produtos.php");
             <tr>
                 <td class="nome-msg"><?=$mensagem['nome']?></td>
                 <td class="texto-msg"><?=$mensagem['mensagem']?></td>
+                <td class="telefone-msg"><?=$mensagem['telefone']?></td>
             </tr>
         <?php 
             }

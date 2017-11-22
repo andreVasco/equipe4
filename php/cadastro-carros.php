@@ -24,7 +24,7 @@ include("conecta.php");
 
     <!--FORMULARIO DE CADASTRO DE VEICULOS-->     
     <div class="container  login-form">
-        <form class="form-horizontal teste" method="post" action="adiciona-carros.php">
+        <form class="form-horizontal form-cadastro-carro" method="post" action="adiciona-carros.php">
           <h2 class="subtitulo-painel" >CADASTRAR CARRO</h2>
           <div class="form-group">
             <label for="#" id="campo-cadastrocarro" class="col-sm-3 control-label">Nome:</label>

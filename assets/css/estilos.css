@@ -180,8 +180,9 @@ figcaption p{
     transition: 1s;
 }
 
-#frase{
+#frase-contato{
     left: 10px;
+    color: #660000;
 }
 
 .form-cont{
@@ -980,7 +981,7 @@ figcaption p{
     border-top: 300px solid #fff;
 }
 
-#tit-h2{
+#tit-h2a{
     text-align: center;
     color: #660000;
     margin-bottom: 5%;
@@ -989,9 +990,13 @@ figcaption p{
 
 #frase{
     left: 10px;
-    color: #660000;
+    color: #022B59;
 }
-
+.form-altera-carro {
+    width: 71%;
+    position: absolute;
+    left: 20%;
+}
 .login-form{
     vertical-align: middle;
 }
@@ -1025,6 +1030,7 @@ figcaption p{
     padding: 1.75%; 
     text-transform: uppercase;
     font-weight: bold;
+    border-bottom: 2px solid #000;
 }
 .logo-painel {
     position: absolute;
@@ -1038,7 +1044,7 @@ figcaption p{
     right: 8%;
 }
 .menu-vertical-painel{
-    width: 18%;
+    width: 21%;
     height: 500px;
     position: absolute;
     margin-left:0;
@@ -1055,8 +1061,14 @@ figcaption p{
 
 .link-painel{
     color: #EEE;
-    padding:  5px;
+    padding: 5px;
     font-size: 65%; 
+}
+.link-painel:hover{
+    color: #BBB;
+} 
+.addcar {
+    padding: 0;
 }
 
 .item-painel{
@@ -1071,7 +1083,7 @@ figcaption p{
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 3%;
-    margin-top: 3%;
+    margin-top: 2%;
     color: #022B59;
     font-family: sans-serif;
 }
@@ -1104,10 +1116,16 @@ figcaption p{
     top: 25%;
     font-family: sans-serif;
 }
-.coluna-nome, .coluna-texto {
+.coluna-nome, .coluna-texto, .coluna-telefone {
     text-align: center;
     font-weight: bold;
     font-size: 110%;
+}
+.coluna-texto {
+    width: 50%;
+}
+.texto-msg {
+    text-align: center;
 }
 /*FIM DO CSS DA ÁREA DE MENSAGENS DO PAINEL ADMINISTRATIVO*/
 
@@ -1116,6 +1134,13 @@ figcaption p{
 
 .selecionar-arquivo {
     margin-bottom: 20px;
+}
+.form-cadastro-carro {
+    background-color: #fff;
+    padding: 10px;
+    width: 67%;
+    position: absolute;
+    left: 22%;
 }
 
 /* CSS EDITAR PRODUTOS */
@@ -1126,7 +1151,7 @@ figcaption p{
 }
 
 #add_foto {
-    color: #660000;
+    color: #022B59;
 }
 
 /* CSS CADASTRO-LOGIN.PHP */
@@ -1137,6 +1162,14 @@ figcaption p{
     color: #022B59;
     left: 10px;
     padding-right: 5px;
+}
+.form-add-login {
+    background-color: #fff;
+    padding: 10px;
+    width: 60%;
+    position: absolute;
+    left: 24%;
+    top: 116%;
 }
 
 /* CSS EDITAR PRODUTOS */

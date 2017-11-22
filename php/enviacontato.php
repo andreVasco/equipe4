@@ -24,7 +24,9 @@ if(mysqli_query($conexao, $query)) {
         Mensagem enviada com sucesso!
     </p>
 
-<?php } else { 
+<?php
+header("refresh:3; url=contato.php"); }
+else { 
     
 $msg = mysqli_error($conexao);?>
 
@@ -32,7 +34,8 @@ $msg = mysqli_error($conexao);?>
         ERRO: Sua mensagem não foi enviada.  <?= $msg ?>
     </p>
 
-<?php } ?>
+<?php 
+header("refresh:3; url=contato.php"); } ?>
 
 </html>
 

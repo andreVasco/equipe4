@@ -58,28 +58,28 @@
 					<form class="form-horizontal" method="post" action="enviacontato.php">
                         
 					  <div class="form-group">
-					    <label for="#" id="frase" class="col-sm-3 control-label">Nome Completo:</label>
+					    <label for="#" id="frase-contato" class="col-sm-3 control-label">Nome Completo:</label>
 					    <div class="col-sm-7">
 					      <input type="text" class="form-control" id="inputPassword3" placeholder="Nome Completo" name="nome">
 					    </div>
 					  </div>
                         
 					  <div class="form-group">
-					    <label for="#" id="frase" class="col-sm-3 control-label">Email:</label>
+					    <label for="#" id="frase-contato" class="col-sm-3 control-label">Email:</label>
 					    <div class="col-sm-7">
 					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email">
 					    </div>
 					  </div>
                         
                         <div class="form-group">
-					    <label for="#" id="frase" class="col-sm-3 control-label">Telefone:</label>
+					    <label for="#" id="frase-contato" class="col-sm-3 control-label">Telefone:</label>
 					    <div class="col-sm-7">
 					      <input type="number" class="form-control" id="inputEmail3" placeholder="Telefone de contato" name="telefone">
 					    </div>
 					  </div>
                         
 					  <div class="form-group">
-					    <label for="#" id="frase" class="col-sm-3 control-label">Mensagem:</label>
+					    <label for="#" id="frase-contato" class="col-sm-3 control-label">Mensagem:</label>
 					    <div class="col-sm-7">
 					 		<textarea type="text" class="form-control" placeholder="Escreva aqui sua Mensagem" name="mensagem"></textarea>
 					    </div>

@@ -48,15 +48,15 @@
           <div id="teste-js">
             <div class="container  login-form">
                    <form class="form-horizontal teste" action="login-acesso.php" method="POST">
-                      <h2 id="tit-h2" >Bem vindo!</h2>
+                      <h2 id="tit-h2a" >Bem vindo!</h2>
                       <div class="form-group">
-                        <label for="#" id="frase" class="col-sm-3 control-label">Email:</label>
+                        <label for="#" id="frase-contato" class="col-sm-3 control-label">Email:</label>
                         <div class="col-sm-7">
                           <input type="email" class="form-control" id="inputPassword3" name="email" placeholder="Digite aqui">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="#" id="frase" class="col-sm-3 control-label"  >Senha:</label>
+                        <label for="#" id="frase-contato" class="col-sm-3 control-label"  >Senha:</label>
                         <div class="col-sm-7">
                           <input type="password" class="form-control" id="inputEmail3" placeholder="Digite aqui" name="senha">
                         </div>

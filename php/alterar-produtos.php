@@ -20,8 +20,11 @@ $produto = BuscaProduto($conexao, $id);
 	</head>
 	<!--COMEÇO DO CORPO-->
 	<body class="body-login">
+    <body class="body-produtos">
+    <!--INCLUINDO O ESQUELETO DO PAINEL-->
+         <?php include("painel.php"); ?>
             <div class="container  login-form">
-                   <form class="form-horizontal teste" method="post" action="altera-carro.php">
+                   <form class="form-horizontal form-altera-carro" method="post" action="altera-carro.php">
                    	 <h2 id="tit-h2" >ALTERAR CARRO</h2>
             
                    	  <div class="form-group">

@@ -18,7 +18,9 @@ $id = $_GET['id'];
 </head>
 </head>
 <body>
-        <h1 id="add_foto" align="center">Adicionar foto ao album:</h1>
+  <!--INCLUINDO O ESQUELETO DO PAINEL-->
+         <?php include("painel.php"); ?>
+        <h2 id="add_foto" align="center">Adicionar foto ao album:</h2>
           <form action="album-fotos.php?id=<?php echo $id ?>" method="post" >
             <form action="upload-foto.php" method="post" enctype="multipart/form-data">
             <div align="center">
