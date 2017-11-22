@@ -160,7 +160,7 @@ $albumid = 	$_GET['albumid'];
 	<!-- Footer comeca aqui -->
 	<div class="footer-det" >
 	<div id="body-footer" >
-		<div  id="footer-produtos">
+		<div  >
 		<footer id="footer" >
 			<div class="wrapper">
 				<div class="footer-inicio">
