@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 19-Nov-2017 às 22:02
+-- Generation Time: 22-Nov-2017 às 13:58
 -- Versão do servidor: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -49,7 +49,8 @@ INSERT INTO `contato` (`nome`, `email`, `telefone`, `mensagem`) VALUES
 ('FERNANDA', 'dev4@codejr.com.br', 99427575, 'teste'),
 ('FERNANDA', 'dev4@codejr.com.br', 99427575, 'teste'),
 ('FERNANDA', 'fernandananda95@yahoo.com.br', 99427575, 'teste'),
-('Teste', 'dev4@codejr.com.br', 99427575, 'teste');
+('Teste', 'dev4@codejr.com.br', 99427575, 'teste'),
+('teste', 'teste@gmail.com', 33333333, 'teste');
 
 -- --------------------------------------------------------
 
@@ -60,7 +61,7 @@ INSERT INTO `contato` (`nome`, `email`, `telefone`, `mensagem`) VALUES
 CREATE TABLE `detalhesproduto` (
   `id` int(11) NOT NULL,
   `albumid` int(11) NOT NULL,
-  `endereco` varchar(200) DEFAULT NULL
+  `endereco` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -68,14 +69,17 @@ CREATE TABLE `detalhesproduto` (
 --
 
 INSERT INTO `detalhesproduto` (`id`, `albumid`, `endereco`) VALUES
-(0, 44, 'teste1.jpg'),
-(1, 44, 'teste1.jpg'),
-(2, 44, 'teste2.jpg'),
-(3, 44, 'teste3.jpg'),
-(4, 44, 'teste4.jpg'),
-(5, 45, 'teste1.jpg'),
-(6, 45, 'teste3.jpg'),
-(7, 46, 'teste4.jpg');
+(2, 44, 'teste4.jpg'),
+(3, 45, 'teste1.jpg'),
+(4, 47, 'teste3.jpg'),
+(5, 47, 'teste4.jpg'),
+(6, 45, 'teste4.jpg'),
+(7, 44, 'teste3.jpg'),
+(8, 44, 'teste4.jpg'),
+(9, 44, 'teste3.jpg'),
+(10, 45, 'teste3.jpg'),
+(11, 44, 'teste1.jpg'),
+(12, 47, 'teste2.jpg');
 
 -- --------------------------------------------------------
 
@@ -98,11 +102,11 @@ CREATE TABLE `produtos` (
 
 INSERT INTO `produtos` (`nome`, `descricao`, `preco`, `categoria`, `capa`, `albumid`) VALUES
 ('Titulo', 'DescriÃ§Ã£o', '99999999.99', 'luxo', 'teste1.jpg', 44),
-('Teste 2', 'teste 2', '2222.00', 'esportivo', 'teste2.jpg', 45),
-('Teste 3', 'teste3', '99999999.99', 'luxo', 'teste3.jpg', 46),
+('Teste novo', 'teste novo', '77777777.00', 'luxo', 'teste2.jpg', 45),
 ('teste 4', 'teste4', '99999999.99', 'luxo', 'teste4.jpg', 47),
-('teste 4', 'teste 4', '99999999.99', 'esportivo', 'teste1.jpg', 48),
-('teste5', 'teste 5', '665.99', 'luxo', 'teste2.jpg', 50);
+('teste 4', 'teste 4', '99999999.99', 'esportivo', 'teste3.jpg', 48),
+('teste5', 'teste 5', '665.99', 'luxo', 'teste2.jpg', 50),
+('Teste', 'teste', '2323.00', 'etc', 'teste4.jpg', 51);
 
 -- --------------------------------------------------------
 
@@ -133,8 +137,7 @@ INSERT INTO `usuario` (`usuario`, `senha`, `email`, `id`) VALUES
 -- Indexes for table `detalhesproduto`
 --
 ALTER TABLE `detalhesproduto`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `albumid` (`albumid`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `produtos`
@@ -153,26 +156,22 @@ ALTER TABLE `usuario`
 --
 
 --
+-- AUTO_INCREMENT for table `detalhesproduto`
+--
+ALTER TABLE `detalhesproduto`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
 -- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- Constraints for dumped tables
---
-
---
--- Limitadores para a tabela `detalhesproduto`
---
-ALTER TABLE `detalhesproduto`
-  ADD CONSTRAINT `detalhesproduto_ibfk_1` FOREIGN KEY (`albumid`) REFERENCES `produtos` (`albumid`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
