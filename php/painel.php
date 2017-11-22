@@ -1,3 +1,17 @@
+<?php
+include("conecta.php"); 
+session_start();
+if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
+	header('location:login.php');
+	exit();	
+}
+else {
+}
+?>
+
+
+
+
 <header class="body-menu">             
 	<h1 class="titulo-painel">Painel admnistrativo</h1>
 	<img src="../assets/images/logo.png" class="logo-painel left">

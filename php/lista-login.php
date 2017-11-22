@@ -1,5 +1,7 @@
-<?php include("conecta.php");
-include("banco-produtos.php") ?>
+<?php
+include("conecta.php"); 
+include("banco-produtos.php") 
+?>
 <html>
 <head>
     <meta charset="utf-8">

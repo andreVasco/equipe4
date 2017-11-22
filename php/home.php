@@ -1,6 +1,6 @@
-<?
-php include("conecta.php");
+<?php include("conecta.php"); 
 ?>
+
 <!DOCTYPE html>
 <hmtl id="html-home">
     
@@ -89,7 +89,7 @@ php include("conecta.php");
                             </figcaption>
                         </figure>
                         <figure class="item">
-                            <img src="../assets/images/carro2-slide.png" class="img-fluid imgfld-home bigImg" alt="Responsive image">
+                            <img src="../assets/images/carro2-slide.jpg"     class="img-fluid imgfld-home bigImg" alt="Responsive image">
                             <figcaption class="carousel-caption">
                                 <h1>"Carros merecem ser bem feitos"</h1>
                                 <cite>Enzo Ferrari.</cite>
@@ -123,71 +123,29 @@ php include("conecta.php");
             <div id="highlights">
             <h2 class="high-texto">Nossos Destaques</h2>
             </div>
-                <div class="container">
+              <div class="container">
                 <div class="row row-home">
-              <div class="col-sm-6">
-                <div class="card destaque">
-                  <div class="card-body">
-                    <img src="../Assets/images/carro1-destaque.png" class="img-fluid imgfld-home bigImg" alt="Responsive image">
-                    <p class="card-text">
-                        <strong>BMW Z4</strong><br>
-                        2.O Conversível<br>
-                        Automático<br>
-                        Opções de seminovos à partir de 125 mil<br>
-                      </p>
-                    <p><a href="produtos-detalhes.php?albumid=<?php echo $produto['albumid']; ?>" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
+                   <?php 
+                      $dep = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY albumid DESC LIMIT 4");
+                      while ($mostruario = mysqli_fetch_assoc($dep)) {
+                    ?>
+                  <div class="col-sm-6">
+                    <div class="card destaque">
+                      <div class="card-body">
+                        <img src="upload/<?php echo $mostruario["capa"] ?>" width="600" class="img-fluid img-responsive imgfld-home bigImg" alt="Responsive image">
+                        <p class="card-text">
+                            <strong><?php echo $mostruario["nome"] ?></strong><br>
+                            <?php echo $mostruario["descricao"] ?><br>
+                          </p>
+                        <a href="produtos-detalhes.php?albumid=<?php echo $mostruario["albumid"]?>" class="btn btn-danger">Ver Detalhes</a>
+                      </div>
                     </div>
-                </div>
-                </div>
-                    
-              <div class="col-sm-6">
-                <div class="card destaque">
-                  <div class="card-body">
-                    <img src="../Assets/images/carro2-destaque.png" class="img-fluid imgfld-home bigImg" alt="Responsive image">
-                    <p class="card-text">
-                        <strong>Mustang GT 2017</strong><br>
-                        Motor V8 5.0 Gasolina<br>
-                        Automático<br>
-                        Sistema de navegação integrado<br>
-                      </p>
-                      <p><a href="produtos-detalhes.php?albumid=<?php echo $produto['albumid']; ?>" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
-                    </div>
-                </div>
+                  </div>  
+                    <?php } ?>   
+
+                 </div>
               </div>
-            </div>
-                
-            <div class="row row-home">
-              <div class="col-sm-6">
-                <div class="card destaque">
-                  <div class="card-body">
-                    <img src="../Assets/images/carro3-destaque.png" class="img-fluid imgfld-home bigImg" alt="Responsive image">
-                    <p class="card-text">
-                        <strong>Audi A8</strong><br>
-                        4.0 TFSI<br>
-                        Automático ou Manual<br>
-                        Sistema Turbo<br>
-                      </p>
-                      <p><a href="produtos-detalhes.php?albumid=<?php echo $produto['albumid']; ?>" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
-                    </div>
-                </div>
-              </div>
-                
-              <div class="col-sm-6 escalade">
-                <div class="card destaque">
-                  <div class="card-body">
-                    <img src="../Assets/images/carro4-destaque.png" class="img-fluid imgflgd-home bigImg" alt="Responsive image">
-                    <p class="card-text">
-                        <strong>Escalade</strong><br>
-                        Motor Turbo de 306CV<br>
-                        Porta malas de 640L<br>
-                        Melhor SUV da categoria<br>
-                      </p>
-                    <p><a href="produtos-detalhes.php?albumid=<?php echo $produto['albumid']; ?>" target="_blank" class="center-block btn btn-default btn-sm " role="button" id="info-produtos">+ Informação</a></p>
-                    </div>
-                </div>
-              </div>
-            </div>
-        </div>
+
 
                 <!--HOME HIGHLIGHTS END-->
 

@@ -16,10 +16,13 @@ function ListaProdutos($conexao) {
 							<p>Categoria: <?php echo $produto['categoria'];  ?></p>
 							<div align="center">
 								<button type="button" class="btn btn-danger">
-									<a id="alt-del" href="remover-produtos.php?id=<?php echo($produto['albumid']) ?>">Remover</a>
+									<a id="alt-del" href="remover-produtos.php?id=<?php echo($produto['albumid']) ?>">X</a>
 								</button>
 								<button type="button" class="btn btn-primary">
 									<a id="alt-del" href="alterar-produtos.php?id=<?php echo($produto['albumid']) ?>">Alterar</a>
+								</button>
+								<button type="button" class="btn btn-primary">
+									<a id="alt-del" href="adiciona-fotos.php?id=<?php echo($produto['albumid']) ?>">Album</a>
 								</button>
 							</div>
 						</figcaption>
@@ -53,11 +56,18 @@ function ListaLogin($conexao) {
 						<img src=" https://n6-img-fp.akamaized.net/icones-gratis/imagem-do-usuario-com-fundo-preto_318-34564.jpg?size=338&ext=jpg "  class="foto-produtos" >
 						<figcaption class="caption">
 							<h3 class="titulo-h3-produtos"> <?php echo $tot['usuario']; ?> </h3>
-							<p>Senha: <?php echo $tot['senha'];  ?></p>
-							<p>Email: <?php echo $tot['email'];  ?></p>
+							<p>Senha: <?php
+										 $string = $tot['senha'];
+											$string = substr("$string", 0, 10);
+											echo "$string";  ?></p>
+
+							<p>Email:  <?php
+										 $string = $tot['email'];
+											$string = substr("$string", 0, 10);
+											echo "$string...";  ?></p>
 							<div align="center">
 								<button type="button" class="btn btn-danger">
-									<a id="alt-del" href="remover-login.php?id=<?php echo($tot['id'])?> ">Remover</a>
+									<a id="alt-del" href="remover-login.php?id=<?php echo($tot['id'])?> ">X</a>
 								</button>
 								<button type="button" class="btn btn-primary">
 									<a id="alt-del" href="alterar-login.php?id=<?php echo($tot['id'])?> "> Alterar</a>

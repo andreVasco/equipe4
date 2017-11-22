@@ -57,6 +57,7 @@ figcaption p{
     border: 5px solid #660000;
     border-radius: 8px;
     padding:15px;
+    margin: 10px;
 }
 
 .imgfld-home{
@@ -141,11 +142,6 @@ figcaption p{
 
 /*INÍCIO DO CSS DA PÁGINA DE CONTATOS*/
 
-.body-contatos{
-    background-color: #F8F8FF;
-    width: 100%;
-    position: relative;
-}
 
 #titulo-h2-contato{
     color: #660000;
@@ -193,18 +189,7 @@ figcaption p{
     top: 10px;
 }
 
-.complemento{
-    transition: 0.5s;
-    margin-right: 40%;
-    margin-left: 40%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    border-radius:100%;
-    width:180px;
-    height:180px;
-    background-color: #660000;
-    box-shadow: 2px 2px 2px 2px  #a6a6a6;
-}
+
 
 #titulo-cont{
     font-size: 18px;
@@ -396,14 +381,17 @@ figcaption p{
 
 #NeB{
     margin-bottom: 5px;
-}
-
-.footer-produtos{
     position: relative;
     bottom: 0px;
-    margin-top: 10px;
-    top: 3px;
-    border-top: 200px solid #f8f8ff;
+    top: 430px;
+}
+
+#footer-produtos{    
+    position: relative;
+    bottom: 0px;
+    top: 450px;
+
+}
 }
 
 @media(min-width: 768px) {
@@ -1092,6 +1080,7 @@ figcaption p{
     color: #022B59;
     left: 10px;
     padding-right: 5px;
+
 }
 /*FIM DO CSS DO ESCOPO DO PAINEL ADMINISTRATIVO*/
 
@@ -1136,6 +1125,10 @@ figcaption p{
     top: 15%;
 }
 
+#add_foto {
+    color: #660000;
+}
+
 /* CSS CADASTRO-LOGIN.PHP */
 #tit-cadastrologin {
     color: #022B59;
@@ -1154,9 +1147,7 @@ figcaption p{
 }
 
 /*COMEÇO PAGINA DE DETALHES DO PRODUTO */
-.detalhes-produtos{
 
-}
 .lbox {
     visibility: hidden;
     opacity: 0;
@@ -1201,7 +1192,14 @@ figcaption p{
     list-style: none;
     display: inline-block;
     margin-top: 15%;
+    width: 700px;
+    bottom: 220px;
+    right: 60px;
 
+}
+
+#tit-gal {
+    color: #660000;
 }
 
 
@@ -1283,15 +1281,21 @@ figcaption p{
     width: 80%;
     position: relative;
     right: 10%;
-    bottom: 80px;
+    bottom: 230px;
+}
+
+#foto-com {
+    border-radius: 5px;
 
 }
 
 #teste-det {
-    background-image: linear-gradient(to left,#000 ,#696969  );
-    color: #DCDCDC ;
+    background-color: #f8f8f8;
+    color: #666666;
 
 }
+
+
 .div-blocos {
     width: 100%;
 }
@@ -1306,8 +1310,14 @@ figcaption p{
 #imag-começo {
     width: 0px;
 }
-  
-     
+.fotos-alb {
+    position: relative;
+    list-style: none;
+    display: initial;
+    top: 35px;
+    margin: 20px;
+    right: 0px;
+}    
 }
 
 

@@ -1,19 +1,19 @@
+
 <html>
 
 <?php
 
-$nome = $_POST["nome"];
-$descricao = $_POST["descricao"];
-$capa = $_POST["imagem"];
-$preco = $_POST["preco"];
-$categoria = $_POST["categoria"];
+$msg= false;
+$id =  $_GET['id'];
+$imagem = $_POST["imagem"];
+
 
 
 //abre a conexão
 $conexao = mysqli_connect('localhost', 'root','', 'oreman');
 
 //cria a query
-$query = "INSERT INTO  produtos (nome, descricao, capa, preco, categoria) VALUES ('{$nome}', '{$descricao}', '{$capa}', {$preco}, '{$categoria}')";
+$query = "INSERT INTO detalhesproduto (albumid, endereco) VALUES ({$id}, '{$imagem}') ";
 
 //verifica sucesso ou falha
 if(mysqli_query($conexao, $query)) { 

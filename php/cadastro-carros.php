@@ -1,4 +1,8 @@
-<?php include("conecta.php"); ?>
+<?php
+include("conecta.php"); 
+?>
+
+
 
  
  <html>

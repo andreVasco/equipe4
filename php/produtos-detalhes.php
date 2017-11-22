@@ -65,7 +65,7 @@ $albumid = 	$_GET['albumid'];
 						    <div class="panel-heading" id="teste-det"  role="tab" id="headingOne">
 						      <h4 class="panel-title">
 						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"  aria-controls="collapseOne">
-						         <strong><div align="center"> <?php echo $inform["nome"]?> </div></strong> 
+						         <strong><div id="nome-parte-detalhes" align="center"> <?php echo $inform["nome"]?> </div></strong> 
 						        </a>
 						      </h4>
 						    </div>
@@ -80,7 +80,7 @@ $albumid = 	$_GET['albumid'];
 						    <div class="panel-heading" id="teste-det" role="tab" id="headingTwo">
 						      <h4 class="panel-title" >
 						        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						          <strong><div align="center">+ Detalhes</div></strong>
+						          <strong><div id="nome-parte-detalhes" align="center">+ Detalhes</div></strong>
 						        </a>
 						      </h4>
 						    </div>
@@ -99,27 +99,27 @@ $albumid = 	$_GET['albumid'];
 				</div>
 
 
+
+			<section >
+				<div id="imag-começo">
+					<img src="upload/<?php echo $inform["capa"]?>" class="img-responsive"  id="foto-com" align="center" >
+				</div>
+			</section>
+
 					<div class="row" id="li-detalhes">
 							<div class="col-sm-6 col-md-4 col-lg-3" >
 								<ul class="fotos-alb">
+									<h2 id="tit-gal">Galeria:</h2>
 									<li>
 									<?php
 									$lista = mysqli_query($conexao, "SELECT * from detalhesproduto join produtos on produtos.albumid = detalhesproduto.albumid  WHERE produtos.albumid like $albumid");
 									 while ($info = mysqli_fetch_assoc($lista)) { ?>
-										<a  href="upload/<?php echo $info["endereco"]; ?>" data-lightbox="roadtrip"><img src="upload/<?php echo $info["endereco"]; ?>" class="img-thumbnail" width="100" height="70" /></a>
+										<a  href="upload/<?php echo $info["endereco"]; ?>" data-lightbox="roadtrip"><img src="upload/<?php echo $info["endereco"]; ?>" class="img-thumbnail" width="150" height="70" /></a>
 										<?php } ?>
 									</li>
 								</ul>
 							</div>
 					</div>
-			
-								
-			<section >
-				<div id="imag-começo">
-					<img src="upload/<?php echo $inform["capa"]?>" class="img-responsive" align="center" >
-				</div>
-			</section>
-
 			</div>
 			
 		
@@ -131,7 +131,7 @@ $albumid = 	$_GET['albumid'];
 		    	<h3 id="tit-mostruario"><i>Outros modelos:</i></h3>	
 					<div class="row">
 						<?php 
-							$dep = mysqli_query($conexao, "SELECT * FROM produtos LIMIT 4");
+							$dep = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY preco DESC LIMIT 4");
 							while ($mostruario = mysqli_fetch_assoc($dep)) {
 						?>
 		  				<div class="col-sm-6 col-md-4 col-lg-3">

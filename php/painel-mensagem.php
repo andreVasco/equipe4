@@ -1,10 +1,6 @@
 <?php
-$conexao = mysqli_connect('localhost', 'root','', 'oreman');
-session_start();
-if (!isset($_SESSION["email"]) || !isset($_SESSION["senha"])) {
-    header('location:login.php');
-    exit(); 
-}
+include("conecta.php"); 
+include("banco-produtos.php");  
 ?>
 
 

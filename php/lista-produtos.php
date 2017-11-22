@@ -1,5 +1,10 @@
-<?php include("conecta.php");
-include("banco-produtos.php") ?>
+<?php
+include("conecta.php"); 
+include("banco-produtos.php"); 
+
+?>
+
+
 
 <!DOCTYPE html>
 <html>
