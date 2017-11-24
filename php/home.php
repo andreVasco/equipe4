@@ -89,7 +89,7 @@
                             </figcaption>
                         </figure>
                         <figure class="item">
-                            <img src="../assets/images/carro2-slide.jpg"     class="img-fluid imgfld-home bigImg" alt="Responsive image">
+                            <img src="../assets/images/carro2-slide.png"     class="img-fluid imgfld-home bigImg" alt="Responsive image">
                             <figcaption class="carousel-caption">
                                 <h1>"Carros merecem ser bem feitos"</h1>
                                 <cite>Enzo Ferrari.</cite>
