@@ -23,7 +23,7 @@
               <div  class="container">
                 <div class="navegador-tamanho">
                   <div class="navbar-header">
-                    <a href="home.html">
+                    <a href="home.php">
                       <img src="../assets/images/LogoTransparente1.png"  class="d-inline-block align-top logo-menu" alt="Oreman motors">
                     </a>
                        <button type="button" class="navbar-toggle collapsed" id="botao-collapse-menu" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
