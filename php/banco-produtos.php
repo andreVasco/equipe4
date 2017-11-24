@@ -11,7 +11,11 @@ function ListaProdutos($conexao) {
 						<img src='upload/<?php echo  $produto['capa']; ?>' > 
 						<figcaption class="caption">
 							<h3 class="titulo-h3-produtos"> <?php echo $produto['nome']; ?> </h3>
-							<p>Descrição: <?php echo $produto['descricao'];  ?></p>
+							<p>Descrição: <?php
+										 $string = $produto['descricao'];
+											$string = substr("$string", 0, 10);
+											echo "$string..."; ?></p>
+
 							<p>Preço: <?php echo $produto['preco'];  ?></p>
 							<p>Categoria: <?php echo $produto['categoria'];  ?></p>
 							<div align="center">

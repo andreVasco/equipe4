@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 22-Nov-2017 às 13:58
+-- Generation Time: 24-Nov-2017 às 20:42
 -- Versão do servidor: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -69,17 +69,14 @@ CREATE TABLE `detalhesproduto` (
 --
 
 INSERT INTO `detalhesproduto` (`id`, `albumid`, `endereco`) VALUES
-(2, 44, 'teste4.jpg'),
-(3, 45, 'teste1.jpg'),
-(4, 47, 'teste3.jpg'),
-(5, 47, 'teste4.jpg'),
-(6, 45, 'teste4.jpg'),
-(7, 44, 'teste3.jpg'),
-(8, 44, 'teste4.jpg'),
-(9, 44, 'teste3.jpg'),
-(10, 45, 'teste3.jpg'),
-(11, 44, 'teste1.jpg'),
-(12, 47, 'teste2.jpg');
+(13, 53, 'det3.jpg'),
+(14, 53, 'det3.2.jpg'),
+(15, 53, 'det3.1.jpg'),
+(16, 56, 'det5.1.jpg'),
+(17, 56, 'det5.2.jpg'),
+(18, 57, 'det7.1.jpg'),
+(19, 57, 'det7.3.jpg'),
+(20, 57, 'det7.jpg');
 
 -- --------------------------------------------------------
 
@@ -101,12 +98,12 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`nome`, `descricao`, `preco`, `categoria`, `capa`, `albumid`) VALUES
-('Titulo', 'DescriÃ§Ã£o', '99999999.99', 'luxo', 'teste1.jpg', 44),
-('Teste novo', 'teste novo', '77777777.00', 'luxo', 'teste2.jpg', 45),
-('teste 4', 'teste4', '99999999.99', 'luxo', 'teste4.jpg', 47),
-('teste 4', 'teste 4', '99999999.99', 'esportivo', 'teste3.jpg', 48),
-('teste5', 'teste 5', '665.99', 'luxo', 'teste2.jpg', 50),
-('Teste', 'teste', '2323.00', 'etc', 'teste4.jpg', 51);
+('Teste 1', 'Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. In rutrum. Sed ac dolor sit amet purus malesuada congue. In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Suspendisse sagittis ultrices augue. Mauris metus.', '10000000.00', 'luxo', 'teste1.jpg', 52),
+('Teste 2', 'Morbi leo mi, nonummy eget, tristique non, rhoncus non, leo. Nullam faucibus mi quis velit. Integer in sapien. Fusce tellus odio, dapibus id, fermentum quis, suscipit id, erat. Fusce aliquam vestibulum ipsum. Aliquam erat volutpat. Pellentesque sapien. Cras elementum. Nulla', '99999999.99', 'Esportivo', 'teste3.jpg', 53),
+('Teste 3', 'Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. Nunc tincidunt ante vitae massa. Duis ante orci, molestie vitae, vehicula venenatis, tincidunt ac, pede. Nulla accumsan,', '99999999.99', 'Luxo', 'teste2.jpg', 54),
+('Teste 4', 'Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id metus id velit ullamcorper pulvinar. Vestibulum fermentum tortor id mi.', '99999999.99', 'Novos', 'teste4.jpg', 55),
+('Teste 5', 'Etiam posuere quam ac quam. Maecenas aliquet accumsan leo. Nullam dapibus fermentum ipsum. Etiam quis quam. Integer lacinia. Nulla est. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Integer vulputate sem a nibh rutrum consequat. Maecenas', '99999999.99', 'luxo', 'teste5.jpg', 56),
+('Teste 6', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Aliquam erat volutpat. Nunc auctor. Mauris pretium quam et urna. Fusce nibh. Duis risus.', '99999999.99', 'Esportivo', 'teste6.jpg', 57);
 
 -- --------------------------------------------------------
 
@@ -159,13 +156,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `detalhesproduto`
 --
 ALTER TABLE `detalhesproduto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `albumid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `usuario`
