@@ -356,9 +356,7 @@ figcaption p{
     box-shadow: 2px 2px 2px 2px #8B8989;
 }
 
-#pesquisa-produtos{
-    width: 100%;
-}
+
 
 #filtro-produtos{
     width: 84%;
@@ -383,22 +381,22 @@ figcaption p{
     transition: 0.5s;
 }
 
-#NeB{
-    margin-bottom: 5px;
-    position: relative;
-    bottom: 0px;
-    top: 430px;
-}
-
 #footer-produtos{    
     position: relative;
     bottom: 0px;
     top: 450px;
 
 }
+#pesquisa-produtos {
+    width: 100%
 }
-
-@media(min-width: 768px) {
+@media(min-width: 320px)  {
+ #pesquisa-produtos{
+    width: 80%;
+ } 
+    
+}
+@media(min-width: 768px)  {
     
     #filtro-produtos{
         margin-top: 10px;
@@ -416,10 +414,11 @@ figcaption p{
         position: relative;
         margin-top: 10px;
         margin-left: 111px;
+        width: 100%;
     }
     
 }
-@media(min-width: 992px) {
+@media(min-width: 992px)  {
     
     #filtro-produtos{
         margin-top: 10px;
@@ -468,6 +467,7 @@ figcaption p{
     }
     
 }
+
 
 /*FIM DO CSS DA PÁGINA DE PRODUTOS*/
 
