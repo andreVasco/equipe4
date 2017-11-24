@@ -20,6 +20,7 @@ $usuario = BuscaUsuario($conexao, $id);
 
   </head>
   <body class="body-login">
+    <?php include('painel.php'); ?>
           <div id="teste-js">
             <div class="container  login-form">
                    <form class="form-horizontal teste" action="adiciona-login.php" method="POST">

@@ -23,7 +23,7 @@ include("banco-produtos.php");
     <!--INCLUINDO O ESQUELETO DO PAINEL-->
          <?php include("painel.php"); ?>
 
-    <h3 class="subtitulo-painel">Mensagens Recebidas</h3>
+    <h3 class="subtitulo-painel submsg">Mensagens Recebidas</h3>
     
     <?php
     //FUNÇÃO QUE LISTA AS MENSAGENS

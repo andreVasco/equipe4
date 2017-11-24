@@ -1092,7 +1092,135 @@ figcaption p{
     color: #022B59;
     left: 10px;
     padding-right: 5px;
+}
 
+@media(max-width: 768px) {
+    .logo-painel {
+        top: -1%;
+    }
+    .listaprod {
+        width: 77%;
+    }
+    .menu-vertical-painel {
+        font-size: 80%;
+    }
+}
+
+@media(min-width: 425px) and (max-width: 767px) {
+    .menu-vertical-painel {
+        font-size: 80%;
+    }
+    .listaprod {
+        left: 29% !important;
+        top: 19% !important;
+    }
+    .listalogin {
+        left: 32% !important;
+        top: 19% !important;
+        width: 67% !important;
+    }
+}
+
+@media(min-width: 375px) and (max-width: 424px) {
+    .listaprod {
+        left: 32% !important;
+        top: 19% !important;
+        width: 70% !important;
+    }
+    .listalogin {
+        left: 31% !important;
+        top: 19% !important;
+        width: 70% !important;
+    }
+    .titulo-painel {
+        font-size: 235% !important;
+    }
+
+}
+
+@media(min-width: 320px) and (max-width: 425px) {
+    .titulo-painel {
+        font-size: 253%;
+    }
+    .left {        
+        left: 0%;
+    }
+    .right {
+        right: 0%;
+    }
+    .subtitulo-painel {
+        left: 29%;
+        font-size: 150%;
+        position: absolute;
+    }
+    .menu-vertical-painel {
+        font-size: 80%;
+    }
+    .painel-lista-vertical {
+        padding: 5px;
+    }
+    .menu-vertical-painel {
+        width: 28%;
+    }
+    .item-painel {
+        padding-left: 8px;
+    }
+    .form-cadastro-carro {
+        background-color: transparent;
+        padding: 10px;
+        left: 29% !important;
+        top: 150%;
+    }
+    .cadstcarro {
+        font-size: 200%;
+        top: 86%;
+    }
+    .form-add-login {
+        left: 29% !important;
+        top: 140% !important;
+    }
+    .cadastlogin {
+        left: 46%;
+        font-size: 164%;
+        position: absolute;
+        top: 110%;
+    }
+}
+@media(max-width: 320px) {
+    .selecionar-arquivo {
+        width: 200px !important;
+    }
+    .logo-painel {
+        width: 71px;
+        height: 56px;
+    }
+    .item-painel {
+        font-size: 85%;
+    }
+    .linkmsg {
+        position: relative;
+        left: -10%;
+    }
+    .listalogin {
+        position: absolute;
+        left: 28% !important;
+        top: 17% !important;
+    }
+    .listaprod {
+        left: 28% !important;
+        top: 17% !important;
+    }
+    .subtitulo-painel {
+        font-size: 132%;
+    }
+    .subtitulo-painel {
+        font-size: 132%;
+        top: 113%;
+        left: 34%;
+    }
+    .submsg {
+        top: 16%;
+    }
 }
 /*FIM DO CSS DO ESCOPO DO PAINEL ADMINISTRATIVO*/
 
@@ -1177,6 +1305,9 @@ figcaption p{
     position: absolute;
     left: 25%;
     top: 15%;
+}
+#titulo1 {
+    text-align: center;
 }
 
 /*COMEÇO PAGINA DE DETALHES DO PRODUTO */

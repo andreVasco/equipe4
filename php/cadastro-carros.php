@@ -22,10 +22,11 @@ include("conecta.php");
     <!--INCLUINDO O ESQUELETO DO PAINEL-->
          <?php include("painel.php"); ?>
 
-    <!--FORMULARIO DE CADASTRO DE VEICULOS-->     
+    <!--FORMULARIO DE CADASTRO DE VEICULOS-->
+    <h2 class="subtitulo-painel cadstcarro" >CADASTRAR CARRO</h2>     
     <div class="container  login-form">
         <form class="form-horizontal form-cadastro-carro" method="post" action="adiciona-carros.php">
-          <h2 class="subtitulo-painel" >CADASTRAR CARRO</h2>
+          
           <div class="form-group">
             <label for="#" id="campo-cadastrocarro" class="col-sm-3 control-label">Nome:</label>
             <div class="col-sm-7">

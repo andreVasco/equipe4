@@ -13,7 +13,7 @@ $produto = BuscaProduto($conexao, $id);
 		<meta name="viewport"  content="width=device-width,initial-scale=1"> <!--Ajusta o site para o tamanho do dispositivo-->
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css"> <!-- reset-->
-  		<link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
+  	<link rel="stylesheet" type="text/css" href="../assets/css/estilos.css">
 		<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css"> <!-- link para acessar a pasta de css do bootstrap-->
 		<title>OREMAN MOTORS</title>
 		<link rel="icon" href="../assets/images/icon.png" type="image/x-icon"/>
@@ -25,7 +25,7 @@ $produto = BuscaProduto($conexao, $id);
          <?php include("painel.php"); ?>
             <div class="container  login-form">
                    <form class="form-horizontal form-altera-carro" method="post" action="altera-carro.php">
-                   	 <h2 id="tit-h2" >ALTERAR CARRO</h2>
+                   	 <h2 id="titulo1">ALTERAR CARRO</h2>
             
                    	  <div class="form-group">
                         <label for="#" id="frase" class="col-sm-3 control-label">Nome:</label>

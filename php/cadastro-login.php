@@ -23,9 +23,10 @@ include("conecta.php");
     <?php include("painel.php") ?>
 
     <div id="teste-js">
+      <h2 class="subtitulo-painel" >Cadastro</h2>
        <div class="container  login-form">
                    <form class="form-horizontal form-add-login" action="adiciona-login.php" method="POST">
-                      <h2 class="subtitulo-painel" >Cadastro</h2>
+                      
                       <div class="form-group">
                         <label for="#" id="campo-cadastrologin" class="col-sm-3 control-label">Usuário:</label>
                         <div class="col-sm-7">
