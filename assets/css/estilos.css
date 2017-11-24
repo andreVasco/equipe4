@@ -190,8 +190,6 @@ figcaption p{
     top: 10px;
 }
 
-
-
 #titulo-cont{
     font-size: 18px;
     position: relative;
@@ -199,6 +197,11 @@ figcaption p{
     color: #f8f8ff;
     font-style: italic;
     left: 15px;
+}
+
+.titulo-pagina-contatos
+{
+    text-align: center;
 }
 
 #paragrafo-cont{
@@ -988,6 +991,9 @@ figcaption p{
     margin-top: 5%;
 }
 
+#tit-h2a{
+    text-align: center;
+}
 #frase{
     left: 10px;
     color: #022B59;
